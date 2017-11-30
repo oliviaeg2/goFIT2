@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		B572996C1FB98A1B009367E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572996B1FB98A1B009367E6 /* AppDelegate.swift */; };
-		B572996E1FB98A1B009367E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572996D1FB98A1B009367E6 /* ViewController.swift */; };
+		B572996E1FB98A1B009367E6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572996D1FB98A1B009367E6 /* HomeViewController.swift */; };
 		B57299711FB98A1B009367E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B572996F1FB98A1B009367E6 /* Main.storyboard */; };
 		B57299731FB98A1B009367E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B57299721FB98A1B009367E6 /* Assets.xcassets */; };
 		B57299761FB98A1B009367E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57299741FB98A1B009367E6 /* LaunchScreen.storyboard */; };
+		B5B4E3611FCFB23A0087DA32 /* createChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B4E3601FCFB23A0087DA32 /* createChallengeViewController.swift */; };
+		B5D62CCC1FCE8A1E0020A958 /* plusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D62CCB1FCE8A1E0020A958 /* plusTableViewCell.swift */; };
+		B5D62CCE1FCE8FDA0020A958 /* challengesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D62CCD1FCE8FDA0020A958 /* challengesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B57299681FB98A1B009367E6 /* goFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = goFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B572996B1FB98A1B009367E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B572996D1FB98A1B009367E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B572996D1FB98A1B009367E6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B57299701FB98A1B009367E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B57299721FB98A1B009367E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B57299751FB98A1B009367E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B57299771FB98A1B009367E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5B4E3601FCFB23A0087DA32 /* createChallengeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = createChallengeViewController.swift; sourceTree = "<group>"; };
+		B5D62CCB1FCE8A1E0020A958 /* plusTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = plusTableViewCell.swift; sourceTree = "<group>"; };
+		B5D62CCD1FCE8FDA0020A958 /* challengesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = challengesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +61,11 @@
 			isa = PBXGroup;
 			children = (
 				B572996B1FB98A1B009367E6 /* AppDelegate.swift */,
-				B572996D1FB98A1B009367E6 /* ViewController.swift */,
+				B572996D1FB98A1B009367E6 /* HomeViewController.swift */,
 				B572996F1FB98A1B009367E6 /* Main.storyboard */,
+				B5B4E3601FCFB23A0087DA32 /* createChallengeViewController.swift */,
+				B5D62CCD1FCE8FDA0020A958 /* challengesTableViewController.swift */,
+				B5D62CCB1FCE8A1E0020A958 /* plusTableViewCell.swift */,
 				B57299721FB98A1B009367E6 /* Assets.xcassets */,
 				B57299741FB98A1B009367E6 /* LaunchScreen.storyboard */,
 				B57299771FB98A1B009367E6 /* Info.plist */,
@@ -137,8 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B572996E1FB98A1B009367E6 /* ViewController.swift in Sources */,
+				B572996E1FB98A1B009367E6 /* HomeViewController.swift in Sources */,
+				B5D62CCC1FCE8A1E0020A958 /* plusTableViewCell.swift in Sources */,
 				B572996C1FB98A1B009367E6 /* AppDelegate.swift in Sources */,
+				B5B4E3611FCFB23A0087DA32 /* createChallengeViewController.swift in Sources */,
+				B5D62CCE1FCE8FDA0020A958 /* challengesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +314,7 @@
 				B572997C1FB98A1B009367E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
