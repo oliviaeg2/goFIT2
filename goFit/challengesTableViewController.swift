@@ -20,6 +20,7 @@ class challengesTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
         self.title = "CHALLENGES"
+        //self.navigationController?.navigationBar.isHidden = false;
         
     }
 

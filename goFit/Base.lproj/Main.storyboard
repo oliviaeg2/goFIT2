@@ -22,6 +22,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="00z-pw-vbm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="685"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tKB-Wi-Mlu">
                                 <rect key="frame" x="48" y="134" width="100" height="100"/>
                                 <constraints>
@@ -139,7 +143,7 @@
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.87617182950000005" green="1" blue="0.94937324379999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="EZ5-9b-cSB" firstAttribute="top" secondItem="sBz-do-iJY" secondAttribute="bottom" constant="25" id="0ka-FT-JXX"/>
                             <constraint firstItem="tR2-Dl-Ijh" firstAttribute="leading" secondItem="cJr-Yl-mDh" secondAttribute="trailing" constant="29" id="2kc-3s-oq9"/>
@@ -173,7 +177,7 @@
                             <constraint firstItem="pgj-sb-7VW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="29" id="zTR-O8-VNA"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="goFIT" id="pMy-Yb-tAI"/>
+                    <navigationItem key="navigationItem" title="goFIT" id="xNF-cu-W0S"/>
                     <connections>
                         <outlet property="challenges" destination="tKB-Wi-Mlu" id="UHv-ph-c4j"/>
                         <outlet property="currentChallenge" destination="tR2-Dl-Ijh" id="PG0-Ky-1eZ"/>
@@ -184,7 +188,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3039" y="-967"/>
+            <point key="canvasLocation" x="3037.5999999999999" y="-967.4662668665668"/>
         </scene>
         <!--My Challenges-->
         <scene sceneID="oWd-jh-m6A">
@@ -198,10 +202,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="j90-8P-PgK">
+                                <rect key="frame" x="0.0" y="55" width="375" height="557"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="clq-aQ-OwE">
                                 <rect key="frame" x="0.0" y="110" width="375" height="557"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.87617182950000005" green="1" blue="0.94937324379999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ynq-Td-NTR">
                                     <size key="itemSize" width="181" height="164"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -223,14 +231,10 @@
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Challenge Type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53v-LC-5n3">
                                                             <rect key="frame" x="16" y="77" width="92" height="16"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pYn-Fm-tc6">
-                                                            <rect key="frame" x="25" y="16" width="71" height="53"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="x of y Complete" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ie-ah-kB2">
                                                             <rect key="frame" x="16" y="94" width="88" height="12"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -238,6 +242,10 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pYn-Fm-tc6">
+                                                            <rect key="frame" x="40" y="29" width="40" height="40"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </imageView>
                                                     </subviews>
                                                 </view>
                                             </subviews>
@@ -261,7 +269,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.87617182947964312" green="1" blue="0.94937324384680777" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="My Challenges" id="2x9-y9-vYt">
                         <barButtonItem key="backBarButtonItem" title="Back" id="FK1-zI-So9"/>
@@ -275,7 +283,7 @@
             </objects>
             <point key="canvasLocation" x="4020" y="-966.56671664167925"/>
         </scene>
-        <!--Create Challenge View Controller-->
+        <!--Create Challenge-->
         <scene sceneID="ztY-2a-W0t">
             <objects>
                 <viewController id="ehm-pW-WOU" customClass="createChallengeViewController" customModule="goFit" customModuleProvider="target" sceneMemberID="viewController">
@@ -287,6 +295,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="uhW-pc-eRi">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Participants:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9jg-qQ-pzo">
                                 <rect key="frame" x="16" y="337" width="182" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
@@ -537,7 +549,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.87617182950000005" green="1" blue="0.94937324379999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="QDm-rK-7J8" firstAttribute="top" secondItem="9jg-qQ-pzo" secondAttribute="bottom" constant="15" id="03j-0I-wpr"/>
                             <constraint firstItem="3eo-rn-kb7" firstAttribute="top" secondItem="CAE-bl-qFs" secondAttribute="bottom" constant="21" id="0oS-Tw-Gv7"/>
@@ -601,7 +613,7 @@
                             <constraint firstItem="qv5-Sj-GDi" firstAttribute="leading" secondItem="b0M-Y5-xz3" secondAttribute="leadingMargin" constant="93" id="z17-wV-yKa"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="G2l-id-LEh"/>
+                    <navigationItem key="navigationItem" title="Create Challenge" id="G2l-id-LEh"/>
                     <connections>
                         <outlet property="bikingButton" destination="iOY-k7-iEp" id="QZL-te-TUN"/>
                         <outlet property="bryceButton" destination="QDm-rK-7J8" id="mdk-Xb-ME5"/>
@@ -620,7 +632,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4wS-Mm-Dt3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4951" y="-967"/>
+            <point key="canvasLocation" x="4949.6000000000004" y="-967.4662668665668"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0Ry-vt-jlJ">
@@ -642,6 +654,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="background.png" width="616" height="1268"/>
         <image name="bike" width="64" height="64"/>
         <image name="friends" width="128" height="128"/>
         <image name="jumprope" width="64" height="64"/>

@@ -42,6 +42,11 @@ class HomeViewController: UIViewController {
         currentChallenge.layer.borderColor = UIColor.green.cgColor
         
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(false);
+    //self.navigationController?.navigationBar.isHidden = true;
+    }
 
 
 }

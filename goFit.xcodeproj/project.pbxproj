@@ -18,6 +18,7 @@
 		B9272F391FD05A0B009F756E /* ChallengesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9272F381FD05A0B009F756E /* ChallengesViewController.swift */; };
 		B9272F3B1FD05A2C009F756E /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9272F3A1FD05A2C009F756E /* Challenge.swift */; };
 		B9272F3D1FD05A7F009F756E /* ChallengeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9272F3C1FD05A7F009F756E /* ChallengeCollectionViewCell.swift */; };
+		B92E69941FD15E7100FCBB43 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = B92E69931FD15E7100FCBB43 /* background.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		B9272F381FD05A0B009F756E /* ChallengesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengesViewController.swift; sourceTree = "<group>"; };
 		B9272F3A1FD05A2C009F756E /* Challenge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
 		B9272F3C1FD05A7F009F756E /* ChallengeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeCollectionViewCell.swift; sourceTree = "<group>"; };
+		B92E69931FD15E7100FCBB43 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				B5D62CCB1FCE8A1E0020A958 /* plusTableViewCell.swift */,
 				B57299721FB98A1B009367E6 /* Assets.xcassets */,
 				B57299741FB98A1B009367E6 /* LaunchScreen.storyboard */,
+				B92E69931FD15E7100FCBB43 /* background.png */,
 				B57299771FB98A1B009367E6 /* Info.plist */,
 			);
 			path = goFit;
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B57299761FB98A1B009367E6 /* LaunchScreen.storyboard in Resources */,
+				B92E69941FD15E7100FCBB43 /* background.png in Resources */,
 				B57299731FB98A1B009367E6 /* Assets.xcassets in Resources */,
 				B57299711FB98A1B009367E6 /* Main.storyboard in Resources */,
 			);

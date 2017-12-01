@@ -17,7 +17,8 @@ class ChallengesViewController: UIViewController, UICollectionViewDataSource, UI
         super.viewDidLoad()
         challengesGridView.dataSource = self
         challengesGridView.delegate = self
-    }
+        challengesGridView.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
+       }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
