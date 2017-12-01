@@ -46,12 +46,10 @@ class ChallengesViewController: UIViewController, UICollectionViewDataSource, UI
         cell.imageView.image = challengeImage
         cell.progressLabel.text = String(progress) + " " + "of"  + " " + String(goal) + " " + "complete"
         
-        
-        //TODO: To fix weird spacing, place everything in cell in a view and then make the border apply to the view, not the cell
-        cell.layer.borderColor = UIColor.green.cgColor;
-        cell.layer.cornerRadius = cell.frame.size.width / 2;
-        cell.clipsToBounds = true;
-        cell.layer.borderWidth = 5.0;
+        cell.cellView.layer.borderColor = UIColor.green.cgColor;
+        cell.cellView.layer.cornerRadius = cell.frame.size.width / 3;
+        cell.cellView.clipsToBounds = true;
+        cell.cellView.layer.borderWidth = 3.0;
         
         return cell
         
