@@ -11,6 +11,7 @@ import UIKit
 class createChallengeViewController: UIViewController {
     
     var selectedChallenge = "NA"
+    var currentFrequency  = 0;
     
     @IBOutlet weak var swimmingButton: UIButton!
     @IBOutlet weak var runningButton: UIButton!
@@ -29,10 +30,16 @@ class createChallengeViewController: UIViewController {
     @IBOutlet weak var frequencyLabel: UILabel!
     @IBAction func frequencyChanged(_ sender: UIStepper) {
         frequencyLabel.text = Int(sender.value).description
+        currentFrequency = Int(sender.value)
     }
     
     @IBAction func createChallenge(_ sender: UIButton) {
-        print("Challenge: " + selectedChallenge + ", frequency: " + frequencyLabel.text!)
+        //TODO: Implement users
+        //TODO: Implement image -- probably would work when map is implemented
+        let newChallenge = Challenge.init(type: selectedChallenge, frequency: currentFrequency, user: "Me", icon: #imageLiteral(resourceName: "running"));
+        Challenge.userChallengesShared.append(newChallenge!);
+        //TODO: CONGRATS screen
+        _ = navigationController?.popViewController(animated: true)
     }
     
     

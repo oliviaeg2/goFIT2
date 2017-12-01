@@ -16,6 +16,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let initialChallengeTitles = ["Walking", "Weights", "Biking", "Swimming", "Salad", "Water"];
+        let initialChallengeImages = [#imageLiteral(resourceName: "steps"), #imageLiteral(resourceName: "weights"), #imageLiteral(resourceName: "bike"), #imageLiteral(resourceName: "swimming"), #imageLiteral(resourceName: "salad"), #imageLiteral(resourceName: "water")];
+        
+        var i = 0;
+        var curChallenge : Challenge
+        
+        for challengeType in initialChallengeTitles {
+            curChallenge = Challenge(type: challengeType, frequency: 4, user: "Me", icon: initialChallengeImages[i])!;
+            Challenge.userChallengesShared.append(curChallenge);
+            i = i + 1;
+        }
+        print(Challenge.userChallengesShared);
+        
+        //TODO: Make a mapping of titles to images
         return true
     }
 
