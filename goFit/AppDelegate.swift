@@ -27,9 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             Challenge.userChallengesShared.append(curChallenge);
             i = i + 1;
         }
-        print(Challenge.userChallengesShared);
-        
-        //TODO: Make a mapping of titles to images
+//        let challengesToIcons = ["Walking" : #imageLiteral(resourceName: "steps"), "Swimming": #imageLiteral(resourceName: "swimming"), "Salad": #imageLiteral(resourceName: "salad"), "Running": #imageLiteral(resourceName: "running"), "Biking": #imageLiteral(resourceName: "bike"), "Weights": #imageLiteral(resourceName: "weights"), "Jumprope": #imageLiteral(resourceName: "jumprope"), "Water": #imageLiteral(resourceName: "water")];
         return true
     }
 

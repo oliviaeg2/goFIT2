@@ -36,7 +36,7 @@ class createChallengeViewController: UIViewController {
     @IBAction func createChallenge(_ sender: UIButton) {
         //TODO: Implement users
         //TODO: Implement image -- probably would work when map is implemented
-        let newChallenge = Challenge.init(type: selectedChallenge, frequency: currentFrequency, user: "Me", icon: #imageLiteral(resourceName: "running"));
+        let newChallenge = Challenge.init(type: selectedChallenge, frequency: currentFrequency, user: "Me", icon: Challenge.challengesToIcons[selectedChallenge]);
         Challenge.userChallengesShared.append(newChallenge!);
         //TODO: CONGRATS screen
         _ = navigationController?.popViewController(animated: true)
