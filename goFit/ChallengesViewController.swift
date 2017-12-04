@@ -46,7 +46,11 @@ class ChallengesViewController: UIViewController, UICollectionViewDataSource, UI
         let curUser = Challenge.userChallengesShared[indexPath.row - 1].user
         cell.typeLabel.text = challengeTitle
         cell.imageView.image = challengeImage
-        cell.friendLabel.text = curUser
+        cell.friendImage.image = User.usersToIcons[curUser]
+            cell.friendImage.layer.borderColor = UIColor.green.cgColor;
+            cell.friendImage.layer.cornerRadius = 15;
+            cell.friendImage.clipsToBounds = true;
+            cell.friendImage.layer.borderWidth = 2.0;
         cell.progressLabel.text = String(progress) + " " + "of"  + " " + String(goal) + " " + "complete"
         
         cell.cellView.layer.borderColor = UIColor.green.cgColor;
@@ -58,21 +62,6 @@ class ChallengesViewController: UIViewController, UICollectionViewDataSource, UI
         else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AddGridCell", for: indexPath) as! AddNewCollectionViewCell
             return cell;
-        }
-        let cell = UICollectionViewCell();
-        return cell;
-        
-    }
-    
-    
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "Create New Segue") {
-            //var indexPath: NSIndexPath
-            //var vc = segue.destination as! CreateChallengeViewController
-            //indexPath = challengesGridView.indexPath(for: sender as! UICollectionViewCell)! as NSIndexPath
-            
-            //vc.title = challengeCategories[indexPath.row] as! String
         }
     }
 }

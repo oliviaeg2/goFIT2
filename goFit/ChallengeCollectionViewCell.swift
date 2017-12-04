@@ -18,5 +18,6 @@ class ChallengeCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var progressLabel: UILabel!
     
-    @IBOutlet weak var friendLabel: UILabel!
+    @IBOutlet weak var friendImage: UIImageView!
+    
 }

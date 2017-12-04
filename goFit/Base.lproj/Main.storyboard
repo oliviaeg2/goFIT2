@@ -249,20 +249,17 @@
                                                             <rect key="frame" x="55" y="29" width="40" height="40"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5HD-R8-jCF">
-                                                            <rect key="frame" x="35" y="121" width="60" height="21"/>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="User_icon_BLACK-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="ElX-eV-Ktr">
+                                                            <rect key="frame" x="60" y="111" width="30" height="30"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
+                                                        </imageView>
                                                     </subviews>
                                                 </view>
                                             </subviews>
                                         </view>
                                         <connections>
                                             <outlet property="cellView" destination="t7N-gT-s9X" id="vaL-wd-coK"/>
-                                            <outlet property="friendLabel" destination="5HD-R8-jCF" id="RpV-nP-5In"/>
+                                            <outlet property="friendImage" destination="ElX-eV-Ktr" id="6U5-9Q-US6"/>
                                             <outlet property="imageView" destination="pYn-Fm-tc6" id="g4l-ZU-UVf"/>
                                             <outlet property="progressLabel" destination="3Ie-ah-kB2" id="ix7-oP-2fP"/>
                                             <outlet property="typeLabel" destination="53v-LC-5n3" id="Xaj-98-Jvb"/>
@@ -300,7 +297,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fws-LC-DwX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3998" y="-967"/>
+            <point key="canvasLocation" x="3997.5999999999999" y="-967.4662668665668"/>
         </scene>
         <!--Social View Controller-->
         <scene sceneID="BGJ-BT-lnm">

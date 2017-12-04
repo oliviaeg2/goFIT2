@@ -11,7 +11,7 @@ import UIKit
 class createChallengeViewController: UIViewController {
     
     var selectedChallenge = "NA"
-    var currentFrequency  = 0;
+    var currentFrequency  = 1;
     var selectedUser = "ME";
     
     @IBOutlet weak var swimmingButton: UIButton!
@@ -141,8 +141,6 @@ class createChallengeViewController: UIViewController {
         }
     }
     
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -195,16 +193,19 @@ class createChallengeViewController: UIViewController {
         bryceButton.clipsToBounds = true;
         bryceButton.layer.borderWidth = 5.0;
         bryceButton.layer.borderColor = UIColor.blue.cgColor
+        bryceButton.setImage(#imageLiteral(resourceName: "bryce"), for: UIControlState.normal)
         
         christinaButton.layer.cornerRadius = christinaButton.frame.size.width / 2;
         christinaButton.clipsToBounds = true;
         christinaButton.layer.borderWidth = 5.0;
         christinaButton.layer.borderColor = UIColor.blue.cgColor
+        christinaButton.setImage(#imageLiteral(resourceName: "christina"), for: UIControlState.normal)
         
         denisButton.layer.cornerRadius = denisButton.frame.size.width / 2;
         denisButton.clipsToBounds = true;
         denisButton.layer.borderWidth = 5.0;
         denisButton.layer.borderColor = UIColor.blue.cgColor
+        denisButton.setImage(#imageLiteral(resourceName: "denis"), for: UIControlState.normal)
     }
 
     /*

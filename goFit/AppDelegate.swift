@@ -29,11 +29,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         let initialFriendNames = ["ME", "Denis", "Bryce", "Olivia", "Christina"];
+        let initialFriendImages = [#imageLiteral(resourceName: "user"), #imageLiteral(resourceName: "denis"), #imageLiteral(resourceName: "bryce"), #imageLiteral(resourceName: "olivia"), #imageLiteral(resourceName: "christina")];
         var curUser : User
+        var j = 0;
         
         for userName in initialFriendNames {
-            curUser = User(name: userName)!;
+            curUser = User(name: userName, image: initialFriendImages[j])!;
             User.userFriendsShared.append(curUser);
+            j += 1;
         }
 
         return true

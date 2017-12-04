@@ -11,16 +11,22 @@ import UIKit
 class User: NSObject {
      static var userFriendsShared = [User]()
     
-   //static var curUserFriends =
-    
     var name : String
     var challenges : [Challenge]
+    var proPic : UIImage
     
-    init?(name: String?) {
+    static var usersToIcons = ["Denis": #imageLiteral(resourceName: "denis"), "Bryce": #imageLiteral(resourceName: "bryce"), "Christina": #imageLiteral(resourceName: "christina"), "Olivia": #imageLiteral(resourceName: "olivia"), "Me": #imageLiteral(resourceName: "user"), "ME": #imageLiteral(resourceName: "user")]
+    
+    init?(name: String?, image: UIImage?) {
         if (name == nil) {
             return nil;
         }
         self.name = name!;
+        if ((image) != nil) {
+        self.proPic = image!;
+        } else {
+            self.proPic = #imageLiteral(resourceName: "user");
+        }
         challenges = [Challenge]()
         
     }
