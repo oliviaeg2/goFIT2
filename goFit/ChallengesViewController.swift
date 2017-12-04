@@ -33,7 +33,7 @@ class ChallengesViewController: UIViewController, UICollectionViewDataSource, UI
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return Challenge.userChallengesShared.count
+        return Challenge.userChallengesShared.count + 1
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -43,8 +43,10 @@ class ChallengesViewController: UIViewController, UICollectionViewDataSource, UI
         let challengeImage = Challenge.userChallengesShared[indexPath.row - 1].icon
         let progress = Challenge.userChallengesShared[indexPath.row - 1].progress
         let goal = Challenge.userChallengesShared[indexPath.row - 1].frequency
+        let curUser = Challenge.userChallengesShared[indexPath.row - 1].user
         cell.typeLabel.text = challengeTitle
         cell.imageView.image = challengeImage
+        cell.friendLabel.text = curUser
         cell.progressLabel.text = String(progress) + " " + "of"  + " " + String(goal) + " " + "complete"
         
         cell.cellView.layer.borderColor = UIColor.green.cgColor;

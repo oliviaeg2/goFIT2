@@ -228,33 +228,41 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t7N-gT-s9X">
-                                                    <rect key="frame" x="30" y="22" width="120" height="121"/>
+                                                    <rect key="frame" x="15" y="8" width="150" height="150"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Challenge Type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53v-LC-5n3">
-                                                            <rect key="frame" x="16" y="77" width="92" height="16"/>
+                                                            <rect key="frame" x="29" y="77" width="92" height="16"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="x of y Complete" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ie-ah-kB2">
-                                                            <rect key="frame" x="16" y="94" width="88" height="12"/>
+                                                            <rect key="frame" x="33" y="91" width="88" height="12"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="8"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pYn-Fm-tc6">
-                                                            <rect key="frame" x="40" y="29" width="40" height="40"/>
+                                                            <rect key="frame" x="55" y="29" width="40" height="40"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5HD-R8-jCF">
+                                                            <rect key="frame" x="35" y="121" width="60" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                     </subviews>
                                                 </view>
                                             </subviews>
                                         </view>
                                         <connections>
                                             <outlet property="cellView" destination="t7N-gT-s9X" id="vaL-wd-coK"/>
+                                            <outlet property="friendLabel" destination="5HD-R8-jCF" id="RpV-nP-5In"/>
                                             <outlet property="imageView" destination="pYn-Fm-tc6" id="g4l-ZU-UVf"/>
                                             <outlet property="progressLabel" destination="3Ie-ah-kB2" id="ix7-oP-2fP"/>
                                             <outlet property="typeLabel" destination="53v-LC-5n3" id="Xaj-98-Jvb"/>
@@ -292,7 +300,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fws-LC-DwX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4020" y="-966.56671664167925"/>
+            <point key="canvasLocation" x="3998" y="-967"/>
         </scene>
         <!--Social View Controller-->
         <scene sceneID="BGJ-BT-lnm">
