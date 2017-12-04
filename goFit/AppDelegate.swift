@@ -27,7 +27,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             Challenge.userChallengesShared.append(curChallenge);
             i = i + 1;
         }
-//        let challengesToIcons = ["Walking" : #imageLiteral(resourceName: "steps"), "Swimming": #imageLiteral(resourceName: "swimming"), "Salad": #imageLiteral(resourceName: "salad"), "Running": #imageLiteral(resourceName: "running"), "Biking": #imageLiteral(resourceName: "bike"), "Weights": #imageLiteral(resourceName: "weights"), "Jumprope": #imageLiteral(resourceName: "jumprope"), "Water": #imageLiteral(resourceName: "water")];
+        
+        let initialFriendNames = ["ME", "Denis", "Bryce", "Olivia", "Christina"];
+        var curUser : User
+        
+        for userName in initialFriendNames {
+            curUser = User(name: userName)!;
+            User.userFriendsShared.append(curUser);
+        }
+
         return true
     }
 

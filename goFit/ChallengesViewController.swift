@@ -10,7 +10,6 @@ import UIKit
 
 class ChallengesViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
-    @IBOutlet weak var addNewButton: UIButton!
     @IBOutlet weak var challengesGridView: UICollectionView!
     
     override func viewDidLoad() {
@@ -38,11 +37,12 @@ class ChallengesViewController: UIViewController, UICollectionViewDataSource, UI
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if (indexPath.row > 0) {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ChallengeGridCell", for: indexPath) as! ChallengeCollectionViewCell
-        let challengeTitle = Challenge.userChallengesShared[indexPath.row].type
-        let challengeImage = Challenge.userChallengesShared[indexPath.row].icon
-        let progress = Challenge.userChallengesShared[indexPath.row].progress
-        let goal = Challenge.userChallengesShared[indexPath.row].frequency
+        let challengeTitle = Challenge.userChallengesShared[indexPath.row - 1].type
+        let challengeImage = Challenge.userChallengesShared[indexPath.row - 1].icon
+        let progress = Challenge.userChallengesShared[indexPath.row - 1].progress
+        let goal = Challenge.userChallengesShared[indexPath.row - 1].frequency
         cell.typeLabel.text = challengeTitle
         cell.imageView.image = challengeImage
         cell.progressLabel.text = String(progress) + " " + "of"  + " " + String(goal) + " " + "complete"
@@ -51,8 +51,14 @@ class ChallengesViewController: UIViewController, UICollectionViewDataSource, UI
         cell.cellView.layer.cornerRadius = cell.frame.size.width / 3;
         cell.cellView.clipsToBounds = true;
         cell.cellView.layer.borderWidth = 3.0;
-        
         return cell
+        }
+        else {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AddGridCell", for: indexPath) as! AddNewCollectionViewCell
+            return cell;
+        }
+        let cell = UICollectionViewCell();
+        return cell;
         
     }
     
