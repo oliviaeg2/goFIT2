@@ -137,6 +137,9 @@
                                 <state key="normal" title="&lt;">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="touchedPrevious:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6bv-Cp-vc4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="typ-ce-xwP">
                                 <rect key="frame" x="296" y="362" width="30" height="46"/>
@@ -144,6 +147,9 @@
                                 <state key="normal" title="&gt;">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="touchedNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hZv-KM-z0f"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.87617182950000005" green="1" blue="0.94937324379999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -184,6 +190,7 @@
                     <connections>
                         <outlet property="challenges" destination="tKB-Wi-Mlu" id="UHv-ph-c4j"/>
                         <outlet property="currentChallenge" destination="tR2-Dl-Ijh" id="PG0-Ky-1eZ"/>
+                        <outlet property="currentChallengeLabel" destination="Ab5-dF-1HZ" id="rVb-Gc-bER"/>
                         <outlet property="goal" destination="1hh-dK-IKB" id="c0s-Qq-XfT"/>
                         <outlet property="progress" destination="ljN-2Y-DJN" id="aMl-EW-jIi"/>
                         <outlet property="social" destination="xnv-Fh-kOx" id="tgz-TU-Os4"/>
