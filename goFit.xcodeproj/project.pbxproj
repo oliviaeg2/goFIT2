@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CC9CCA581D0216797570AA4 /* Pods_goFit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF2ABD7FC09481A5B7FB1BE5 /* Pods_goFit.framework */; };
 		B572996C1FB98A1B009367E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572996B1FB98A1B009367E6 /* AppDelegate.swift */; };
 		B572996E1FB98A1B009367E6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572996D1FB98A1B009367E6 /* HomeViewController.swift */; };
 		B57299711FB98A1B009367E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B572996F1FB98A1B009367E6 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		51FBD0AFE95A837FA2808B3E /* Pods-goFit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-goFit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-goFit/Pods-goFit.debug.xcconfig"; sourceTree = "<group>"; };
 		B57299681FB98A1B009367E6 /* goFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = goFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B572996B1FB98A1B009367E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B572996D1FB98A1B009367E6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +48,8 @@
 		B92E69991FD1F65D00FCBB43 /* SocialCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialCollectionViewCell.swift; sourceTree = "<group>"; };
 		B92E699B1FD1F74F00FCBB43 /* User_icon_BLACK-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "User_icon_BLACK-01.png"; sourceTree = "<group>"; };
 		B959EDF91FD5E7370041BE6A /* AddNewCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewCollectionViewCell.swift; sourceTree = "<group>"; };
+		DAD4645E6C6E434D0CBE994A /* Pods-goFit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-goFit.release.xcconfig"; path = "Pods/Target Support Files/Pods-goFit/Pods-goFit.release.xcconfig"; sourceTree = "<group>"; };
+		DF2ABD7FC09481A5B7FB1BE5 /* Pods_goFit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_goFit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,17 +57,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CC9CCA581D0216797570AA4 /* Pods_goFit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		017ADE0B6A5CF41784CBCDE7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF2ABD7FC09481A5B7FB1BE5 /* Pods_goFit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		766229D084E76524EF47B6FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				51FBD0AFE95A837FA2808B3E /* Pods-goFit.debug.xcconfig */,
+				DAD4645E6C6E434D0CBE994A /* Pods-goFit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B572995F1FB98A1B009367E6 = {
 			isa = PBXGroup;
 			children = (
 				B572996A1FB98A1B009367E6 /* goFit */,
 				B57299691FB98A1B009367E6 /* Products */,
+				766229D084E76524EF47B6FC /* Pods */,
+				017ADE0B6A5CF41784CBCDE7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,9 +131,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B572997A1FB98A1B009367E6 /* Build configuration list for PBXNativeTarget "goFit" */;
 			buildPhases = (
+				92A899853151E1C4ABF13BAF /* [CP] Check Pods Manifest.lock */,
 				B57299641FB98A1B009367E6 /* Sources */,
 				B57299651FB98A1B009367E6 /* Frameworks */,
 				B57299661FB98A1B009367E6 /* Resources */,
+				F1A1AB6591566D65B1D3038C /* [CP] Embed Pods Frameworks */,
+				6DA006EEA6BEDDB45AC5A076 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -169,6 +196,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6DA006EEA6BEDDB45AC5A076 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-goFit/Pods-goFit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92A899853151E1C4ABF13BAF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-goFit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1A1AB6591566D65B1D3038C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-goFit/Pods-goFit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MBCircularProgressBar/MBCircularProgressBar.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBCircularProgressBar.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-goFit/Pods-goFit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B57299641FB98A1B009367E6 /* Sources */ = {
@@ -307,6 +388,7 @@
 		};
 		B572997B1FB98A1B009367E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51FBD0AFE95A837FA2808B3E /* Pods-goFit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = T829AWJPEZ;
@@ -321,6 +403,7 @@
 		};
 		B572997C1FB98A1B009367E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAD4645E6C6E434D0CBE994A /* Pods-goFit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = T829AWJPEZ;

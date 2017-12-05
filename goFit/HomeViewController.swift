@@ -7,14 +7,17 @@
 //
 
 import UIKit
+import MBCircularProgressBar
 
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var currentChallenge: UIImageView!
     
+    @IBOutlet weak var challengesImage: UIImageView!
     @IBOutlet weak var challenges: UIButton!
     @IBOutlet weak var social: UIButton!
     
+    @IBOutlet weak var progressBar: MBCircularProgressBarView!
     @IBOutlet weak var progress: UILabel!
     @IBOutlet weak var goal: UILabel!
     
@@ -28,19 +31,28 @@ class HomeViewController: UIViewController {
      }
     
     @IBAction func plus() {
-//        let progressValue = Int(progress.text!)!
-//        if progressValue < Int(goal.text!)! {
-//            progress.text = String(progressValue + 1)
-//        }
         let curChallenge = Challenge.userChallengesShared[currentInt]
         if (curChallenge.progress < curChallenge.frequency) {
           curChallenge.progress += 1
         }
         progress.text = String(curChallenge.progress)
+        UIView.animate(withDuration: 2.0, animations: { 
+            self.progressBar.value = CGFloat(curChallenge.progress)
+            if (curChallenge.progress == curChallenge.frequency) {
+                self.progressBar.progressColor = UIColor.green
+            }
+        }) { (finished) in
+            print("updated!")
+        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        challengesImage.layer.borderColor = UIColor.green.cgColor;
+        challengesImage.layer.cornerRadius = 50;
+        challengesImage.clipsToBounds = true;
+        challengesImage.layer.borderWidth = 2.0;
         
         let newChallenge = Challenge.userChallengesShared[currentInt]
         currentChallengeLabel.text = newChallenge.type;
@@ -50,12 +62,14 @@ class HomeViewController: UIViewController {
         progress.text = String(progressVal)
         goal.text = String(goalVal)
         
-        
-        currentChallenge.layer.cornerRadius = currentChallenge.frame.size.width / 2;
-        currentChallenge.clipsToBounds = true;
-        
-        currentChallenge.layer.borderWidth = 10.0;
-        currentChallenge.layer.borderColor = UIColor.green.cgColor
+        if (progressVal == goalVal) {
+            progressBar.progressColor = UIColor.green
+        }
+        else {
+            progressBar.progressColor = UIColor.yellow
+        }
+        progressBar.value = CGFloat(progressVal)
+        progressBar.maxValue = CGFloat(goalVal)
         
     }
     
@@ -69,6 +83,14 @@ class HomeViewController: UIViewController {
             goalVal = newChallenge.frequency
             progress.text = String(progressVal)
             goal.text = String(goalVal)
+            if (progressVal == goalVal) {
+                progressBar.progressColor = UIColor.green
+            }
+            else {
+                progressBar.progressColor = UIColor.yellow
+            }
+            progressBar.value = CGFloat(progressVal)
+            progressBar.maxValue = CGFloat(goalVal)
         }
     }
     
@@ -83,6 +105,14 @@ class HomeViewController: UIViewController {
         goalVal = newChallenge.frequency
         progress.text = String(progressVal)
         goal.text = String(goalVal)
+            if (progressVal == goalVal) {
+                progressBar.progressColor = UIColor.green
+            }
+            else {
+                 progressBar.progressColor = UIColor.yellow
+            }
+        progressBar.value = CGFloat(progressVal)
+        progressBar.maxValue = CGFloat(goalVal)
 
         }
     }

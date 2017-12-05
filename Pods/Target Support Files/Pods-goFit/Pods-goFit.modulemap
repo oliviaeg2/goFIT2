@@ -1,0 +1,6 @@
+framework module Pods_goFit {
+  umbrella header "Pods-goFit-umbrella.h"
+
+  export *
+  module * { export * }
+}
