@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MBCircularProgressBar
 
 class ChallengeCollectionViewCell: UICollectionViewCell {
     
@@ -14,7 +15,7 @@ class ChallengeCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var imageView: UIImageView!
     
-    @IBOutlet weak var cellView: UIView!
+    @IBOutlet weak var cellView: MBCircularProgressBarView!
     
     @IBOutlet weak var progressLabel: UILabel!
     

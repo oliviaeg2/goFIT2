@@ -39,6 +39,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             j += 1;
         }
 
+        let universalFriendNames = ["Denis", "Bryce", "Olivia", "Christina", "Dylan", "Mark", "Niall", "Sophia", "Dog", "God", "Beyonce"]
+        
         return true
     }
 

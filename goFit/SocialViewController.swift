@@ -34,10 +34,11 @@ class SocialViewController: UIViewController,UICollectionViewDataSource, UIColle
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "socialGridCell", for: indexPath) as! SocialCollectionViewCell
         let userName = User.userFriendsShared[indexPath.row].name
         cell.nameLabel.text = userName
-//      cell.layer.borderColor = UIColor.green.cgColor;
-//      cell.layer.cornerRadius = cell.frame.size.width / 3;
-//      cell.clipsToBounds = true;
-//      cell.layer.borderWidth = 3.0;
+        cell.friendProfPic.image = User.usersToIcons[userName]
+      cell.socialCellView.layer.borderColor = UIColor.green.cgColor;
+      cell.socialCellView.layer.cornerRadius = cell.frame.size.width / 3;
+      cell.socialCellView.clipsToBounds = true;
+      cell.socialCellView.layer.borderWidth = 3.0;
         return cell
         
     }

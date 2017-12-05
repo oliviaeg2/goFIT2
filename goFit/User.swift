@@ -10,6 +10,7 @@ import UIKit
 
 class User: NSObject {
      static var userFriendsShared = [User]()
+     static var universalFriendsShared = [User]()
     
     var name : String
     var challenges : [Challenge]

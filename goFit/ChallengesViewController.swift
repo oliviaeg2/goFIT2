@@ -53,10 +53,11 @@ class ChallengesViewController: UIViewController, UICollectionViewDataSource, UI
             cell.friendImage.layer.borderWidth = 2.0;
         cell.progressLabel.text = String(progress) + " " + "of"  + " " + String(goal) + " " + "complete"
         
-        cell.cellView.layer.borderColor = UIColor.green.cgColor;
-        cell.cellView.layer.cornerRadius = cell.frame.size.width / 3;
-        cell.cellView.clipsToBounds = true;
-        cell.cellView.layer.borderWidth = 3.0;
+            cell.cellView.value = CGFloat(progress);
+            cell.cellView.maxValue = CGFloat(goal);
+            if (progress == goal) {
+                cell.cellView.progressColor = UIColor.green
+            }
         return cell
         }
         else {
