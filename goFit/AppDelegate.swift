@@ -39,7 +39,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             j += 1;
         }
 
-        let universalFriendNames = ["Denis", "Bryce", "Olivia", "Christina", "Dylan", "Mark", "Niall", "Sophia", "Dog", "God", "Beyonce"]
+        let universalFriendNames = ["Denis", "Bryce", "Olivia", "Christina", "Dylan", "Marc", "Niall", "Sophia", "Dog", "God", "Beyonce"]
+        let universalFriendImages = [#imageLiteral(resourceName: "denis"), #imageLiteral(resourceName: "bryce"), #imageLiteral(resourceName: "olivia"), #imageLiteral(resourceName: "christina"), #imageLiteral(resourceName: "dylan"), #imageLiteral(resourceName: "marc"), #imageLiteral(resourceName: "niall"), #imageLiteral(resourceName: "sophia"), #imageLiteral(resourceName: "dog"), #imageLiteral(resourceName: "god"), #imageLiteral(resourceName: "beyonce")]
+        
+        var k = 0;
+        
+        for name in universalFriendNames {
+            curUser = User(name: name, image: universalFriendImages[k])!;
+            User.universalFriendsShared.append(curUser);
+            k += 1;
+        }
         
         return true
     }

@@ -16,7 +16,7 @@ class ChallengesViewController: UIViewController, UICollectionViewDataSource, UI
         super.viewDidLoad()
         challengesGridView.dataSource = self
         challengesGridView.delegate = self
-        challengesGridView.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
+        //challengesGridView.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
        }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -47,7 +47,7 @@ class ChallengesViewController: UIViewController, UICollectionViewDataSource, UI
         cell.typeLabel.text = challengeTitle
         cell.imageView.image = challengeImage
         cell.friendImage.image = User.usersToIcons[curUser]
-            cell.friendImage.layer.borderColor = UIColor.green.cgColor;
+            cell.friendImage.layer.borderColor = UIColor.clear.cgColor
             cell.friendImage.layer.cornerRadius = 15;
             cell.friendImage.clipsToBounds = true;
             cell.friendImage.layer.borderWidth = 2.0;
