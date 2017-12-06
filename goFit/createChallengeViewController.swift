@@ -13,6 +13,15 @@ class createChallengeViewController: UIViewController {
     var selectedChallenge = "NA"
     var currentFrequency  = 1;
     var selectedUser = "ME";
+    var amount = 0;
+    
+    var distanceUnits = ["mi", "km", "min", "hr"];
+    var foodUnits = ["oz", "cup"];
+    var otherUnits = ["rep", "sets", "min", "hr"];
+    
+    var distanceSelected = true;
+    var foodSelected = false;
+    var otherSelected = false;
     
     @IBOutlet weak var swimmingButton: UIButton!
     @IBOutlet weak var runningButton: UIButton!
@@ -34,6 +43,10 @@ class createChallengeViewController: UIViewController {
         currentFrequency = Int(sender.value)
     }
     
+    @IBOutlet weak var unitsControl: UISegmentedControl!
+    @IBOutlet weak var totalLabel: UILabel!
+    @IBOutlet weak var amountTextField: UITextField!
+    
     @IBAction func createChallenge(_ sender: UIButton) {
         //TODO: Implement users
         let newChallenge = Challenge.init(type: selectedChallenge, frequency: currentFrequency, user: selectedUser, icon: Challenge.challengesToIcons[selectedChallenge]);
@@ -42,14 +55,26 @@ class createChallengeViewController: UIViewController {
         _ = navigationController?.popViewController(animated: true)
     }
     
+    @IBAction func startedTypingAmount(_ sender: Any) {
+//        if ((amountTextField.text) != nil) {
+//        //check if number
+//        amount = Int(amountTextField.text!)!
+//        }
+//        else {
+//            amount = 0
+//        }
+    }
+    
+    
+    
+    
+    @IBAction func unitSelected(_ sender: Any) {
+        let total = currentFrequency * amount
+        totalLabel.text = "( " + String(total) + distanceUnits[unitsControl.selectedSegmentIndex] + "per week)"
+    }
     
     
     @IBAction func swimming(_ sender: UIButton) {
-//        if swimmingButton.layer.borderColor == UIColor.green.cgColor {
-//            swimmingButton.layer.borderColor = UIColor.blue.cgColor
-//        } else {
-//            swimmingButton.layer.borderColor = UIColor.green.cgColor
-//        }
         if (swimmingButton.currentImage == #imageLiteral(resourceName: "swimming_blue"))  {
             swimmingButton.setImage(#imageLiteral(resourceName: "swimming_green"), for: UIControlState.normal)
         } else {

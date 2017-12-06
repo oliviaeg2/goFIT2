@@ -243,7 +243,7 @@
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <subviews>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="User_icon_BLACK-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="ElX-eV-Ktr">
-                                                                    <rect key="frame" x="30" y="12" width="30" height="30"/>
+                                                                    <rect key="frame" x="30" y="10" width="30" height="30"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 </imageView>
                                                             </subviews>
@@ -575,18 +575,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIj-yO-veP">
-                                <rect key="frame" x="298" y="509" width="22" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8WS-QC-u8W">
-                                <rect key="frame" x="269" y="509" width="22" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAq-nS-POY">
-                                <rect key="frame" x="236" y="509" width="22" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Participants:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9jg-qQ-pzo">
                                 <rect key="frame" x="16" y="337" width="182" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -824,19 +812,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="startedTypingAmount:" destination="ehm-pW-WOU" eventType="editingDidBegin" id="7tm-QC-tbL"/>
+                                </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7c-72-CGH">
-                                <rect key="frame" x="176" y="509" width="22" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nre-Ml-6FR">
-                                <rect key="frame" x="205" y="509" width="22" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6h-ci-cue">
-                                <rect key="frame" x="333" y="509" width="22" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(2.5 mi per week)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYe-ey-Lxv">
                                 <rect key="frame" x="119" y="596" width="153" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -844,11 +823,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="789-hN-I1O">
+                                <rect key="frame" x="170" y="503" width="189" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="mi"/>
+                                    <segment title="km"/>
+                                </segments>
+                                <connections>
+                                    <action selector="unitSelected:" destination="ehm-pW-WOU" eventType="valueChanged" id="IjV-Pi-qdx"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Create Challenge" id="G2l-id-LEh"/>
                     <connections>
+                        <outlet property="amountTextField" destination="9Ea-ZN-GrU" id="t53-9N-3kV"/>
                         <outlet property="bikingButton" destination="iOY-k7-iEp" id="QZL-te-TUN"/>
                         <outlet property="bryceButton" destination="QDm-rK-7J8" id="mdk-Xb-ME5"/>
                         <outlet property="christinaButton" destination="mfi-8f-5Nn" id="2F1-OA-Z4A"/>
@@ -859,6 +850,8 @@
                         <outlet property="runningButton" destination="adh-7T-Mo3" id="ieN-Ys-G34"/>
                         <outlet property="saladButton" destination="YIY-GX-RoZ" id="LpS-Z6-CIt"/>
                         <outlet property="swimmingButton" destination="53e-co-8mr" id="syJ-6G-9oN"/>
+                        <outlet property="totalLabel" destination="KYe-ey-Lxv" id="k1I-vA-Bhc"/>
+                        <outlet property="unitsControl" destination="789-hN-I1O" id="yTm-ll-V4e"/>
                         <outlet property="walkingButton" destination="Sbr-Et-ygd" id="EZJ-uT-eYY"/>
                         <outlet property="waterButton" destination="obs-8Y-Rax" id="gay-85-wCg"/>
                         <outlet property="weightsButton" destination="g01-wU-sH0" id="EjE-7G-7bi"/>
