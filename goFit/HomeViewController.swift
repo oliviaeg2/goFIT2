@@ -26,6 +26,29 @@ class HomeViewController: UIViewController {
     var currentInt = 0;
     var progressVal = 2;
     var goalVal = 4;
+    //var fitBlue =
+    
+    func hexStringToUIColor (hex:String) -> UIColor {
+        var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
+        
+        if (cString.hasPrefix("#")) {
+            cString.remove(at: cString.startIndex)
+        }
+        
+        if ((cString.characters.count) != 6) {
+            return UIColor.gray
+        }
+        
+        var rgbValue:UInt32 = 0
+        Scanner(string: cString).scanHexInt32(&rgbValue)
+        
+        return UIColor(
+            red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
+            green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
+            blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
+            alpha: CGFloat(1.0)
+        )
+    }
     
     @IBAction func minus() {
      }
@@ -66,7 +89,7 @@ class HomeViewController: UIViewController {
             progressBar.progressColor = UIColor.green
         }
         else {
-            progressBar.progressColor = UIColor.yellow
+            progressBar.progressColor = hexStringToUIColor(hex: "48d0f9")
         }
         progressBar.value = CGFloat(progressVal)
         progressBar.maxValue = CGFloat(goalVal)
@@ -87,7 +110,7 @@ class HomeViewController: UIViewController {
                 progressBar.progressColor = UIColor.green
             }
             else {
-                progressBar.progressColor = UIColor.yellow
+                progressBar.progressColor = hexStringToUIColor(hex: "48d0f9")
             }
             progressBar.value = CGFloat(progressVal)
             progressBar.maxValue = CGFloat(goalVal)
@@ -109,7 +132,7 @@ class HomeViewController: UIViewController {
                 progressBar.progressColor = UIColor.green
             }
             else {
-                 progressBar.progressColor = UIColor.yellow
+                progressBar.progressColor = hexStringToUIColor(hex: "48d0f9")
             }
         progressBar.value = CGFloat(progressVal)
         progressBar.maxValue = CGFloat(goalVal)

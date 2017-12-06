@@ -38,27 +38,34 @@ class ChallengesViewController: UIViewController, UICollectionViewDataSource, UI
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if (indexPath.row > 0) {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ChallengeGridCell", for: indexPath) as! ChallengeCollectionViewCell
-        let challengeTitle = Challenge.userChallengesShared[indexPath.row - 1].type
-        let challengeImage = Challenge.userChallengesShared[indexPath.row - 1].icon
-        let progress = Challenge.userChallengesShared[indexPath.row - 1].progress
-        let goal = Challenge.userChallengesShared[indexPath.row - 1].frequency
-        let curUser = Challenge.userChallengesShared[indexPath.row - 1].user
-        cell.typeLabel.text = challengeTitle
-        cell.imageView.image = challengeImage
-        cell.friendImage.image = User.usersToIcons[curUser]
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ChallengeGridCell", for: indexPath) as! ChallengeCollectionViewCell
+            let challengeTitle = Challenge.userChallengesShared[indexPath.row - 1].type
+            let challengeImage = Challenge.userChallengesShared[indexPath.row - 1].icon
+            let progress = Challenge.userChallengesShared[indexPath.row - 1].progress
+            let goal = Challenge.userChallengesShared[indexPath.row - 1].frequency
+            let curUser = Challenge.userChallengesShared[indexPath.row - 1].user
+            cell.typeLabel.text = challengeTitle
+            cell.imageView.image = challengeImage
+            cell.friendImage.image = User.usersToIcons[curUser]
             cell.friendImage.layer.borderColor = UIColor.clear.cgColor
             cell.friendImage.layer.cornerRadius = 15;
             cell.friendImage.clipsToBounds = true;
             cell.friendImage.layer.borderWidth = 2.0;
-        cell.progressLabel.text = String(progress) + " " + "of"  + " " + String(goal) + " " + "complete"
-        
-            cell.cellView.value = CGFloat(progress);
-            cell.cellView.maxValue = CGFloat(goal);
-            if (progress == goal) {
-                cell.cellView.progressColor = UIColor.green
+            cell.progressLabel.text = String(progress) + " " + "of"  + " " + String(goal) + " " + "complete"
+
+                cell.cellView.value = CGFloat(progress);
+                cell.cellView.maxValue = CGFloat(goal);
+                if (progress == goal) {
+                    cell.cellView.progressColor = UIColor.green
+                    if (curUser == "ME" || curUser == "me") {
+                        cell.friendProgressBar.isHidden = true;
+                    }
+                    else {
+                        cell.friendProgressBar.isHidden = false;
+                    }
+
             }
-        return cell
+            return cell
         }
         else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AddGridCell", for: indexPath) as! AddNewCollectionViewCell

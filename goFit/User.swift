@@ -16,7 +16,7 @@ class User: NSObject {
     var challenges : [Challenge]
     var proPic : UIImage
     
-    static var usersToIcons = ["Denis": #imageLiteral(resourceName: "denis"), "Bryce": #imageLiteral(resourceName: "bryce"), "Christina": #imageLiteral(resourceName: "christina"), "Olivia": #imageLiteral(resourceName: "olivia"), "Me": #imageLiteral(resourceName: "user"), "ME": #imageLiteral(resourceName: "user")]
+    static var usersToIcons = ["Denis": #imageLiteral(resourceName: "denis"), "Bryce": #imageLiteral(resourceName: "bryce"), "Christina": #imageLiteral(resourceName: "christina"), "Olivia": #imageLiteral(resourceName: "olivia"), "Me": #imageLiteral(resourceName: "dylan"), "ME": #imageLiteral(resourceName: "dylan")]
     
     init?(name: String?, image: UIImage?) {
         if (name == nil) {

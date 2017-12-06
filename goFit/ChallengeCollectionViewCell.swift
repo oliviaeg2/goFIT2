@@ -21,4 +21,5 @@ class ChallengeCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var friendImage: UIImageView!
     
+    @IBOutlet weak var friendProgressBar: MBCircularProgressBarView!
 }

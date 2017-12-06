@@ -45,11 +45,17 @@ class createChallengeViewController: UIViewController {
     
     
     @IBAction func swimming(_ sender: UIButton) {
-        if swimmingButton.layer.borderColor == UIColor.green.cgColor {
-            swimmingButton.layer.borderColor = UIColor.blue.cgColor
+//        if swimmingButton.layer.borderColor == UIColor.green.cgColor {
+//            swimmingButton.layer.borderColor = UIColor.blue.cgColor
+//        } else {
+//            swimmingButton.layer.borderColor = UIColor.green.cgColor
+//        }
+        if (swimmingButton.currentImage == #imageLiteral(resourceName: "swimming_blue"))  {
+            swimmingButton.setImage(#imageLiteral(resourceName: "swimming_green"), for: UIControlState.normal)
         } else {
-            swimmingButton.layer.borderColor = UIColor.green.cgColor
+           swimmingButton.setImage(#imageLiteral(resourceName: "swimming_blue"), for: UIControlState.normal)
         }
+
         selectedChallenge = "Swimming"
     }
     @IBAction func running(_ sender: UIButton) {
