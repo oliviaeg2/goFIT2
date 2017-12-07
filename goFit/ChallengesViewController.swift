@@ -45,24 +45,32 @@ class ChallengesViewController: UIViewController, UICollectionViewDataSource, UI
             let curUser = Challenge.userChallengesShared[indexPath.row - 1].user
             cell.typeLabel.text = challengeTitle
             cell.imageView.image = challengeImage
-            cell.friendImage.image = User.usersToIcons[curUser]
+            let size = User.userFriendsShared.count
+            let index = arc4random_uniform(UInt32(size))
+            let name = User.userFriendsShared[Int(index)].name
+            cell.friendImage.image = User.usersToIcons[name]
             cell.friendImage.layer.borderColor = UIColor.clear.cgColor
             cell.friendImage.layer.cornerRadius = 15;
             cell.friendImage.clipsToBounds = true;
             cell.friendImage.layer.borderWidth = 2.0;
-            cell.progressLabel.text = String(progress) + " " + "of"  + " " + String(goal) + " " + "complete"
+            cell.friendProgressBar.value = CGFloat(arc4random_uniform(6));
+            cell.friendProgressBar.maxValue = 5;
+            if (cell.friendProgressBar.value == 5) {
+                cell.friendProgressBar.progressColor = UIColor.green
+            }
+            cell.progressLabel.text = String(progress) + " " + "of"  + " " + String(goal);
 
-                cell.cellView.value = CGFloat(progress);
-                cell.cellView.maxValue = CGFloat(goal);
-                if (progress == goal) {
-                    cell.cellView.progressColor = UIColor.green
-                    if (curUser == "ME" || curUser == "me") {
-                        cell.friendProgressBar.isHidden = true;
-                        cell.friendImage.isHidden = false;
-                    }
-                    else {
-                        cell.friendProgressBar.isHidden = false;
-                    }
+            cell.cellView.value = CGFloat(progress);
+            cell.cellView.maxValue = CGFloat(goal);
+            if (progress == goal) {
+                cell.cellView.progressColor = UIColor.green
+                if (curUser == "ME" || curUser == "me") {
+                    cell.friendProgressBar.isHidden = true;
+                    cell.friendImage.isHidden = false;
+                }
+                else {
+                    cell.friendProgressBar.isHidden = false;
+                }
 
             }
             return cell
