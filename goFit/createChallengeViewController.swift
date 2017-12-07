@@ -194,6 +194,8 @@ class createChallengeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        changeSegmentedControl(units: distanceUnits)
+        
 //        meButton.layer.cornerRadius = meButton.frame.size.width / 2;
 //        meButton.clipsToBounds = true;
 //        meButton.layer.borderWidth = 5.0;

@@ -807,6 +807,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
+                                    <action selector="finishedTyping:" destination="ehm-pW-WOU" eventType="editingDidEnd" id="PoB-e8-rv7"/>
+                                    <action selector="finishedTypingAmount:" destination="ehm-pW-WOU" eventType="editingDidEnd" id="Is7-ZB-2a6"/>
                                     <action selector="startedTypingAmount:" destination="ehm-pW-WOU" eventType="editingDidBegin" id="7tm-QC-tbL"/>
                                 </connections>
                             </textField>
@@ -832,11 +834,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="SHK-09-tzl">
-                                <rect key="frame" x="181" y="505" width="121" height="29"/>
+                                <rect key="frame" x="181" y="505" width="174" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
+                                    <segment title="go"/>
+                                    <segment title="FIT"/>
                                 </segments>
                             </segmentedControl>
                         </subviews>
@@ -856,6 +858,7 @@
                         <outlet property="saladButton" destination="YIY-GX-RoZ" id="LpS-Z6-CIt"/>
                         <outlet property="swimmingButton" destination="53e-co-8mr" id="syJ-6G-9oN"/>
                         <outlet property="totalLabel" destination="KYe-ey-Lxv" id="k1I-vA-Bhc"/>
+                        <outlet property="unitsControl" destination="SHK-09-tzl" id="PSm-Gb-oLn"/>
                         <outlet property="walkingButton" destination="Sbr-Et-ygd" id="EZJ-uT-eYY"/>
                         <outlet property="waterButton" destination="obs-8Y-Rax" id="gay-85-wCg"/>
                         <outlet property="weightsButton" destination="g01-wU-sH0" id="EjE-7G-7bi"/>
