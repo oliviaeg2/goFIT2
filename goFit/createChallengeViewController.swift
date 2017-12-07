@@ -80,94 +80,94 @@ class createChallengeViewController: UIViewController {
         } else {
            swimmingButton.setImage(#imageLiteral(resourceName: "swimming_blue"), for: UIControlState.normal)
         }
-
         selectedChallenge = "Swimming"
     }
     @IBAction func running(_ sender: UIButton) {
-        if runningButton.layer.borderColor == UIColor.green.cgColor {
-            runningButton.layer.borderColor = UIColor.blue.cgColor
+        if (runningButton.currentImage == #imageLiteral(resourceName: "running_blue"))  {
+            runningButton.setImage(#imageLiteral(resourceName: "running_green"), for: UIControlState.normal)
         } else {
-            runningButton.layer.borderColor = UIColor.green.cgColor
+            runningButton.setImage(#imageLiteral(resourceName: "running_blue"), for: UIControlState.normal)
         }
         selectedChallenge = "Running"
     }
     @IBAction func salad(_ sender: UIButton) {
-        if saladButton.layer.borderColor == UIColor.green.cgColor {
-            saladButton.layer.borderColor = UIColor.blue.cgColor
+        if (saladButton.currentImage == #imageLiteral(resourceName: "salad_blue"))  {
+            saladButton.setImage(#imageLiteral(resourceName: "salad_green"), for: UIControlState.normal)
         } else {
-            saladButton.layer.borderColor = UIColor.green.cgColor
+            saladButton.setImage(#imageLiteral(resourceName: "salad_blue"), for: UIControlState.normal)
         }
         selectedChallenge = "Salad"
     }
     @IBAction func steps(_ sender: UIButton) {
-        if walkingButton.layer.borderColor == UIColor.green.cgColor {
-            walkingButton.layer.borderColor = UIColor.blue.cgColor
+        if (walkingButton.currentImage == #imageLiteral(resourceName: "walking_blue"))  {
+            walkingButton.setImage(#imageLiteral(resourceName: "walking_green"), for: UIControlState.normal)
         } else {
-            walkingButton.layer.borderColor = UIColor.green.cgColor
+            walkingButton.setImage(#imageLiteral(resourceName: "walking_blue"), for: UIControlState.normal)
         }
         selectedChallenge = "Walking"
     }
     @IBAction func biking(_ sender: UIButton) {
-        if bikingButton.layer.borderColor == UIColor.green.cgColor {
-            bikingButton.layer.borderColor = UIColor.blue.cgColor
+        if (bikingButton.currentImage == #imageLiteral(resourceName: "biking_blue"))  {
+            bikingButton.setImage(#imageLiteral(resourceName: "biking_green"), for: UIControlState.normal)
         } else {
-            bikingButton.layer.borderColor = UIColor.green.cgColor
+            bikingButton.setImage(#imageLiteral(resourceName: "biking_blue"), for: UIControlState.normal)
         }
         selectedChallenge = "Biking"
     }
     @IBAction func weights(_ sender: UIButton) {
-        if weightsButton.layer.borderColor == UIColor.green.cgColor {
-            weightsButton.layer.borderColor = UIColor.blue.cgColor
+        if (weightsButton.currentImage == #imageLiteral(resourceName: "weights_blue"))  {
+            weightsButton.setImage(#imageLiteral(resourceName: "weights_green"), for: UIControlState.normal)
         } else {
-            weightsButton.layer.borderColor = UIColor.green.cgColor
+            weightsButton.setImage(#imageLiteral(resourceName: "weights_blue"), for: UIControlState.normal)
         }
         selectedChallenge = "Weights"
     }
     @IBAction func jumprope(_ sender: UIButton) {
-        if jumpropeButton.layer.borderColor == UIColor.green.cgColor {
-            jumpropeButton.layer.borderColor = UIColor.blue.cgColor
+        if (jumpropeButton.currentImage == #imageLiteral(resourceName: "jumprope_blue"))  {
+            jumpropeButton.setImage(#imageLiteral(resourceName: "jumprope_green"), for: UIControlState.normal)
         } else {
-            jumpropeButton.layer.borderColor = UIColor.green.cgColor
+            jumpropeButton.setImage(#imageLiteral(resourceName: "jumprope_blue"), for: UIControlState.normal)
         }
         selectedChallenge = "Jumprope"
     }
     @IBAction func water(_ sender: UIButton) {
-        if waterButton.layer.borderColor == UIColor.green.cgColor {
-            waterButton.layer.borderColor = UIColor.blue.cgColor
+        if (waterButton.currentImage == #imageLiteral(resourceName: "water_blue"))  {
+            waterButton.setImage(#imageLiteral(resourceName: "water_green"), for: UIControlState.normal)
         } else {
-            waterButton.layer.borderColor = UIColor.green.cgColor
+            waterButton.setImage(#imageLiteral(resourceName: "water_blue"), for: UIControlState.normal)
         }
         selectedChallenge = "Water"
     }
     
     @IBAction func me(_ sender: UIButton) {
-        if meButton.layer.borderColor == UIColor.green.cgColor {
-            meButton.layer.borderColor = UIColor.blue.cgColor
+        if (meButton.currentImage == #imageLiteral(resourceName: "profile_blue"))  {
+            meButton.setImage(#imageLiteral(resourceName: "profile_green"), for: UIControlState.normal)
         } else {
-            meButton.layer.borderColor = UIColor.green.cgColor
+            meButton.setImage(#imageLiteral(resourceName: "profile_blue"), for: UIControlState.normal)
         }
     }
+    
     @IBAction func bryce(_ sender: UIButton) {
-        if bryceButton.layer.borderColor == UIColor.green.cgColor {
-            bryceButton.layer.borderColor = UIColor.blue.cgColor
+        if (bryceButton.currentImage == #imageLiteral(resourceName: "bryce_blue"))  {
+            bryceButton.setImage(#imageLiteral(resourceName: "bryce_green"), for: UIControlState.normal)
         } else {
-            bryceButton.layer.borderColor = UIColor.green.cgColor
+            bryceButton.setImage(#imageLiteral(resourceName: "bryce_blue"), for: UIControlState.normal)
             selectedUser = "Bryce";
         }
     }
     @IBAction func christina(_ sender: UIButton) {
-        if christinaButton.layer.borderColor == UIColor.green.cgColor {
-            christinaButton.layer.borderColor = UIColor.blue.cgColor
+        if (christinaButton.currentImage == #imageLiteral(resourceName: "christina_blue"))  {
+            christinaButton.setImage(#imageLiteral(resourceName: "christina_green"), for: UIControlState.normal)
         } else {
-            christinaButton.layer.borderColor = UIColor.green.cgColor
+            christinaButton.setImage(#imageLiteral(resourceName: "christina_blue"), for: UIControlState.normal)
             selectedUser = "Christina";
         }
     }
     @IBAction func denis(_ sender: UIButton) {
-        if denisButton.layer.borderColor == UIColor.green.cgColor {
-            denisButton.layer.borderColor = UIColor.blue.cgColor
+        if (denisButton.currentImage == #imageLiteral(resourceName: "denis_blue"))  {
+            denisButton.setImage(#imageLiteral(resourceName: "denis_green"), for: UIControlState.normal)
         } else {
-            denisButton.layer.borderColor = UIColor.green.cgColor
+            denisButton.setImage(#imageLiteral(resourceName: "denis_blue"), for: UIControlState.normal)
             selectedUser = "Denis";
         }
     }
@@ -175,68 +175,11 @@ class createChallengeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        swimmingButton.layer.cornerRadius = swimmingButton.frame.size.width / 2;
-        swimmingButton.clipsToBounds = true;
-        swimmingButton.layer.borderWidth = 5.0;
-        swimmingButton.layer.borderColor = UIColor.blue.cgColor
+//        meButton.layer.cornerRadius = meButton.frame.size.width / 2;
+//        meButton.clipsToBounds = true;
+//        meButton.layer.borderWidth = 5.0;
+//        meButton.layer.borderColor = UIColor.blue.cgColor
         
-        runningButton.layer.cornerRadius = runningButton.frame.size.width / 2;
-        runningButton.clipsToBounds = true;
-        runningButton.layer.borderWidth = 5.0;
-        runningButton.layer.borderColor = UIColor.blue.cgColor
-        
-        saladButton.layer.cornerRadius = saladButton.frame.size.width / 2;
-        saladButton.clipsToBounds = true;
-        saladButton.layer.borderWidth = 5.0;
-        saladButton.layer.borderColor = UIColor.blue.cgColor
-        
-        walkingButton.layer.cornerRadius = walkingButton.frame.size.width / 2;
-        walkingButton.clipsToBounds = true;
-        walkingButton.layer.borderWidth = 5.0;
-        walkingButton.layer.borderColor = UIColor.blue.cgColor
-        
-        bikingButton.layer.cornerRadius = bikingButton.frame.size.width / 2;
-        bikingButton.clipsToBounds = true;
-        bikingButton.layer.borderWidth = 5.0;
-        bikingButton.layer.borderColor = UIColor.blue.cgColor
-        
-        weightsButton.layer.cornerRadius = weightsButton.frame.size.width / 2;
-        weightsButton.clipsToBounds = true;
-        weightsButton.layer.borderWidth = 5.0;
-        weightsButton.layer.borderColor = UIColor.blue.cgColor
-        
-        jumpropeButton.layer.cornerRadius = jumpropeButton.frame.size.width / 2;
-        jumpropeButton.clipsToBounds = true;
-        jumpropeButton.layer.borderWidth = 5.0;
-        jumpropeButton.layer.borderColor = UIColor.blue.cgColor
-        
-        waterButton.layer.cornerRadius = waterButton.frame.size.width / 2;
-        waterButton.clipsToBounds = true;
-        waterButton.layer.borderWidth = 5.0;
-        waterButton.layer.borderColor = UIColor.blue.cgColor
-        
-        meButton.layer.cornerRadius = meButton.frame.size.width / 2;
-        meButton.clipsToBounds = true;
-        meButton.layer.borderWidth = 5.0;
-        meButton.layer.borderColor = UIColor.blue.cgColor
-        
-        bryceButton.layer.cornerRadius = bryceButton.frame.size.width / 2;
-        bryceButton.clipsToBounds = true;
-        bryceButton.layer.borderWidth = 5.0;
-        bryceButton.layer.borderColor = UIColor.blue.cgColor
-        bryceButton.setImage(#imageLiteral(resourceName: "bryce"), for: UIControlState.normal)
-        
-        christinaButton.layer.cornerRadius = christinaButton.frame.size.width / 2;
-        christinaButton.clipsToBounds = true;
-        christinaButton.layer.borderWidth = 5.0;
-        christinaButton.layer.borderColor = UIColor.blue.cgColor
-        christinaButton.setImage(#imageLiteral(resourceName: "christina"), for: UIControlState.normal)
-        
-        denisButton.layer.cornerRadius = denisButton.frame.size.width / 2;
-        denisButton.clipsToBounds = true;
-        denisButton.layer.borderWidth = 5.0;
-        denisButton.layer.borderColor = UIColor.blue.cgColor
-        denisButton.setImage(#imageLiteral(resourceName: "denis"), for: UIControlState.normal)
     }
 
     /*

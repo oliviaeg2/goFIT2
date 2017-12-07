@@ -72,10 +72,10 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        challengesImage.layer.borderColor = UIColor.green.cgColor;
-        challengesImage.layer.cornerRadius = 50;
-        challengesImage.clipsToBounds = true;
-        challengesImage.layer.borderWidth = 2.0;
+//        challengesImage.layer.borderColor = UIColor.green.cgColor;
+//        challengesImage.layer.cornerRadius = 50;
+//        challengesImage.clipsToBounds = true;
+//        challengesImage.layer.borderWidth = 2.0;
         
         let newChallenge = Challenge.userChallengesShared[currentInt]
         currentChallengeLabel.text = newChallenge.type;
