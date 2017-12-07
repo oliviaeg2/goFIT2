@@ -17,7 +17,7 @@ class SocialViewController: UIViewController,UICollectionViewDataSource, UIColle
         super.viewDidLoad()
         socialGridView.dataSource = self
         socialGridView.delegate = self
-        socialGridView.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
+        //socialGridView.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
     }
 
     override func didReceiveMemoryWarning() {
