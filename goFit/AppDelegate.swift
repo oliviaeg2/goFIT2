@@ -28,6 +28,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             i = i + 1;
         }
         
+        let dummyChallenge = Challenge.userChallengesShared[0];
+        
         let initialFriendNames = ["ME", "Denis", "Bryce", "Olivia", "Christina"];
         let initialFriendImages = [#imageLiteral(resourceName: "user"), #imageLiteral(resourceName: "denis"), #imageLiteral(resourceName: "bryce"), #imageLiteral(resourceName: "olivia"), #imageLiteral(resourceName: "christina")];
         var curUser : User
@@ -46,6 +48,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         for name in universalFriendNames {
             curUser = User(name: name, image: universalFriendImages[k])!;
+            curUser.addChallenge(newChallenge: dummyChallenge);
             User.universalFriendsShared.append(curUser);
             k += 1;
         }

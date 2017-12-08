@@ -74,8 +74,6 @@ class createChallengeViewController: UIViewController {
 //        }
     }
     
-    @IBAction func finishedTyping(_ sender: Any) {
-    }
     
     
     @IBAction func unitSelected(_ sender: Any) {
@@ -83,8 +81,19 @@ class createChallengeViewController: UIViewController {
        //totalLabel.text = "( " + String(total) + distanceUnits[unitsControl.selectedSegmentIndex] + "per week)"
     }
     
+    func clearChallengesSelection() {
+        swimmingButton.setImage(#imageLiteral(resourceName: "swimming_blue"), for: UIControlState.normal)
+        runningButton.setImage(#imageLiteral(resourceName: "running_blue"), for: UIControlState.normal)
+        saladButton.setImage(#imageLiteral(resourceName: "salad_blue"), for: UIControlState.normal)
+        walkingButton.setImage(#imageLiteral(resourceName: "walking_blue"), for: UIControlState.normal)
+        bikingButton.setImage(#imageLiteral(resourceName: "biking_blue"), for: UIControlState.normal)
+        weightsButton.setImage(#imageLiteral(resourceName: "weights_blue"), for: UIControlState.normal)
+        jumpropeButton.setImage(#imageLiteral(resourceName: "jumprope_blue"), for: UIControlState.normal)
+        waterButton.setImage(#imageLiteral(resourceName: "water_blue"), for: UIControlState.normal)
+    }
     
     @IBAction func swimming(_ sender: UIButton) {
+        clearChallengesSelection()
         if (swimmingButton.currentImage == #imageLiteral(resourceName: "swimming_blue"))  {
             swimmingButton.setImage(#imageLiteral(resourceName: "swimming_green"), for: UIControlState.normal)
         } else {
@@ -95,6 +104,7 @@ class createChallengeViewController: UIViewController {
     }
     
     @IBAction func running(_ sender: UIButton) {
+        clearChallengesSelection()
         if (runningButton.currentImage == #imageLiteral(resourceName: "running_blue"))  {
             runningButton.setImage(#imageLiteral(resourceName: "running_green"), for: UIControlState.normal)
         } else {
@@ -104,6 +114,7 @@ class createChallengeViewController: UIViewController {
          changeSegmentedControl(units: distanceUnits);
     }
     @IBAction func salad(_ sender: UIButton) {
+        clearChallengesSelection()
         if (saladButton.currentImage == #imageLiteral(resourceName: "salad_blue"))  {
             saladButton.setImage(#imageLiteral(resourceName: "salad_green"), for: UIControlState.normal)
         } else {
@@ -113,6 +124,7 @@ class createChallengeViewController: UIViewController {
         changeSegmentedControl(units: foodUnits);
     }
     @IBAction func steps(_ sender: UIButton) {
+        clearChallengesSelection()
         if (walkingButton.currentImage == #imageLiteral(resourceName: "walking_blue"))  {
             walkingButton.setImage(#imageLiteral(resourceName: "walking_green"), for: UIControlState.normal)
         } else {
@@ -122,6 +134,7 @@ class createChallengeViewController: UIViewController {
         changeSegmentedControl(units: distanceUnits);
     }
     @IBAction func biking(_ sender: UIButton) {
+        clearChallengesSelection()
         if (bikingButton.currentImage == #imageLiteral(resourceName: "biking_blue"))  {
             bikingButton.setImage(#imageLiteral(resourceName: "biking_green"), for: UIControlState.normal)
         } else {
@@ -131,6 +144,7 @@ class createChallengeViewController: UIViewController {
         changeSegmentedControl(units: distanceUnits);
     }
     @IBAction func weights(_ sender: UIButton) {
+        clearChallengesSelection()
         if (weightsButton.currentImage == #imageLiteral(resourceName: "weights_blue"))  {
             weightsButton.setImage(#imageLiteral(resourceName: "weights_green"), for: UIControlState.normal)
         } else {
@@ -140,6 +154,7 @@ class createChallengeViewController: UIViewController {
         changeSegmentedControl(units: otherUnits);
     }
     @IBAction func jumprope(_ sender: UIButton) {
+        clearChallengesSelection()
         if (jumpropeButton.currentImage == #imageLiteral(resourceName: "jumprope_blue"))  {
             jumpropeButton.setImage(#imageLiteral(resourceName: "jumprope_green"), for: UIControlState.normal)
         } else {
@@ -149,6 +164,7 @@ class createChallengeViewController: UIViewController {
         changeSegmentedControl(units: otherUnits);
     }
     @IBAction func water(_ sender: UIButton) {
+        clearChallengesSelection()
         if (waterButton.currentImage == #imageLiteral(resourceName: "water_blue"))  {
             waterButton.setImage(#imageLiteral(resourceName: "water_green"), for: UIControlState.normal)
         } else {
@@ -194,6 +210,8 @@ class createChallengeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(createChallengeViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
         changeSegmentedControl(units: distanceUnits)
         
 //        meButton.layer.cornerRadius = meButton.frame.size.width / 2;
@@ -201,6 +219,16 @@ class createChallengeViewController: UIViewController {
 //        meButton.layer.borderWidth = 5.0;
 //        meButton.layer.borderColor = UIColor.blue.cgColor
         
+    }
+    
+    func dismissKeyboard() {
+        if (amountTextField.text != nil) {
+            if (Int(amountTextField.text!) != nil) {
+                amount = Int(amountTextField.text!)!
+            }
+        }
+        view.endEditing(true)
+        print(amount)
     }
 
     /*

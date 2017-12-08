@@ -18,6 +18,8 @@ class User: NSObject {
     
     static var usersToIcons = ["Denis": #imageLiteral(resourceName: "denis"), "Bryce": #imageLiteral(resourceName: "bryce"), "Christina": #imageLiteral(resourceName: "christina"), "Olivia": #imageLiteral(resourceName: "olivia"), "Me": #imageLiteral(resourceName: "dylan"), "ME": #imageLiteral(resourceName: "dylan")]
     
+    static var usersToButtons = ["Denis": #imageLiteral(resourceName: "denis_blue"), "Bryce": #imageLiteral(resourceName: "bryce_blue"), "Christina": #imageLiteral(resourceName: "christina_blue"), "Olivia": #imageLiteral(resourceName: "olivia_blue"), "Me": #imageLiteral(resourceName: "dylan"), "ME": #imageLiteral(resourceName: "dylan")]
+    
     init?(name: String?, image: UIImage?) {
         if (name == nil) {
             return nil;
@@ -30,5 +32,9 @@ class User: NSObject {
         }
         challenges = [Challenge]()
         
+    }
+    
+    func addChallenge(newChallenge: Challenge) {
+        self.challenges.append(newChallenge);
     }
 }

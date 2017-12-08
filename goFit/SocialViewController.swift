@@ -30,29 +30,25 @@ class SocialViewController: UIViewController,UICollectionViewDataSource, UIColle
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-       // let cell = UICollectionViewCell();
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "socialGridCell", for: indexPath) as! SocialCollectionViewCell
         let userName = User.userFriendsShared[indexPath.row].name
         cell.nameLabel.text = userName
-        cell.friendProfPic.image = User.usersToIcons[userName]
-      cell.socialCellView.layer.borderColor = UIColor.green.cgColor;
-      cell.socialCellView.layer.cornerRadius = cell.frame.size.width / 3;
-      cell.socialCellView.clipsToBounds = true;
-      cell.socialCellView.layer.borderWidth = 3.0;
+        cell.friendProfPic.image = User.usersToButtons[userName]
         return cell
         
     }
-
     
-
-    /*
+    
+    
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if (segue.identifier == "viewProfileSegue") {
+            let vc = segue.destination as! ProfileViewController
+            var indexPath = socialGridView.indexPath(for: sender as! UICollectionViewCell)!
+            vc.username = User.userFriendsShared[indexPath.row].name
+            vc.profPic = User.usersToIcons[User.userFriendsShared[indexPath.row].name]
+        }
     }
-    */
 
-}
+ }
