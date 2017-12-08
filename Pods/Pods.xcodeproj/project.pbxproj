@@ -7,21 +7,74 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		051A0BF473E7ED0C924A569AE06DFCAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		28818D2A2515DCB4353FBA631E3802A8 /* MBCircularProgressBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BFBD4E945F2D55195130F58AADE91C1 /* MBCircularProgressBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		36F74FBBB97437B0D9616D519D2FF291 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		4ED7D8BA9C4A353E290D7DFD86EAB96B /* Pods-goFit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA9342B312E216C81FB73C81ED5E31F /* Pods-goFit-dummy.m */; };
-		5D87F3DADCD4493C556A08CE44F15C8B /* MBCircularProgressBarLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5788ADC7A3F67B9A0A021DE043D5AA93 /* MBCircularProgressBarLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		75B20A1FD3D481126F9E031AF3EB8E5B /* Pods-goFit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D6C281D8D8CC3BD5B182C7323DFF48C /* Pods-goFit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		77C8278B25BBE7290F8A0818E1705A86 /* MBCircularProgressBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 909198F6FB4B8CE808160B368A23E1A5 /* MBCircularProgressBar-dummy.m */; };
-		7B5656D4FDD9E33EA4EAFB591F9D3237 /* MBCircularProgressBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AE177EE8E4529FD2D7E2F33EF0F2EEA /* MBCircularProgressBarView.m */; };
-		8D4DB055CF0A5687AF7CC6067A7AEB46 /* example.png in Resources */ = {isa = PBXBuildFile; fileRef = 361C5FEA5A6EBBBDA2274DCEF1E56C54 /* example.png */; };
-		A17E6E1C53C7D3D2FA803DF74A013B78 /* MBCircularProgressBarView.h in Headers */ = {isa = PBXBuildFile; fileRef = 69C141292FED66CE59CDC3F21A739DD6 /* MBCircularProgressBarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A94A11448B594303235C9908A4F04A8C /* MBCircularProgressBarLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D99656B9564A8FF9EB6AC5A58F113A6F /* MBCircularProgressBarLayer.m */; };
-		ABF93FCB1E7333C4DA22900A7789ACC8 /* MBCircularProgressBar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C77E712B9B5D6526E0F946B20F648CDB /* MBCircularProgressBar.bundle */; };
+		01862E3DCB91BDA0B2F9BF024438DF78 /* PNChart.h in Headers */ = {isa = PBXBuildFile; fileRef = B216B6CB76C95677B91D82F585AA6B55 /* PNChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01E464E41BEF3A008B4B1FBB164DE35A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4A990FF58368664D6B75F3465171E3 /* Foundation.framework */; };
+		06724437C19D93B32D7704B0C849BCB6 /* PNPieChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 19CD8CE54DDAF98E6C63EBC04FB078A2 /* PNPieChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E9A8FBCF70E343103AB476F5BDA9ABE /* PNChart-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B4411B83313ECE53B14D79253ADCD8E9 /* PNChart-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F398E26AE00E6F38D5806634A484BFC /* PNRadarChartDataItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CA2BDA10E348000969DC1151DD9495 /* PNRadarChartDataItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		228396459A5DFEE20A11FCBE2322446B /* UICountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 56AB713E0DE8569E29E182347EA44ACF /* UICountingLabel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		23507D26F66CCB366FE0F6C1A0D185D1 /* PNScatterChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 069665AD797376279D51346EF7024089 /* PNScatterChartDataItem.m */; };
+		275CDB94DE5627044CA1E5689E71006A /* PNScatterChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF6377900A4819134C8FF2E742C2A3F /* PNScatterChartData.m */; };
+		28818D2A2515DCB4353FBA631E3802A8 /* MBCircularProgressBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FE39443C7643D917A80633FA134341CD /* MBCircularProgressBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A670F9A61E0A74AE89985B0AB73EBD8 /* PNPieChartDataItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D0E7CECBE0C0615B17838164FC50E6F /* PNPieChartDataItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D3210324DB17502F91862D181A5DAA /* PNBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ABBE80C1ED3E273C2B2F3B91B37DCF9 /* PNBar.m */; };
+		36F74FBBB97437B0D9616D519D2FF291 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4A990FF58368664D6B75F3465171E3 /* Foundation.framework */; };
+		3951AA0F503376DDF9D6FF81717EC1DB /* PNScatterChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 27CDF81C3B775D18F873503372816C66 /* PNScatterChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3AFD533C942D8681B68B17BCD3C995F6 /* PNGenericChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD9642A1FBE9C87989281751E85EFC9 /* PNGenericChart.m */; };
+		3CE9BBC528D44EAA04A0BB9303990295 /* Pods-goFit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D6C281D8D8CC3BD5B182C7323DFF48C /* Pods-goFit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F006C5DA2EEA45E157440B08535F16C /* PNScatterChartDataItem.h in Headers */ = {isa = PBXBuildFile; fileRef = C84A01877ED073FE3271A54C6E4F0182 /* PNScatterChartDataItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		415EFB6537A3F68F71C09A5B099DCC8A /* PNColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 31955C11214AECE031C41C9238C4E963 /* PNColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43108E20843C6A047C34B89A63CDE9C6 /* PNChart-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F85E37948A65BD4915124D627D8BA21 /* PNChart-dummy.m */; };
+		47EB05F507CC96A5A8778049FA04E494 /* PNLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 939C08944BB42930F414D7BE808E0107 /* PNLineChart.m */; };
+		49DBBCC302C3055F99A1F860042CC4CE /* PNBarChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 54AA0DAE32E0E97640AAE85F04C20762 /* PNBarChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D871E78B0F660F6B50FC41EF7462E97 /* PNRadarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = F0B34928120C1502EFD26FD53107B724 /* PNRadarChart.m */; };
+		4E546FE3E7EC37C7300F189766082A39 /* UICountingLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EF33FDFCB80E7C4DE72EAC0C6FB340F /* UICountingLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D87F3DADCD4493C556A08CE44F15C8B /* MBCircularProgressBarLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = B27A0C3901A3364133BB60C41438FF8B /* MBCircularProgressBarLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63B2B60C4E0425695947C754528998EA /* PNScatterChartData.h in Headers */ = {isa = PBXBuildFile; fileRef = F421685298F0A94C6F9765D810899F19 /* PNScatterChartData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D791026E20DF9A2B254FD7D11D6DB39 /* PNRadarChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 82029B98EF15850BDEF2F976F20B52BD /* PNRadarChartDataItem.m */; };
+		77C8278B25BBE7290F8A0818E1705A86 /* MBCircularProgressBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 043DD1AE56EE2FCA02E66A55D5E51344 /* MBCircularProgressBar-dummy.m */; };
+		79A1A20C26E7759F31EE5A64D90F8E6F /* PNLineChartData.h in Headers */ = {isa = PBXBuildFile; fileRef = AFD6F08466FF0C53FCD47E017927AB99 /* PNLineChartData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B5656D4FDD9E33EA4EAFB591F9D3237 /* MBCircularProgressBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3286C52232257574F8D9A84EC764D2A /* MBCircularProgressBarView.m */; };
+		83CA2377B55DD2D5EB6DE486AC459A54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4A990FF58368664D6B75F3465171E3 /* Foundation.framework */; };
+		884AA25551C1E0897CB5332890C4A400 /* UICountingLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E928502F8146FCEE6C5BEC812073B2B /* UICountingLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D0A8407E6C2577C48DEDBF16BF8B469 /* PNLineChart.h in Headers */ = {isa = PBXBuildFile; fileRef = DAB89D6098D3FC88D0F874F5C0D9DEC7 /* PNLineChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D4DB055CF0A5687AF7CC6067A7AEB46 /* example.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DB775B765172F8717C74B4C5BC15971 /* example.png */; };
+		8E1DEC97CC5767A4B537AA988BE21B6D /* PNPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BD5671CFEABB8697EC9AAB2DA38B0B /* PNPieChart.m */; };
+		8ED82E4BB5088B3BC288B53EFD9B9106 /* PNLineChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = E6271B8C0EFF83BAF01193B1CB9BB574 /* PNLineChartData.m */; };
+		975E65AF5274D9E271902795BBE5AD9B /* UICountingLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9103AD49AA73F4AFAC5A6BD63F2B787 /* UICountingLabel.framework */; };
+		9836A66AB82D024A77635E7F712E1F3A /* Pods-goFit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA9342B312E216C81FB73C81ED5E31F /* Pods-goFit-dummy.m */; };
+		9A188B2744B9ADBAE00CA89FF8A04B16 /* PNCircleChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 3894330DB648DB87D4F7C4F7A2145134 /* PNCircleChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9BADCA5679C8A8A66E61ADDDB0632098 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10089A14B451E9A962D07579E4163155 /* CoreGraphics.framework */; };
+		9D463C13702FAEA9AA93F1FC99655BD8 /* PNChartLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = BDE8BC1F04F0E9A66D41D744EBA45F9A /* PNChartLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A17E6E1C53C7D3D2FA803DF74A013B78 /* MBCircularProgressBarView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7193E2D04F7A290DDC4ED8E87E499E6B /* MBCircularProgressBarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A94A11448B594303235C9908A4F04A8C /* MBCircularProgressBarLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 53977AE84AA835F0B85F18FBFED0D479 /* MBCircularProgressBarLayer.m */; };
+		ABF93FCB1E7333C4DA22900A7789ACC8 /* MBCircularProgressBar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8E8DD1F2A8444B77E932F0059FA7AEE7 /* MBCircularProgressBar.bundle */; };
+		ADB66EDB01E996BC6F5BFFD4534B6C21 /* PNLineChartDataItem.h in Headers */ = {isa = PBXBuildFile; fileRef = BA80754AFC47AEB3EEB004F6A396ECCB /* PNLineChartDataItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3174CE1F7CEC7E4986A14E9C4EAA5ED /* UICountingLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D45F888ADE6F4B854AA6F1D1D0BF4D /* UICountingLabel-dummy.m */; };
+		BCA98672348F4BE5B74F67CCEB68B3AE /* PNBar.h in Headers */ = {isa = PBXBuildFile; fileRef = D06615CA943C2EFC89DD39E95F6F320E /* PNBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C344EA4B1862D8F0074DAE36CE9F08A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67942C696292CC592FBEE3BA3005E34E /* UIKit.framework */; };
+		CA847ADF445C8C5454B1999A89D1F137 /* PNChartDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C13D74A7CBBA7866DCBAFE613AD3734C /* PNChartDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D46DF427577E7AB87ED36E29CD8937D9 /* PNLineChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5B551EFA8A71A7C3DC0377EA62C645 /* PNLineChartDataItem.m */; };
+		DAAB15D1FF9B62D061DF3A73E8D11050 /* PNRadarChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 2416B9649EF07C9AB9EE79903E9CC0FC /* PNRadarChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCB7CC08FC235B33EDC5F8957848B565 /* PNGenericChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 01FA710C882CD2701E08CC28C11A92EC /* PNGenericChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF8F4C447D73F08682A89276EB7924E7 /* PNPieChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 43CD153C5705B4586AD7E518E6E54C98 /* PNPieChartDataItem.m */; };
+		E6543B0E8A962B065B29B9E4EE1A904D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 203ED675A3265A07DB1F1BB031CD518C /* QuartzCore.framework */; };
+		F3B69FAAAA7F3B62E1130C2DD172C986 /* PNScatterChart.m in Sources */ = {isa = PBXBuildFile; fileRef = B7872AB5BB7AE1FC5F7F154D455B98E5 /* PNScatterChart.m */; };
+		F518C92F8521475ACF30FA6ABCB4768F /* PNCircleChart.m in Sources */ = {isa = PBXBuildFile; fileRef = CD65544DFAD789C35BF42042ECE6E0A8 /* PNCircleChart.m */; };
+		F6437A9168D825D17B7E2BF5C1C2E81D /* PNChartLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D07901D7129C2616E8FF3906F74CADB /* PNChartLabel.m */; };
+		FC0638C57BE88E9577E9989B97D1E099 /* PNBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C5550F29E9FF2C9FEEF5FE6D293247 /* PNBarChart.m */; };
+		FCC1436792EA4C37502DE74FC2DCDEF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4A990FF58368664D6B75F3465171E3 /* Foundation.framework */; };
+		FF884F1ECBE6F4B32FB84E46AD8C28A9 /* PNColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 021A43C87AA9DE347DE1FBD6D6D00414 /* PNColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2331FC354592179C10840D17D20A7DB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA392EE8E5B24D16FB9910405A0AFC2E;
+			remoteInfo = UICountingLabel;
+		};
 		301A6F64EDD08CFF4C105CE828187E61 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -29,7 +82,21 @@
 			remoteGlobalIDString = CAC840DD7C14BED838F74AD37CD7CBBA;
 			remoteInfo = "MBCircularProgressBar-MBCircularProgressBar";
 		};
-		E5BB25D98A77188CD2FD4609F4A7BE97 /* PBXContainerItemProxy */ = {
+		789FDF21F22B2BE97F3C650E7930CD6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FC1CB21D1B64FAAC47A6478616DA728;
+			remoteInfo = PNChart;
+		};
+		C6B9A6DF57A26CF87A9A940CA2091059 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA392EE8E5B24D16FB9910405A0AFC2E;
+			remoteInfo = UICountingLabel;
+		};
+		E49E98DF8DCF2BBBC0929F49F0AC55BF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -39,41 +106,115 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0BFBD4E945F2D55195130F58AADE91C1 /* MBCircularProgressBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBCircularProgressBar-umbrella.h"; sourceTree = "<group>"; };
+		01FA710C882CD2701E08CC28C11A92EC /* PNGenericChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNGenericChart.h; path = PNChart/PNGenericChart.h; sourceTree = "<group>"; };
+		021A43C87AA9DE347DE1FBD6D6D00414 /* PNColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNColor.m; path = PNChart/PNColor.m; sourceTree = "<group>"; };
+		036F1CF4475D3766BAA50F4AD02625E7 /* MBCircularProgressBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBCircularProgressBar-prefix.pch"; sourceTree = "<group>"; };
+		043DD1AE56EE2FCA02E66A55D5E51344 /* MBCircularProgressBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBCircularProgressBar-dummy.m"; sourceTree = "<group>"; };
+		069665AD797376279D51346EF7024089 /* PNScatterChartDataItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNScatterChartDataItem.m; path = PNChart/PNScatterChartDataItem.m; sourceTree = "<group>"; };
+		07C55854F24848F11A3B4D0557C2438B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08CA2BDA10E348000969DC1151DD9495 /* PNRadarChartDataItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNRadarChartDataItem.h; path = PNChart/PNRadarChartDataItem.h; sourceTree = "<group>"; };
+		0DB775B765172F8717C74B4C5BC15971 /* example.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = example.png; path = Pod/Assets/example.png; sourceTree = "<group>"; };
+		10089A14B451E9A962D07579E4163155 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		12F71520EFCFB6AD9FCAEB21B7793CF5 /* UICountingLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = UICountingLabel.modulemap; sourceTree = "<group>"; };
+		19CD8CE54DDAF98E6C63EBC04FB078A2 /* PNPieChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNPieChart.h; path = PNChart/PNPieChart.h; sourceTree = "<group>"; };
 		1BC1F060562014FAF92E4496E9B88DFF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		361C5FEA5A6EBBBDA2274DCEF1E56C54 /* example.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = example.png; path = Pod/Assets/example.png; sourceTree = "<group>"; };
-		37725506ED2D81100DB5846101654FD4 /* MBCircularProgressBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBCircularProgressBar.framework; path = MBCircularProgressBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D0E7CECBE0C0615B17838164FC50E6F /* PNPieChartDataItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNPieChartDataItem.h; path = PNChart/PNPieChartDataItem.h; sourceTree = "<group>"; };
+		203ED675A3265A07DB1F1BB031CD518C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		2416B9649EF07C9AB9EE79903E9CC0FC /* PNRadarChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNRadarChart.h; path = PNChart/PNRadarChart.h; sourceTree = "<group>"; };
+		27CDF81C3B775D18F873503372816C66 /* PNScatterChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNScatterChart.h; path = PNChart/PNScatterChart.h; sourceTree = "<group>"; };
+		28545CC3337EF4448066C3F12515F387 /* ResourceBundle-MBCircularProgressBar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-MBCircularProgressBar-Info.plist"; sourceTree = "<group>"; };
+		2D07901D7129C2616E8FF3906F74CADB /* PNChartLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNChartLabel.m; path = PNChart/PNChartLabel.m; sourceTree = "<group>"; };
+		2F5B551EFA8A71A7C3DC0377EA62C645 /* PNLineChartDataItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNLineChartDataItem.m; path = PNChart/PNLineChartDataItem.m; sourceTree = "<group>"; };
+		31955C11214AECE031C41C9238C4E963 /* PNColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNColor.h; path = PNChart/PNColor.h; sourceTree = "<group>"; };
+		3894330DB648DB87D4F7C4F7A2145134 /* PNCircleChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNCircleChart.h; path = PNChart/PNCircleChart.h; sourceTree = "<group>"; };
+		3A88AFE85E9FC87E9C3E6BC5377A621C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D87FD5D7939DD866FFCB17438670340 /* Pods-goFit-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-goFit-resources.sh"; sourceTree = "<group>"; };
-		5788ADC7A3F67B9A0A021DE043D5AA93 /* MBCircularProgressBarLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBCircularProgressBarLayer.h; path = Pod/Classes/MBCircularProgressBarLayer.h; sourceTree = "<group>"; };
+		3E928502F8146FCEE6C5BEC812073B2B /* UICountingLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICountingLabel-umbrella.h"; sourceTree = "<group>"; };
+		42BD5671CFEABB8697EC9AAB2DA38B0B /* PNPieChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNPieChart.m; path = PNChart/PNPieChart.m; sourceTree = "<group>"; };
+		43CD153C5705B4586AD7E518E6E54C98 /* PNPieChartDataItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNPieChartDataItem.m; path = PNChart/PNPieChartDataItem.m; sourceTree = "<group>"; };
+		4EF33FDFCB80E7C4DE72EAC0C6FB340F /* UICountingLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UICountingLabel.h; sourceTree = "<group>"; };
+		53977AE84AA835F0B85F18FBFED0D479 /* MBCircularProgressBarLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MBCircularProgressBarLayer.m; path = Pod/Classes/MBCircularProgressBarLayer.m; sourceTree = "<group>"; };
+		54AA0DAE32E0E97640AAE85F04C20762 /* PNBarChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNBarChart.h; path = PNChart/PNBarChart.h; sourceTree = "<group>"; };
+		5589ECE5793486554D815097D118A336 /* PNChart.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PNChart.modulemap; sourceTree = "<group>"; };
+		56AB713E0DE8569E29E182347EA44ACF /* UICountingLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UICountingLabel.m; sourceTree = "<group>"; };
 		5ABD470E1A0003675FF7B1C8CF3D7D9E /* Pods-goFit-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-goFit-frameworks.sh"; sourceTree = "<group>"; };
-		5AE177EE8E4529FD2D7E2F33EF0F2EEA /* MBCircularProgressBarView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MBCircularProgressBarView.m; path = Pod/Classes/MBCircularProgressBarView.m; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		69C141292FED66CE59CDC3F21A739DD6 /* MBCircularProgressBarView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBCircularProgressBarView.h; path = Pod/Classes/MBCircularProgressBarView.h; sourceTree = "<group>"; };
-		746F7F24B1FBBE777873AA989034E66A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67942C696292CC592FBEE3BA3005E34E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		67C9723CF477DD7A0B607EE7BAD51EBC /* MBCircularProgressBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MBCircularProgressBar.modulemap; sourceTree = "<group>"; };
+		6BF6377900A4819134C8FF2E742C2A3F /* PNScatterChartData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNScatterChartData.m; path = PNChart/PNScatterChartData.m; sourceTree = "<group>"; };
+		7193E2D04F7A290DDC4ED8E87E499E6B /* MBCircularProgressBarView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBCircularProgressBarView.h; path = Pod/Classes/MBCircularProgressBarView.h; sourceTree = "<group>"; };
 		7A95D4CEB40CB2A0E0CF82DE7432C81F /* Pods-goFit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-goFit.debug.xcconfig"; sourceTree = "<group>"; };
 		7C2A20058F9F377F9894E88F0EB16B12 /* Pods-goFit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-goFit-acknowledgements.plist"; sourceTree = "<group>"; };
+		7D86CE1319B4E1FEFBA2B294481E344F /* MBCircularProgressBar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBCircularProgressBar.xcconfig; sourceTree = "<group>"; };
+		7F85E37948A65BD4915124D627D8BA21 /* PNChart-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PNChart-dummy.m"; sourceTree = "<group>"; };
 		7FA9342B312E216C81FB73C81ED5E31F /* Pods-goFit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-goFit-dummy.m"; sourceTree = "<group>"; };
-		87CB9CDB2C93985DD8701798853C92AE /* MBCircularProgressBar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBCircularProgressBar.xcconfig; sourceTree = "<group>"; };
+		82029B98EF15850BDEF2F976F20B52BD /* PNRadarChartDataItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNRadarChartDataItem.m; path = PNChart/PNRadarChartDataItem.m; sourceTree = "<group>"; };
+		8B4B5D9038911B127E04F87426ACED57 /* UICountingLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICountingLabel-prefix.pch"; sourceTree = "<group>"; };
 		8D6C281D8D8CC3BD5B182C7323DFF48C /* Pods-goFit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-goFit-umbrella.h"; sourceTree = "<group>"; };
-		909198F6FB4B8CE808160B368A23E1A5 /* MBCircularProgressBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBCircularProgressBar-dummy.m"; sourceTree = "<group>"; };
+		8E8DD1F2A8444B77E932F0059FA7AEE7 /* MBCircularProgressBar.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MBCircularProgressBar.bundle; path = MBCircularProgressBar.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		939C08944BB42930F414D7BE808E0107 /* PNLineChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNLineChart.m; path = PNChart/PNLineChart.m; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		99F7B0DCCC32AFC576BB067EA0A52401 /* MBCircularProgressBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MBCircularProgressBar.modulemap; sourceTree = "<group>"; };
+		9ABBE80C1ED3E273C2B2F3B91B37DCF9 /* PNBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNBar.m; path = PNChart/PNBar.m; sourceTree = "<group>"; };
+		9BD9642A1FBE9C87989281751E85EFC9 /* PNGenericChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNGenericChart.m; path = PNChart/PNGenericChart.m; sourceTree = "<group>"; };
 		A199FE22940D29A3D1632F4606B0BA84 /* Pods-goFit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-goFit.modulemap"; sourceTree = "<group>"; };
 		A9F9D525CA7E171C6F3EE1319541EB7D /* Pods-goFit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-goFit.release.xcconfig"; sourceTree = "<group>"; };
-		B20A79CA7109038DE561144613F39D88 /* Pods_goFit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_goFit.framework; path = "Pods-goFit.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BAB3C28BB8EB159D8F6E71D69FDBFF12 /* MBCircularProgressBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBCircularProgressBar-prefix.pch"; sourceTree = "<group>"; };
-		C77E712B9B5D6526E0F946B20F648CDB /* MBCircularProgressBar.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MBCircularProgressBar.bundle; path = MBCircularProgressBar.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE4A990FF58368664D6B75F3465171E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		AEA7E49B468F6C8473E605E102B52939 /* PNChart.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PNChart.xcconfig; sourceTree = "<group>"; };
+		AFD6F08466FF0C53FCD47E017927AB99 /* PNLineChartData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNLineChartData.h; path = PNChart/PNLineChartData.h; sourceTree = "<group>"; };
+		B0A6C4A46AC71CB0E01B8BCF8F550085 /* UICountingLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UICountingLabel.xcconfig; sourceTree = "<group>"; };
+		B216B6CB76C95677B91D82F585AA6B55 /* PNChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNChart.h; path = PNChart/PNChart.h; sourceTree = "<group>"; };
+		B27A0C3901A3364133BB60C41438FF8B /* MBCircularProgressBarLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBCircularProgressBarLayer.h; path = Pod/Classes/MBCircularProgressBarLayer.h; sourceTree = "<group>"; };
+		B2CC398F74824F929075168E6BF44598 /* UICountingLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UICountingLabel.framework; path = UICountingLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4411B83313ECE53B14D79253ADCD8E9 /* PNChart-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PNChart-umbrella.h"; sourceTree = "<group>"; };
+		B7872AB5BB7AE1FC5F7F154D455B98E5 /* PNScatterChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNScatterChart.m; path = PNChart/PNScatterChart.m; sourceTree = "<group>"; };
+		B9103AD49AA73F4AFAC5A6BD63F2B787 /* UICountingLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UICountingLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA80754AFC47AEB3EEB004F6A396ECCB /* PNLineChartDataItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNLineChartDataItem.h; path = PNChart/PNLineChartDataItem.h; sourceTree = "<group>"; };
+		BDE8BC1F04F0E9A66D41D744EBA45F9A /* PNChartLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNChartLabel.h; path = PNChart/PNChartLabel.h; sourceTree = "<group>"; };
+		BEE58C4D9642AE1B1558779B8C65C7E8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C13D74A7CBBA7866DCBAFE613AD3734C /* PNChartDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNChartDelegate.h; path = PNChart/PNChartDelegate.h; sourceTree = "<group>"; };
+		C84A01877ED073FE3271A54C6E4F0182 /* PNScatterChartDataItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNScatterChartDataItem.h; path = PNChart/PNScatterChartDataItem.h; sourceTree = "<group>"; };
+		C9C5550F29E9FF2C9FEEF5FE6D293247 /* PNBarChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNBarChart.m; path = PNChart/PNBarChart.m; sourceTree = "<group>"; };
+		CD65544DFAD789C35BF42042ECE6E0A8 /* PNCircleChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNCircleChart.m; path = PNChart/PNCircleChart.m; sourceTree = "<group>"; };
+		CE2831A1E41FC6DF01AA34A2264D7BB0 /* PNChart-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PNChart-prefix.pch"; sourceTree = "<group>"; };
+		CF3C385DA2B3CC3873E916E897808ACD /* Pods_goFit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_goFit.framework; path = "Pods-goFit.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D06615CA943C2EFC89DD39E95F6F320E /* PNBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNBar.h; path = PNChart/PNBar.h; sourceTree = "<group>"; };
+		D6D45F888ADE6F4B854AA6F1D1D0BF4D /* UICountingLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UICountingLabel-dummy.m"; sourceTree = "<group>"; };
 		D719FBC3B9295FC7DF711220DE3CFF61 /* Pods-goFit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-goFit-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D99656B9564A8FF9EB6AC5A58F113A6F /* MBCircularProgressBarLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MBCircularProgressBarLayer.m; path = Pod/Classes/MBCircularProgressBarLayer.m; sourceTree = "<group>"; };
-		F9FE12D0A86E49C6870FDA07802FF9AB /* ResourceBundle-MBCircularProgressBar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-MBCircularProgressBar-Info.plist"; sourceTree = "<group>"; };
+		DAB89D6098D3FC88D0F874F5C0D9DEC7 /* PNLineChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNLineChart.h; path = PNChart/PNLineChart.h; sourceTree = "<group>"; };
+		E3286C52232257574F8D9A84EC764D2A /* MBCircularProgressBarView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MBCircularProgressBarView.m; path = Pod/Classes/MBCircularProgressBarView.m; sourceTree = "<group>"; };
+		E6271B8C0EFF83BAF01193B1CB9BB574 /* PNLineChartData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNLineChartData.m; path = PNChart/PNLineChartData.m; sourceTree = "<group>"; };
+		F0B34928120C1502EFD26FD53107B724 /* PNRadarChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNRadarChart.m; path = PNChart/PNRadarChart.m; sourceTree = "<group>"; };
+		F421685298F0A94C6F9765D810899F19 /* PNScatterChartData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNScatterChartData.h; path = PNChart/PNScatterChartData.h; sourceTree = "<group>"; };
+		FBEBA833F3CAEB6CF3B626BC2DFFD20F /* PNChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PNChart.framework; path = PNChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE39443C7643D917A80633FA134341CD /* MBCircularProgressBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBCircularProgressBar-umbrella.h"; sourceTree = "<group>"; };
+		FFE4DC0FA520DBCED457B3BAF63F3ED7 /* MBCircularProgressBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBCircularProgressBar.framework; path = MBCircularProgressBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		598B62C057DB86575574F1804A3E54A3 /* Frameworks */ = {
+		2E0D9909FD5EE7A40377DAE39F71D1DD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				051A0BF473E7ED0C924A569AE06DFCAE /* Foundation.framework in Frameworks */,
+				01E464E41BEF3A008B4B1FBB164DE35A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C90B6B33EA9D9A517DF08F0116E9AC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCC1436792EA4C37502DE74FC2DCDEF4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		848FFABBBE25F555B7C8843674FAB8E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BADCA5679C8A8A66E61ADDDB0632098 /* CoreGraphics.framework in Frameworks */,
+				83CA2377B55DD2D5EB6DE486AC459A54 /* Foundation.framework in Frameworks */,
+				E6543B0E8A962B065B29B9E4EE1A904D /* QuartzCore.framework in Frameworks */,
+				975E65AF5274D9E271902795BBE5AD9B /* UICountingLabel.framework in Frameworks */,
+				C344EA4B1862D8F0074DAE36CE9F08A2 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,18 +236,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0984DE60AEB3D4067B00E90F4E15705E /* MBCircularProgressBar */ = {
+		0B986F57FC9A41F07FA7C792B3879289 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5788ADC7A3F67B9A0A021DE043D5AA93 /* MBCircularProgressBarLayer.h */,
-				D99656B9564A8FF9EB6AC5A58F113A6F /* MBCircularProgressBarLayer.m */,
-				69C141292FED66CE59CDC3F21A739DD6 /* MBCircularProgressBarView.h */,
-				5AE177EE8E4529FD2D7E2F33EF0F2EEA /* MBCircularProgressBarView.m */,
-				632E234E737254A0CDE96F6B8195E459 /* Resources */,
-				43B00FB94624817CB0539C3F591B3723 /* Support Files */,
+				BEE58C4D9642AE1B1558779B8C65C7E8 /* Info.plist */,
+				12F71520EFCFB6AD9FCAEB21B7793CF5 /* UICountingLabel.modulemap */,
+				B0A6C4A46AC71CB0E01B8BCF8F550085 /* UICountingLabel.xcconfig */,
+				D6D45F888ADE6F4B854AA6F1D1D0BF4D /* UICountingLabel-dummy.m */,
+				8B4B5D9038911B127E04F87426ACED57 /* UICountingLabel-prefix.pch */,
+				3E928502F8146FCEE6C5BEC812073B2B /* UICountingLabel-umbrella.h */,
 			);
-			name = MBCircularProgressBar;
-			path = MBCircularProgressBar;
+			name = "Support Files";
+			path = "../Target Support Files/UICountingLabel";
+			sourceTree = "<group>";
+		};
+		164B158A8CB23B6941285A31D50749CB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A88AFE85E9FC87E9C3E6BC5377A621C /* Info.plist */,
+				67C9723CF477DD7A0B607EE7BAD51EBC /* MBCircularProgressBar.modulemap */,
+				7D86CE1319B4E1FEFBA2B294481E344F /* MBCircularProgressBar.xcconfig */,
+				043DD1AE56EE2FCA02E66A55D5E51344 /* MBCircularProgressBar-dummy.m */,
+				036F1CF4475D3766BAA50F4AD02625E7 /* MBCircularProgressBar-prefix.pch */,
+				FE39443C7643D917A80633FA134341CD /* MBCircularProgressBar-umbrella.h */,
+				28545CC3337EF4448066C3F12515F387 /* ResourceBundle-MBCircularProgressBar-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MBCircularProgressBar";
 			sourceTree = "<group>";
 		};
 		190C91B7674C902F2AA448C7219621F4 /* Targets Support Files */ = {
@@ -117,44 +273,111 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		43B00FB94624817CB0539C3F591B3723 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				746F7F24B1FBBE777873AA989034E66A /* Info.plist */,
-				99F7B0DCCC32AFC576BB067EA0A52401 /* MBCircularProgressBar.modulemap */,
-				87CB9CDB2C93985DD8701798853C92AE /* MBCircularProgressBar.xcconfig */,
-				909198F6FB4B8CE808160B368A23E1A5 /* MBCircularProgressBar-dummy.m */,
-				BAB3C28BB8EB159D8F6E71D69FDBFF12 /* MBCircularProgressBar-prefix.pch */,
-				0BFBD4E945F2D55195130F58AADE91C1 /* MBCircularProgressBar-umbrella.h */,
-				F9FE12D0A86E49C6870FDA07802FF9AB /* ResourceBundle-MBCircularProgressBar-Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/MBCircularProgressBar";
-			sourceTree = "<group>";
-		};
-		632E234E737254A0CDE96F6B8195E459 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				361C5FEA5A6EBBBDA2274DCEF1E56C54 /* example.png */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				99B2C67CA07FD535D45477311BCDB0D6 /* Pods */,
-				BA0B9A2ED789938B3153D58B145C5BDD /* Products */,
+				E7558378B05AD4CBD1053EABE1357F06 /* Frameworks */,
+				AE03623422C57077CE8E7A2E7905038D /* Pods */,
+				9D6D211249E07C5B9D700548CE81E5AF /* Products */,
 				190C91B7674C902F2AA448C7219621F4 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		99B2C67CA07FD535D45477311BCDB0D6 /* Pods */ = {
+		7DE0EBECA6FD98D3447BF4B0793EC94E /* MBCircularProgressBar */ = {
 			isa = PBXGroup;
 			children = (
-				0984DE60AEB3D4067B00E90F4E15705E /* MBCircularProgressBar */,
+				B27A0C3901A3364133BB60C41438FF8B /* MBCircularProgressBarLayer.h */,
+				53977AE84AA835F0B85F18FBFED0D479 /* MBCircularProgressBarLayer.m */,
+				7193E2D04F7A290DDC4ED8E87E499E6B /* MBCircularProgressBarView.h */,
+				E3286C52232257574F8D9A84EC764D2A /* MBCircularProgressBarView.m */,
+				8B2B4EC83E0700B30409FBE496805793 /* Resources */,
+				164B158A8CB23B6941285A31D50749CB /* Support Files */,
+			);
+			name = MBCircularProgressBar;
+			path = MBCircularProgressBar;
+			sourceTree = "<group>";
+		};
+		7E8DD510386F2532AE6A6B8A7FCDE421 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				10089A14B451E9A962D07579E4163155 /* CoreGraphics.framework */,
+				AE4A990FF58368664D6B75F3465171E3 /* Foundation.framework */,
+				203ED675A3265A07DB1F1BB031CD518C /* QuartzCore.framework */,
+				67942C696292CC592FBEE3BA3005E34E /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		8B2B4EC83E0700B30409FBE496805793 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0DB775B765172F8717C74B4C5BC15971 /* example.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9D6D211249E07C5B9D700548CE81E5AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E8DD1F2A8444B77E932F0059FA7AEE7 /* MBCircularProgressBar.bundle */,
+				FFE4DC0FA520DBCED457B3BAF63F3ED7 /* MBCircularProgressBar.framework */,
+				FBEBA833F3CAEB6CF3B626BC2DFFD20F /* PNChart.framework */,
+				CF3C385DA2B3CC3873E916E897808ACD /* Pods_goFit.framework */,
+				B2CC398F74824F929075168E6BF44598 /* UICountingLabel.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4389AD34F44CB558865CEC0E537A2FC /* PNChart */ = {
+			isa = PBXGroup;
+			children = (
+				D06615CA943C2EFC89DD39E95F6F320E /* PNBar.h */,
+				9ABBE80C1ED3E273C2B2F3B91B37DCF9 /* PNBar.m */,
+				54AA0DAE32E0E97640AAE85F04C20762 /* PNBarChart.h */,
+				C9C5550F29E9FF2C9FEEF5FE6D293247 /* PNBarChart.m */,
+				B216B6CB76C95677B91D82F585AA6B55 /* PNChart.h */,
+				C13D74A7CBBA7866DCBAFE613AD3734C /* PNChartDelegate.h */,
+				BDE8BC1F04F0E9A66D41D744EBA45F9A /* PNChartLabel.h */,
+				2D07901D7129C2616E8FF3906F74CADB /* PNChartLabel.m */,
+				3894330DB648DB87D4F7C4F7A2145134 /* PNCircleChart.h */,
+				CD65544DFAD789C35BF42042ECE6E0A8 /* PNCircleChart.m */,
+				31955C11214AECE031C41C9238C4E963 /* PNColor.h */,
+				021A43C87AA9DE347DE1FBD6D6D00414 /* PNColor.m */,
+				01FA710C882CD2701E08CC28C11A92EC /* PNGenericChart.h */,
+				9BD9642A1FBE9C87989281751E85EFC9 /* PNGenericChart.m */,
+				DAB89D6098D3FC88D0F874F5C0D9DEC7 /* PNLineChart.h */,
+				939C08944BB42930F414D7BE808E0107 /* PNLineChart.m */,
+				AFD6F08466FF0C53FCD47E017927AB99 /* PNLineChartData.h */,
+				E6271B8C0EFF83BAF01193B1CB9BB574 /* PNLineChartData.m */,
+				BA80754AFC47AEB3EEB004F6A396ECCB /* PNLineChartDataItem.h */,
+				2F5B551EFA8A71A7C3DC0377EA62C645 /* PNLineChartDataItem.m */,
+				19CD8CE54DDAF98E6C63EBC04FB078A2 /* PNPieChart.h */,
+				42BD5671CFEABB8697EC9AAB2DA38B0B /* PNPieChart.m */,
+				1D0E7CECBE0C0615B17838164FC50E6F /* PNPieChartDataItem.h */,
+				43CD153C5705B4586AD7E518E6E54C98 /* PNPieChartDataItem.m */,
+				2416B9649EF07C9AB9EE79903E9CC0FC /* PNRadarChart.h */,
+				F0B34928120C1502EFD26FD53107B724 /* PNRadarChart.m */,
+				08CA2BDA10E348000969DC1151DD9495 /* PNRadarChartDataItem.h */,
+				82029B98EF15850BDEF2F976F20B52BD /* PNRadarChartDataItem.m */,
+				27CDF81C3B775D18F873503372816C66 /* PNScatterChart.h */,
+				B7872AB5BB7AE1FC5F7F154D455B98E5 /* PNScatterChart.m */,
+				F421685298F0A94C6F9765D810899F19 /* PNScatterChartData.h */,
+				6BF6377900A4819134C8FF2E742C2A3F /* PNScatterChartData.m */,
+				C84A01877ED073FE3271A54C6E4F0182 /* PNScatterChartDataItem.h */,
+				069665AD797376279D51346EF7024089 /* PNScatterChartDataItem.m */,
+				C7E863690A0ABBB09B9E8387DC13ABF7 /* Support Files */,
+			);
+			name = PNChart;
+			path = PNChart;
+			sourceTree = "<group>";
+		};
+		AE03623422C57077CE8E7A2E7905038D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7DE0EBECA6FD98D3447BF4B0793EC94E /* MBCircularProgressBar */,
+				A4389AD34F44CB558865CEC0E537A2FC /* PNChart */,
+				B3AA5C7CCA9E3A5E84B705BD86E3032B /* UICountingLabel */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -177,40 +400,83 @@
 			path = "Target Support Files/Pods-goFit";
 			sourceTree = "<group>";
 		};
-		BA0B9A2ED789938B3153D58B145C5BDD /* Products */ = {
+		B3AA5C7CCA9E3A5E84B705BD86E3032B /* UICountingLabel */ = {
 			isa = PBXGroup;
 			children = (
-				C77E712B9B5D6526E0F946B20F648CDB /* MBCircularProgressBar.bundle */,
-				37725506ED2D81100DB5846101654FD4 /* MBCircularProgressBar.framework */,
-				B20A79CA7109038DE561144613F39D88 /* Pods_goFit.framework */,
+				4EF33FDFCB80E7C4DE72EAC0C6FB340F /* UICountingLabel.h */,
+				56AB713E0DE8569E29E182347EA44ACF /* UICountingLabel.m */,
+				0B986F57FC9A41F07FA7C792B3879289 /* Support Files */,
 			);
-			name = Products;
+			name = UICountingLabel;
+			path = UICountingLabel;
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		C7E863690A0ABBB09B9E8387DC13ABF7 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+				07C55854F24848F11A3B4D0557C2438B /* Info.plist */,
+				5589ECE5793486554D815097D118A336 /* PNChart.modulemap */,
+				AEA7E49B468F6C8473E605E102B52939 /* PNChart.xcconfig */,
+				7F85E37948A65BD4915124D627D8BA21 /* PNChart-dummy.m */,
+				CE2831A1E41FC6DF01AA34A2264D7BB0 /* PNChart-prefix.pch */,
+				B4411B83313ECE53B14D79253ADCD8E9 /* PNChart-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PNChart";
+			sourceTree = "<group>";
+		};
+		E7558378B05AD4CBD1053EABE1357F06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9103AD49AA73F4AFAC5A6BD63F2B787 /* UICountingLabel.framework */,
+				7E8DD510386F2532AE6A6B8A7FCDE421 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1FEDDDBB51AEFAD2B83B7381EE2B71FC /* Headers */ = {
+		211C4D1C0ADFD781AD42B45CE9C134F1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75B20A1FD3D481126F9E031AF3EB8E5B /* Pods-goFit-umbrella.h in Headers */,
+				BCA98672348F4BE5B74F67CCEB68B3AE /* PNBar.h in Headers */,
+				49DBBCC302C3055F99A1F860042CC4CE /* PNBarChart.h in Headers */,
+				0E9A8FBCF70E343103AB476F5BDA9ABE /* PNChart-umbrella.h in Headers */,
+				01862E3DCB91BDA0B2F9BF024438DF78 /* PNChart.h in Headers */,
+				CA847ADF445C8C5454B1999A89D1F137 /* PNChartDelegate.h in Headers */,
+				9D463C13702FAEA9AA93F1FC99655BD8 /* PNChartLabel.h in Headers */,
+				9A188B2744B9ADBAE00CA89FF8A04B16 /* PNCircleChart.h in Headers */,
+				415EFB6537A3F68F71C09A5B099DCC8A /* PNColor.h in Headers */,
+				DCB7CC08FC235B33EDC5F8957848B565 /* PNGenericChart.h in Headers */,
+				8D0A8407E6C2577C48DEDBF16BF8B469 /* PNLineChart.h in Headers */,
+				79A1A20C26E7759F31EE5A64D90F8E6F /* PNLineChartData.h in Headers */,
+				ADB66EDB01E996BC6F5BFFD4534B6C21 /* PNLineChartDataItem.h in Headers */,
+				06724437C19D93B32D7704B0C849BCB6 /* PNPieChart.h in Headers */,
+				2A670F9A61E0A74AE89985B0AB73EBD8 /* PNPieChartDataItem.h in Headers */,
+				DAAB15D1FF9B62D061DF3A73E8D11050 /* PNRadarChart.h in Headers */,
+				0F398E26AE00E6F38D5806634A484BFC /* PNRadarChartDataItem.h in Headers */,
+				3951AA0F503376DDF9D6FF81717EC1DB /* PNScatterChart.h in Headers */,
+				63B2B60C4E0425695947C754528998EA /* PNScatterChartData.h in Headers */,
+				3F006C5DA2EEA45E157440B08535F16C /* PNScatterChartDataItem.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89C3E02DAFB3D0F4AF244CFA0D86EF4C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				884AA25551C1E0897CB5332890C4A400 /* UICountingLabel-umbrella.h in Headers */,
+				4E546FE3E7EC37C7300F189766082A39 /* UICountingLabel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D977F34EC57FE87567E2F768B2E3819 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CE9BBC528D44EAA04A0BB9303990295 /* Pods-goFit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +493,44 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		0FC1CB21D1B64FAAC47A6478616DA728 /* PNChart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A92B5FD027CE987470A48E671364959 /* Build configuration list for PBXNativeTarget "PNChart" */;
+			buildPhases = (
+				5EADEFF53DB0153A85451A7650D5A735 /* Sources */,
+				848FFABBBE25F555B7C8843674FAB8E0 /* Frameworks */,
+				211C4D1C0ADFD781AD42B45CE9C134F1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6E55E784799B63E23A928EA091109E7 /* PBXTargetDependency */,
+			);
+			name = PNChart;
+			productName = PNChart;
+			productReference = FBEBA833F3CAEB6CF3B626BC2DFFD20F /* PNChart.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5386049100E6BBF95D8DA76071FA8D6F /* Pods-goFit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92E13D8D61DB88ECE0993D01B3EBA770 /* Build configuration list for PBXNativeTarget "Pods-goFit" */;
+			buildPhases = (
+				5903C24BD52B91C5E17EA265E5682936 /* Sources */,
+				2E0D9909FD5EE7A40377DAE39F71D1DD /* Frameworks */,
+				9D977F34EC57FE87567E2F768B2E3819 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E64D89B239870F80A71F652FEC1DED5 /* PBXTargetDependency */,
+				F532CED11960337917773DDB93EB6F2D /* PBXTargetDependency */,
+				7DA88F72FD60AE9EAA3173E4FB3D4255 /* PBXTargetDependency */,
+			);
+			name = "Pods-goFit";
+			productName = "Pods-goFit";
+			productReference = CF3C385DA2B3CC3873E916E897808ACD /* Pods_goFit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		CAC840DD7C14BED838F74AD37CD7CBBA /* MBCircularProgressBar-MBCircularProgressBar */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 605D5A449D02B28D2C6B396D7E8A5C3A /* Build configuration list for PBXNativeTarget "MBCircularProgressBar-MBCircularProgressBar" */;
@@ -241,8 +545,25 @@
 			);
 			name = "MBCircularProgressBar-MBCircularProgressBar";
 			productName = "MBCircularProgressBar-MBCircularProgressBar";
-			productReference = C77E712B9B5D6526E0F946B20F648CDB /* MBCircularProgressBar.bundle */;
+			productReference = 8E8DD1F2A8444B77E932F0059FA7AEE7 /* MBCircularProgressBar.bundle */;
 			productType = "com.apple.product-type.bundle";
+		};
+		DA392EE8E5B24D16FB9910405A0AFC2E /* UICountingLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A22DE6618BE94C542426A3608C6D3E5 /* Build configuration list for PBXNativeTarget "UICountingLabel" */;
+			buildPhases = (
+				B1C9814C48D22FEA9B79FC3347917297 /* Sources */,
+				5C90B6B33EA9D9A517DF08F0116E9AC9 /* Frameworks */,
+				89C3E02DAFB3D0F4AF244CFA0D86EF4C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UICountingLabel;
+			productName = UICountingLabel;
+			productReference = B2CC398F74824F929075168E6BF44598 /* UICountingLabel.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 		F579AA4D4755DD9570010BC36D0422F7 /* MBCircularProgressBar */ = {
 			isa = PBXNativeTarget;
@@ -260,25 +581,7 @@
 			);
 			name = MBCircularProgressBar;
 			productName = MBCircularProgressBar;
-			productReference = 37725506ED2D81100DB5846101654FD4 /* MBCircularProgressBar.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		FC9DFF16A5CBAE89962AB473829C6F5A /* Pods-goFit */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A5EE7CE6BE2E4520BAB1D7E441E5FA81 /* Build configuration list for PBXNativeTarget "Pods-goFit" */;
-			buildPhases = (
-				F87C87C7318839C3A64C17310A5490DF /* Sources */,
-				598B62C057DB86575574F1804A3E54A3 /* Frameworks */,
-				1FEDDDBB51AEFAD2B83B7381EE2B71FC /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EC93E75F894A82EDCA954C71ADC8CD72 /* PBXTargetDependency */,
-			);
-			name = "Pods-goFit";
-			productName = "Pods-goFit";
-			productReference = B20A79CA7109038DE561144613F39D88 /* Pods_goFit.framework */;
+			productReference = FFE4DC0FA520DBCED457B3BAF63F3ED7 /* MBCircularProgressBar.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -298,13 +601,15 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = BA0B9A2ED789938B3153D58B145C5BDD /* Products */;
+			productRefGroup = 9D6D211249E07C5B9D700548CE81E5AF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				F579AA4D4755DD9570010BC36D0422F7 /* MBCircularProgressBar */,
 				CAC840DD7C14BED838F74AD37CD7CBBA /* MBCircularProgressBar-MBCircularProgressBar */,
-				FC9DFF16A5CBAE89962AB473829C6F5A /* Pods-goFit */,
+				0FC1CB21D1B64FAAC47A6478616DA728 /* PNChart */,
+				5386049100E6BBF95D8DA76071FA8D6F /* Pods-goFit */,
+				DA392EE8E5B24D16FB9910405A0AFC2E /* UICountingLabel */,
 			);
 		};
 /* End PBXProject section */
@@ -329,10 +634,51 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5903C24BD52B91C5E17EA265E5682936 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9836A66AB82D024A77635E7F712E1F3A /* Pods-goFit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EADEFF53DB0153A85451A7650D5A735 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30D3210324DB17502F91862D181A5DAA /* PNBar.m in Sources */,
+				FC0638C57BE88E9577E9989B97D1E099 /* PNBarChart.m in Sources */,
+				43108E20843C6A047C34B89A63CDE9C6 /* PNChart-dummy.m in Sources */,
+				F6437A9168D825D17B7E2BF5C1C2E81D /* PNChartLabel.m in Sources */,
+				F518C92F8521475ACF30FA6ABCB4768F /* PNCircleChart.m in Sources */,
+				FF884F1ECBE6F4B32FB84E46AD8C28A9 /* PNColor.m in Sources */,
+				3AFD533C942D8681B68B17BCD3C995F6 /* PNGenericChart.m in Sources */,
+				47EB05F507CC96A5A8778049FA04E494 /* PNLineChart.m in Sources */,
+				8ED82E4BB5088B3BC288B53EFD9B9106 /* PNLineChartData.m in Sources */,
+				D46DF427577E7AB87ED36E29CD8937D9 /* PNLineChartDataItem.m in Sources */,
+				8E1DEC97CC5767A4B537AA988BE21B6D /* PNPieChart.m in Sources */,
+				DF8F4C447D73F08682A89276EB7924E7 /* PNPieChartDataItem.m in Sources */,
+				4D871E78B0F660F6B50FC41EF7462E97 /* PNRadarChart.m in Sources */,
+				6D791026E20DF9A2B254FD7D11D6DB39 /* PNRadarChartDataItem.m in Sources */,
+				F3B69FAAAA7F3B62E1130C2DD172C986 /* PNScatterChart.m in Sources */,
+				275CDB94DE5627044CA1E5689E71006A /* PNScatterChartData.m in Sources */,
+				23507D26F66CCB366FE0F6C1A0D185D1 /* PNScatterChartDataItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9AEC3FFB5B6F48E0E5F2DF217DFADADF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1C9814C48D22FEA9B79FC3347917297 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3174CE1F7CEC7E4986A14E9C4EAA5ED /* UICountingLabel-dummy.m in Sources */,
+				228396459A5DFEE20A11FCBE2322446B /* UICountingLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,32 +692,73 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F87C87C7318839C3A64C17310A5490DF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4ED7D8BA9C4A353E290D7DFD86EAB96B /* Pods-goFit-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2E64D89B239870F80A71F652FEC1DED5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBCircularProgressBar;
+			target = F579AA4D4755DD9570010BC36D0422F7 /* MBCircularProgressBar */;
+			targetProxy = E49E98DF8DCF2BBBC0929F49F0AC55BF /* PBXContainerItemProxy */;
+		};
+		7DA88F72FD60AE9EAA3173E4FB3D4255 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UICountingLabel;
+			target = DA392EE8E5B24D16FB9910405A0AFC2E /* UICountingLabel */;
+			targetProxy = C6B9A6DF57A26CF87A9A940CA2091059 /* PBXContainerItemProxy */;
+		};
+		B6E55E784799B63E23A928EA091109E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UICountingLabel;
+			target = DA392EE8E5B24D16FB9910405A0AFC2E /* UICountingLabel */;
+			targetProxy = 2331FC354592179C10840D17D20A7DB0 /* PBXContainerItemProxy */;
+		};
 		D71C0FC33E6BF208246BD36D722BEA99 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "MBCircularProgressBar-MBCircularProgressBar";
 			target = CAC840DD7C14BED838F74AD37CD7CBBA /* MBCircularProgressBar-MBCircularProgressBar */;
 			targetProxy = 301A6F64EDD08CFF4C105CE828187E61 /* PBXContainerItemProxy */;
 		};
-		EC93E75F894A82EDCA954C71ADC8CD72 /* PBXTargetDependency */ = {
+		F532CED11960337917773DDB93EB6F2D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = MBCircularProgressBar;
-			target = F579AA4D4755DD9570010BC36D0422F7 /* MBCircularProgressBar */;
-			targetProxy = E5BB25D98A77188CD2FD4609F4A7BE97 /* PBXContainerItemProxy */;
+			name = PNChart;
+			target = 0FC1CB21D1B64FAAC47A6478616DA728 /* PNChart */;
+			targetProxy = 789FDF21F22B2BE97F3C650E7930CD6C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		022097D0421DF5B073623087563556AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEA7E49B468F6C8473E605E102B52939 /* PNChart.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PNChart/PNChart-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PNChart/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PNChart/PNChart.modulemap";
+				PRODUCT_NAME = PNChart;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		1574DFBE46C3A95056829BC718547A7A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -427,9 +814,9 @@
 			};
 			name = Release;
 		};
-		49857C07F0347C414A1CECF49162281F /* Release */ = {
+		20F2C18B4C7D83DE1215B050B0C4614C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A9F9D525CA7E171C6F3EE1319541EB7D /* Pods-goFit.release.xcconfig */;
+			baseConfigurationReference = 7A95D4CEB40CB2A0E0CF82DE7432C81F /* Pods-goFit.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -454,11 +841,10 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		5B5A1446720EEC8CE963B9BD750713E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -520,9 +906,39 @@
 			};
 			name = Debug;
 		};
+		5BED1A30CF8289ED681F91FB84ED95FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEA7E49B468F6C8473E605E102B52939 /* PNChart.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PNChart/PNChart-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PNChart/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PNChart/PNChart.modulemap";
+				PRODUCT_NAME = PNChart;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		62AFCE935F1CF51FC227EC0FEBA5F84D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 87CB9CDB2C93985DD8701798853C92AE /* MBCircularProgressBar.xcconfig */;
+			baseConfigurationReference = 7D86CE1319B4E1FEFBA2B294481E344F /* MBCircularProgressBar.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MBCircularProgressBar";
@@ -536,41 +952,9 @@
 			};
 			name = Release;
 		};
-		A00A114580C72CF884B03DC7F3292279 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A95D4CEB40CB2A0E0CF82DE7432C81F /* Pods-goFit.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-goFit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-goFit/Pods-goFit.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_goFit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		A8787EA979C4DB918F26412F4DDF54BC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 87CB9CDB2C93985DD8701798853C92AE /* MBCircularProgressBar.xcconfig */;
+			baseConfigurationReference = 7D86CE1319B4E1FEFBA2B294481E344F /* MBCircularProgressBar.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MBCircularProgressBar";
@@ -584,9 +968,40 @@
 			};
 			name = Debug;
 		};
+		B6D61468BD16F8468F01D441E62A904A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0A6C4A46AC71CB0E01B8BCF8F550085 /* UICountingLabel.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UICountingLabel/UICountingLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UICountingLabel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UICountingLabel/UICountingLabel.modulemap";
+				PRODUCT_NAME = UICountingLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		B980AA56E7E551CD2927DF96985DB998 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 87CB9CDB2C93985DD8701798853C92AE /* MBCircularProgressBar.xcconfig */;
+			baseConfigurationReference = 7D86CE1319B4E1FEFBA2B294481E344F /* MBCircularProgressBar.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -614,9 +1029,72 @@
 			};
 			name = Debug;
 		};
+		CC7BBD66350A16DEF57308CDA8F372AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9F9D525CA7E171C6F3EE1319541EB7D /* Pods-goFit.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-goFit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-goFit/Pods-goFit.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_goFit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E4FED082A1B548989EE9EE00C7520328 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0A6C4A46AC71CB0E01B8BCF8F550085 /* UICountingLabel.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UICountingLabel/UICountingLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UICountingLabel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UICountingLabel/UICountingLabel.modulemap";
+				PRODUCT_NAME = UICountingLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		F246ABE3FABB1110063770177B6D815E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 87CB9CDB2C93985DD8701798853C92AE /* MBCircularProgressBar.xcconfig */;
+			baseConfigurationReference = 7D86CE1319B4E1FEFBA2B294481E344F /* MBCircularProgressBar.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -666,11 +1144,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A5EE7CE6BE2E4520BAB1D7E441E5FA81 /* Build configuration list for PBXNativeTarget "Pods-goFit" */ = {
+		6A92B5FD027CE987470A48E671364959 /* Build configuration list for PBXNativeTarget "PNChart" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A00A114580C72CF884B03DC7F3292279 /* Debug */,
-				49857C07F0347C414A1CECF49162281F /* Release */,
+				5BED1A30CF8289ED681F91FB84ED95FE /* Debug */,
+				022097D0421DF5B073623087563556AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92E13D8D61DB88ECE0993D01B3EBA770 /* Build configuration list for PBXNativeTarget "Pods-goFit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20F2C18B4C7D83DE1215B050B0C4614C /* Debug */,
+				CC7BBD66350A16DEF57308CDA8F372AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A22DE6618BE94C542426A3608C6D3E5 /* Build configuration list for PBXNativeTarget "UICountingLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4FED082A1B548989EE9EE00C7520328 /* Debug */,
+				B6D61468BD16F8468F01D441E62A904A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

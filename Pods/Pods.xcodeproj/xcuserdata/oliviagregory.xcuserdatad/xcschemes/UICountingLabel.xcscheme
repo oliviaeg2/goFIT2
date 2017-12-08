@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '5386049100E6BBF95D8DA76071FA8D6F'
-               BlueprintName = 'Pods-goFit'
+               BlueprintIdentifier = 'DA392EE8E5B24D16FB9910405A0AFC2E'
+               BlueprintName = 'UICountingLabel'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Pods-goFit.framework'>
+               BuildableName = 'UICountingLabel.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
