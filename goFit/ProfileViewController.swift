@@ -12,6 +12,7 @@ class ProfileViewController: UIViewController {
 
     var username : String?
     var profPic : UIImage?
+    var challenges : [Challenge]?
     
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var friendProfPic: UIImageView!
@@ -22,6 +23,10 @@ class ProfileViewController: UIViewController {
         
         usernameLabel.text = username!;
         friendProfPic.image = profPic!
+        
+        for challenge in challenges! {
+            print(challenge.type)
+        }
         
         // Do any additional setup after loading the view.
     }

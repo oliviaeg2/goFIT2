@@ -185,25 +185,28 @@ class createChallengeViewController: UIViewController {
     @IBAction func bryce(_ sender: UIButton) {
         if (bryceButton.currentImage == #imageLiteral(resourceName: "bryce_blue"))  {
             bryceButton.setImage(#imageLiteral(resourceName: "bryce_green"), for: UIControlState.normal)
+            selectedUser = "Bryce";
         } else {
             bryceButton.setImage(#imageLiteral(resourceName: "bryce_blue"), for: UIControlState.normal)
-            selectedUser = "Bryce";
+//            selectedUser = "Bryce";
         }
     }
     @IBAction func christina(_ sender: UIButton) {
         if (christinaButton.currentImage == #imageLiteral(resourceName: "christina_blue"))  {
             christinaButton.setImage(#imageLiteral(resourceName: "christina_green"), for: UIControlState.normal)
+            selectedUser = "Christina";
         } else {
             christinaButton.setImage(#imageLiteral(resourceName: "christina_blue"), for: UIControlState.normal)
-            selectedUser = "Christina";
+            //selectedUser = "Christina";
         }
     }
     @IBAction func denis(_ sender: UIButton) {
         if (denisButton.currentImage == #imageLiteral(resourceName: "denis_blue"))  {
             denisButton.setImage(#imageLiteral(resourceName: "denis_green"), for: UIControlState.normal)
+             selectedUser = "Denis";
         } else {
             denisButton.setImage(#imageLiteral(resourceName: "denis_blue"), for: UIControlState.normal)
-            selectedUser = "Denis";
+           // selectedUser = "Denis";
         }
     }
     

@@ -48,6 +48,8 @@ class SocialViewController: UIViewController,UICollectionViewDataSource, UIColle
             var indexPath = socialGridView.indexPath(for: sender as! UICollectionViewCell)!
             vc.username = User.userFriendsShared[indexPath.row].name
             vc.profPic = User.usersToIcons[User.userFriendsShared[indexPath.row].name]
+            let userChallenges = User.userFriendsShared[indexPath.row].challenges
+            vc.challenges = userChallenges
         }
     }
 

@@ -19,24 +19,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let initialChallengeTitles = ["Walking", "Weights", "Biking", "Swimming", "Salad", "Water"];
         let initialChallengeImages = [#imageLiteral(resourceName: "steps"), #imageLiteral(resourceName: "weights"), #imageLiteral(resourceName: "bike"), #imageLiteral(resourceName: "swimming"), #imageLiteral(resourceName: "salad"), #imageLiteral(resourceName: "water")];
         
+        let initialFriendNames = ["ME", "Denis", "Bryce","Christina"];
+        let initialFriendImages = [#imageLiteral(resourceName: "olivia"), #imageLiteral(resourceName: "denis"), #imageLiteral(resourceName: "bryce"), #imageLiteral(resourceName: "christina")];
+
+        
+        //initialize challenges
         var i = 0;
         var curChallenge : Challenge
         
         for challengeType in initialChallengeTitles {
-            curChallenge = Challenge(type: challengeType, frequency: 4, user: "Me", icon: initialChallengeImages[i])!;
+            if (i < 4) {
+            curChallenge = Challenge(type: challengeType, frequency: 4, user: initialFriendNames[i], icon: initialChallengeImages[i])!;
+            }
+            else {
+                curChallenge = Challenge(type: challengeType, frequency: 4, user: initialFriendNames[i - 3], icon: initialChallengeImages[i])!;
+            }
             Challenge.userChallengesShared.append(curChallenge);
             i = i + 1;
         }
         
-        let dummyChallenge = Challenge.userChallengesShared[0];
         
-        let initialFriendNames = ["ME", "Denis", "Bryce", "Olivia", "Christina"];
-        let initialFriendImages = [#imageLiteral(resourceName: "user"), #imageLiteral(resourceName: "denis"), #imageLiteral(resourceName: "bryce"), #imageLiteral(resourceName: "olivia"), #imageLiteral(resourceName: "christina")];
         var curUser : User
         var j = 0;
         
         for userName in initialFriendNames {
             curUser = User(name: userName, image: initialFriendImages[j])!;
+            let dummyChallenge = Challenge.userChallengesShared[j];
+            if (j < 4) {
+                let dummyChallenge = Challenge.userChallengesShared[j];
+                curUser.addChallenge(newChallenge: dummyChallenge);
+            }
+            else {
+                let dummyChallenge = Challenge.userChallengesShared[j - 3];
+                curUser.addChallenge(newChallenge: dummyChallenge);
+            }
             User.userFriendsShared.append(curUser);
             j += 1;
         }
@@ -48,7 +64,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         for name in universalFriendNames {
             curUser = User(name: name, image: universalFriendImages[k])!;
-            curUser.addChallenge(newChallenge: dummyChallenge);
             User.universalFriendsShared.append(curUser);
             k += 1;
         }
