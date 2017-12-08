@@ -26,7 +26,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="launch_screen" translatesAutoresizingMaskIntoConstraints="NO" id="BZg-dJ-gkB">
-                                        <rect key="frame" x="4" y="78" width="367" height="491"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
@@ -42,6 +42,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="launch_screen" width="360" height="481"/>
+        <image name="launch_screen" width="766" height="1348"/>
     </resources>
 </document>
