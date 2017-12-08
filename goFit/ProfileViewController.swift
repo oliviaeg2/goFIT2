@@ -17,6 +17,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var friendProfPic: UIImageView!
     
+    @IBOutlet weak var challengesTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,9 +25,6 @@ class ProfileViewController: UIViewController {
         usernameLabel.text = username!;
         friendProfPic.image = profPic!
         
-        for challenge in challenges! {
-            print(challenge.type)
-        }
         
         // Do any additional setup after loading the view.
     }
@@ -36,7 +34,6 @@ class ProfileViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "createSocialChallengeSegue") {
