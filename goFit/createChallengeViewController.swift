@@ -57,8 +57,9 @@ class createChallengeViewController: UIViewController {
     @IBOutlet weak var amountTextField: UITextField!
     
     @IBAction func createChallenge(_ sender: UIButton) {
+        let unit = unitsControl.titleForSegment(at: unitsControl.selectedSegmentIndex)
         //TODO: Implement users
-        let newChallenge = Challenge.init(type: selectedChallenge, frequency: currentFrequency, user: selectedUser, icon: Challenge.challengesToIcons[selectedChallenge]);
+        let newChallenge = Challenge.init(type: selectedChallenge, frequency: currentFrequency, amount: amount, user: selectedUser, icon: Challenge.challengesToIcons[selectedChallenge], unit: unit!);
         Challenge.userChallengesShared.insert(newChallenge!, at: 0);
         //TODO: CONGRATS screen
         _ = navigationController?.popViewController(animated: true)
