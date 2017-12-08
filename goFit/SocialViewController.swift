@@ -9,6 +9,15 @@
 import UIKit
 
 class SocialViewController: UIViewController,UICollectionViewDataSource, UICollectionViewDelegate {
+    
+    
+    @IBAction func addFriend() {
+        let alert = UIAlertController(title: "Oops!", message: "Feature not yet implemented", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
+        
+        self.present(alert, animated: true)
+    }
 
 
     @IBOutlet weak var socialGridView: UICollectionView!
