@@ -18,14 +18,14 @@ class Challenge: NSObject {
     var user : String
     var icon: UIImage?
     var progress : Int
+    //var goalDescription : String
     var amount : Int
-    var unit: String
+    //var unit: String
     
     init?(type: String, frequency: Int, amount: Int, user: String, icon: UIImage?, unit: String) {
         if (type.isEmpty || frequency < 0 ) {
             return nil;
         }
-        self.unit = unit
         self.amount = amount
         self.type = type;
         self.frequency = frequency;

@@ -45,17 +45,15 @@ class SocialViewController: UIViewController,UICollectionViewDataSource, UIColle
         
     }
     
-    
-    
     // MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "viewProfileSegue") {
             let vc = segue.destination as! ProfileViewController
             var indexPath = socialGridView.indexPath(for: sender as! UICollectionViewCell)!
-            vc.username = User.userFriendsShared[indexPath.row].name
-            vc.profPic = User.usersToIcons[User.userFriendsShared[indexPath.row].name]
-            let userChallenges = User.userFriendsShared[indexPath.row].challenges
+            vc.username = User.userFriendsShared[indexPath.row - 1].name
+            vc.profPic = User.usersToIcons[User.userFriendsShared[indexPath.row - 1].name]
+            let userChallenges = User.userFriendsShared[indexPath.row - 1].challenges
             vc.challenges = userChallenges
         }
     }

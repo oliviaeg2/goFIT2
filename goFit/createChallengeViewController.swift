@@ -14,7 +14,7 @@ class createChallengeViewController: UIViewController {
     var currentFrequency  = 1;
     var selectedUser = "ME";
     var amount = 0;
-    
+
     var distanceUnits = ["mi", "km", "min", "hr"];
     var foodUnits = ["oz", "cup"];
     var otherUnits = ["rep", "set", "min", "hr"];
@@ -26,6 +26,7 @@ class createChallengeViewController: UIViewController {
             unitsControl.insertSegment(withTitle: unit, at: i, animated: false)
         }
         i+=1;
+        unitsControl.selectedSegmentIndex = 0;
     }
     
     var distanceSelected = true;
@@ -59,7 +60,7 @@ class createChallengeViewController: UIViewController {
     @IBAction func createChallenge(_ sender: UIButton) {
         let unit = unitsControl.titleForSegment(at: unitsControl.selectedSegmentIndex)
         //TODO: Implement users
-        let newChallenge = Challenge.init(type: selectedChallenge, frequency: currentFrequency, amount: amount, user: selectedUser, icon: Challenge.challengesToIcons[selectedChallenge], unit: unit!);
+        let newChallenge = Challenge.init(type: selectedChallenge, frequency: currentFrequency, amount: 0, user: selectedUser, icon: Challenge.challengesToIcons[selectedChallenge], unit: unit!);
         Challenge.userChallengesShared.insert(newChallenge!, at: 0);
         //TODO: CONGRATS screen
         _ = navigationController?.popViewController(animated: true)
@@ -176,10 +177,10 @@ class createChallengeViewController: UIViewController {
     }
     
     @IBAction func me(_ sender: UIButton) {
-        if (meButton.currentImage == #imageLiteral(resourceName: "profile_blue"))  {
-            meButton.setImage(#imageLiteral(resourceName: "profile_green"), for: UIControlState.normal)
+        if (meButton.currentImage == #imageLiteral(resourceName: "olivia_blue"))  {
+            meButton.setImage(#imageLiteral(resourceName: "olivia_green"), for: UIControlState.normal)
         } else {
-            meButton.setImage(#imageLiteral(resourceName: "profile_blue"), for: UIControlState.normal)
+            meButton.setImage(#imageLiteral(resourceName: "olivia_blue"), for: UIControlState.normal)
         }
     }
     

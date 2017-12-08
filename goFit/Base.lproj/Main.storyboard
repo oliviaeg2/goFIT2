@@ -485,16 +485,16 @@
                                     <segue destination="duC-Qu-knW" kind="show" identifier="createSocialChallengeSegue" id="MTB-g5-s9v"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="125" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UAu-Q9-4dk">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UAu-Q9-4dk">
                                 <rect key="frame" x="8" y="227" width="351" height="349"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="125" id="D4x-GK-aGu">
-                                        <rect key="frame" x="0.0" y="28" width="351" height="125"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="profileCell" rowHeight="70" id="D4x-GK-aGu" customClass="ProfileTableViewCell" customModule="goFit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="351" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="D4x-GK-aGu" id="Dwf-mH-cPo">
-                                            <rect key="frame" x="0.0" y="0.0" width="351" height="124"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="351" height="69"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Th-aZ-Hit" customClass="MBCircularProgressBarView">
@@ -502,7 +502,7 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yTB-Qw-e0O">
-                                                            <rect key="frame" x="7" y="7" width="45" height="45"/>
+                                                            <rect key="frame" x="18" y="18" width="25" height="25"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
                                                     </subviews>
@@ -522,7 +522,7 @@
                                                             <real key="value" value="4"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="progressLineWidth">
-                                                            <real key="value" value="6"/>
+                                                            <real key="value" value="5"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
@@ -542,6 +542,11 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="challengeIcon" destination="yTB-Qw-e0O" id="doH-pA-0JL"/>
+                                            <outlet property="challengeName" destination="Ro2-wl-Xle" id="XXX-u5-785"/>
+                                            <outlet property="challengeQuantity" destination="6EZ-JW-Rtm" id="OAV-3c-YRH"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
