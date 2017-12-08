@@ -55,8 +55,10 @@ class ChallengesViewController: UIViewController, UICollectionViewDataSource, UI
             cell.friendImage.layer.cornerRadius = 15;
             cell.friendImage.clipsToBounds = true;
             cell.friendImage.layer.borderWidth = 2.0;
+            
             cell.friendProgressBar.value = CGFloat(arc4random_uniform(6));
             cell.friendProgressBar.maxValue = 5;
+            
             if (cell.friendProgressBar.value == 5) {
                 cell.friendProgressBar.progressColor = UIColor.green
             }
@@ -66,14 +68,7 @@ class ChallengesViewController: UIViewController, UICollectionViewDataSource, UI
             cell.cellView.maxValue = CGFloat(goal);
             if (progress == goal) {
                 cell.cellView.progressColor = UIColor.green
-                if (curUser == "ME" || curUser == "me") {
-                    cell.friendProgressBar.isHidden = true;
-                    cell.friendImage.isHidden = false;
-                }
-                else {
-                    cell.friendProgressBar.isHidden = false;
-                }
-
+                cell.cellView.alpha = 0.5
             }
             return cell
         }

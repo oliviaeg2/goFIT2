@@ -63,6 +63,7 @@ class HomeViewController: UIViewController {
             self.progressBar.value = CGFloat(curChallenge.progress)
             if (curChallenge.progress == curChallenge.frequency) {
                 self.progressBar.progressColor = UIColor.green
+                Challenge.moveCompletedToEnd(intToMove: self.currentInt)
             }
         }) { (finished) in
             print("updated!")
