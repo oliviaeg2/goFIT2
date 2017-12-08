@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="FS0-QM-Zj1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="17B1003" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="FS0-QM-Zj1">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -425,10 +425,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="157" height="130"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plus_green" translatesAutoresizingMaskIntoConstraints="NO" id="2KJ-Jg-E1n">
-                                                    <rect key="frame" x="42" y="28" width="72" height="74"/>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hl-pq-oXg">
+                                                    <rect key="frame" x="38" y="24" width="80" height="82"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
+                                                    <state key="normal" title="Button" image="plus_green"/>
+                                                    <connections>
+                                                        <action selector="addFriend" destination="FoP-EO-u51" eventType="touchUpInside" id="DRe-pM-hzO"/>
+                                                        <action selector="addFriend" destination="Kls-Q4-aIE" eventType="touchUpInside" id="viE-dJ-3sv"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                         </view>
                                     </collectionViewCell>
@@ -1251,7 +1256,7 @@
         <!--Friend Requests-->
         <scene sceneID="EGA-pD-PnT">
             <objects>
-                <viewController title="Friend Requests" id="pRY-Y5-OOc" sceneMemberID="viewController">
+                <viewController title="Friend Requests" id="pRY-Y5-OOc" customClass="FriendRequestsViewController" customModule="goFit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3rY-0d-V1V"/>
                         <viewControllerLayoutGuide type="bottom" id="udK-NP-Bhw"/>
@@ -1269,6 +1274,9 @@
                                 <rect key="frame" x="329" y="87" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="reject_red"/>
+                                <connections>
+                                    <action selector="acceptRequest" destination="pRY-Y5-OOc" eventType="touchUpInside" id="z6l-Vj-cSi"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crD-sH-G71">
                                 <rect key="frame" x="8" y="140" width="60" height="60"/>
@@ -1305,26 +1313,41 @@
                                 <rect key="frame" x="291" y="87" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="accept_green"/>
+                                <connections>
+                                    <action selector="acceptRequest" destination="pRY-Y5-OOc" eventType="touchUpInside" id="wtG-eC-0G3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKw-11-Tij">
                                 <rect key="frame" x="329" y="223" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="reject_red"/>
+                                <connections>
+                                    <action selector="acceptRequest" destination="pRY-Y5-OOc" eventType="touchUpInside" id="Vap-0c-btQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q8v-fW-LyJ">
                                 <rect key="frame" x="291" y="223" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="accept_green"/>
+                                <connections>
+                                    <action selector="acceptRequest" destination="pRY-Y5-OOc" eventType="touchUpInside" id="EIC-qG-4Hm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pP2-Dq-gyA">
                                 <rect key="frame" x="328" y="155" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="reject_red"/>
+                                <connections>
+                                    <action selector="acceptRequest" destination="pRY-Y5-OOc" eventType="touchUpInside" id="n0X-ud-YfK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7V-u8-Umj">
                                 <rect key="frame" x="291" y="155" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="accept_green"/>
+                                <connections>
+                                    <action selector="acceptRequest" destination="pRY-Y5-OOc" eventType="touchUpInside" id="xwc-Xr-VYd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1337,7 +1360,7 @@
         <!--Challenge Requests-->
         <scene sceneID="0fZ-JF-M4L">
             <objects>
-                <viewController title="Challenge Requests" id="pnd-vs-ewW" sceneMemberID="viewController">
+                <viewController title="Challenge Requests" id="pnd-vs-ewW" customClass="RequestsViewController" customModule="goFit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0zm-gW-Nhe"/>
                         <viewControllerLayoutGuide type="bottom" id="Z1c-8m-dq7"/>
@@ -1360,6 +1383,9 @@
                                 <rect key="frame" x="329" y="87" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="reject_red"/>
+                                <connections>
+                                    <action selector="acceptChallenge" destination="pnd-vs-ewW" eventType="touchUpInside" id="zhT-ao-GWp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LK0-Xt-s3r">
                                 <rect key="frame" x="8" y="208" width="60" height="60"/>
@@ -1384,26 +1410,41 @@
                                 <rect key="frame" x="291" y="87" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="accept_green"/>
+                                <connections>
+                                    <action selector="acceptChallenge" destination="pnd-vs-ewW" eventType="touchUpInside" id="ZaP-Zn-2Sj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bc-Ae-G9Y">
                                 <rect key="frame" x="328" y="155" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="reject_red"/>
+                                <connections>
+                                    <action selector="acceptChallenge" destination="pnd-vs-ewW" eventType="touchUpInside" id="NRd-6w-tNV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7qE-jY-CXA">
                                 <rect key="frame" x="291" y="155" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="accept_green"/>
+                                <connections>
+                                    <action selector="acceptChallenge" destination="pnd-vs-ewW" eventType="touchUpInside" id="7G1-i7-ig6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03d-O2-PoS">
                                 <rect key="frame" x="329" y="223" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="reject_red"/>
+                                <connections>
+                                    <action selector="acceptChallenge" destination="pnd-vs-ewW" eventType="touchUpInside" id="HCd-CG-iyh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pj7-dC-MUE">
                                 <rect key="frame" x="291" y="223" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="accept_green"/>
+                                <connections>
+                                    <action selector="acceptChallenge" destination="pnd-vs-ewW" eventType="touchUpInside" id="sdc-Wb-Rvi"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Christina challenged you!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3k5-ez-Mnz">
                                 <rect key="frame" x="104" y="109" width="225" height="21"/>
@@ -1504,7 +1545,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Week Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ogg-oG-Lgw">
-                                            <rect key="frame" x="16" y="4" width="92" height="20"/>
+                                            <rect key="frame" x="8" y="4" width="92" height="20"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
@@ -1528,13 +1569,13 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="15O-Im-I0i">
-                                            <rect key="frame" x="16" y="12.5" width="73.5" height="18"/>
+                                            <rect key="frame" x="8" y="12.5" width="73.5" height="18"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                             <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N39-dF-Ro3">
-                                            <rect key="frame" x="276.5" y="10.5" width="82" height="20.5"/>
+                                            <rect key="frame" x="284.5" y="10.5" width="82" height="20.5"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>

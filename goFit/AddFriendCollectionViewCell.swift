@@ -10,4 +10,9 @@ import UIKit
 
 class AddFriendCollectionViewCell: UICollectionViewCell {
     
+    
+    @IBAction func addFriend() {
+        
+    }
+    
 }

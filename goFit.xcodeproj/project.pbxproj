@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0CC9CCA581D0216797570AA4 /* Pods_goFit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF2ABD7FC09481A5B7FB1BE5 /* Pods_goFit.framework */; };
+		B52D8AD51FDB547F00CB5346 /* RequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52D8AD41FDB547F00CB5346 /* RequestsViewController.swift */; };
+		B52D8AD71FDB58A400CB5346 /* FriendRequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52D8AD61FDB58A400CB5346 /* FriendRequestsViewController.swift */; };
 		B572996C1FB98A1B009367E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572996B1FB98A1B009367E6 /* AppDelegate.swift */; };
 		B572996E1FB98A1B009367E6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572996D1FB98A1B009367E6 /* HomeViewController.swift */; };
 		B57299711FB98A1B009367E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B572996F1FB98A1B009367E6 /* Main.storyboard */; };
@@ -42,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		51FBD0AFE95A837FA2808B3E /* Pods-goFit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-goFit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-goFit/Pods-goFit.debug.xcconfig"; sourceTree = "<group>"; };
+		B52D8AD41FDB547F00CB5346 /* RequestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestsViewController.swift; sourceTree = "<group>"; };
+		B52D8AD61FDB58A400CB5346 /* FriendRequestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendRequestsViewController.swift; sourceTree = "<group>"; };
 		B57299681FB98A1B009367E6 /* goFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = goFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B572996B1FB98A1B009367E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B572996D1FB98A1B009367E6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +141,8 @@
 				B92E69951FD1EF0F00FCBB43 /* User.swift */,
 				B9272F3C1FD05A7F009F756E /* ChallengeCollectionViewCell.swift */,
 				B572996F1FB98A1B009367E6 /* Main.storyboard */,
+				B52D8AD61FDB58A400CB5346 /* FriendRequestsViewController.swift */,
+				B52D8AD41FDB547F00CB5346 /* RequestsViewController.swift */,
 				B5EF8B361FDA560100F300BE /* ChartTableViewController.swift */,
 				B5EF8B2D1FDA516B00F300BE /* HeaderTableViewCell.swift */,
 				B5EF8B271FDA514F00F300BE /* GradientBackground.swift */,
@@ -320,10 +326,12 @@
 			files = (
 				B913B9281FDB3E8D00117C1B /* AddFriendCollectionViewCell.swift in Sources */,
 				B9272F3B1FD05A2C009F756E /* Challenge.swift in Sources */,
+				B52D8AD51FDB547F00CB5346 /* RequestsViewController.swift in Sources */,
 				B5EF8B2C1FDA516200F300BE /* ChartTableViewCell.swift in Sources */,
 				B5EF8B371FDA560100F300BE /* ChartTableViewController.swift in Sources */,
 				B572996E1FB98A1B009367E6 /* HomeViewController.swift in Sources */,
 				B9272F3D1FD05A7F009F756E /* ChallengeCollectionViewCell.swift in Sources */,
+				B52D8AD71FDB58A400CB5346 /* FriendRequestsViewController.swift in Sources */,
 				B959EDFA1FD5E7370041BE6A /* AddNewCollectionViewCell.swift in Sources */,
 				B5D62CCC1FCE8A1E0020A958 /* plusTableViewCell.swift in Sources */,
 				B5EF8B281FDA514F00F300BE /* GradientBackground.swift in Sources */,
