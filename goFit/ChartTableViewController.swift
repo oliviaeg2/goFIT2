@@ -33,7 +33,7 @@ class ChartTableViewController: UITableViewController {
         return indexPath.section == 0 ? UIScreen.main.bounds.height / 3 : 44
     }
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return weeklyData.count + 1
     }
     
