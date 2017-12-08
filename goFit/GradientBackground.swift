@@ -15,8 +15,8 @@ extension CAGradientLayer {
     // gradient backgrounds) with the specified top and bottom color
     func lightBlueColor() -> CAGradientLayer {
         // Specify top and bottom colors
-        let topColor = UIColor(red: 17/255, green: 122/255, blue: 168/255, alpha: 1)
-        let bottomColor = UIColor(red: (23/255.0), green: (146/255.0), blue: (197/255.0), alpha: 1)
+        let topColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1)
+        let bottomColor = UIColor(red: (255/255.0), green: (255/255.0), blue: (255/255.0), alpha: 1)
         
         // Create a CAGradientLayer and set colors and locations
         let gradientLayer = CAGradientLayer()

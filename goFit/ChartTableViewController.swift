@@ -15,11 +15,7 @@ class ChartTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+         self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     override func didReceiveMemoryWarning() {
@@ -66,7 +62,7 @@ class ChartTableViewController: UITableViewController {
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "dataCell", for: indexPath) as! DataPointTableViewCell
             
-            cell.dataLabel.text = weeklyData[indexPath.section - 1][indexPath.row].description + " " + "Some label"
+            cell.dataLabel.text = weeklyData[indexPath.section - 1][indexPath.row].description + " " + "Cups"
             
             let formatter = DateFormatter()
             formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"

@@ -30,7 +30,7 @@ class ChartTableViewCell: UITableViewCell {
         // Add mock data and configure the data
         var data01Array: [CGFloat] = weeklyData[0]
         let data01: PNLineChartData = PNLineChartData()
-        data01.color = UIColor.white
+        data01.color = UIColor.init(red: 72/255, green: 208/255, blue: 249/255, alpha: 0.5)
         data01.itemCount = UInt(data01Array.count)
         data01.getData = {(index: UInt) -> PNLineChartDataItem in
             let yValue = CGFloat(data01Array[Int(index)])
@@ -41,8 +41,6 @@ class ChartTableViewCell: UITableViewCell {
         lineChart.chartData = [data01]
         lineChart.stroke()
         
-        // Set the background for this cell to be a gradient color background... currently always KaiserBlue, but
-        // in the future will depend on the challenge that is set
         let background = CAGradientLayer().lightBlueColor()
         background.frame = self.contentView.bounds
         self.contentView.layer.insertSublayer(background, at: 0)
