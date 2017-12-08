@@ -38,7 +38,10 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
         let curChallenge = challenges?[indexPath.row]
         cell.challengeName.text = curChallenge?.type
         cell.challengeIcon.image = Challenge.challengesToIcons[(curChallenge?.type)!]
-        cell.challengeQuantity.text = String(describing: (curChallenge?.amount)!)
+        let curAmount = String(describing: (curChallenge?.amount)!)
+        let curUnit = (curChallenge?.unit)!
+        let curFrequency = (curChallenge?.frequency)!
+        cell.challengeQuantity.text =  curAmount + String(curUnit) + "/wk, " + String(curFrequency) + " times a week"
         return cell;
     }
     
