@@ -26,15 +26,22 @@ class SocialViewController: UIViewController,UICollectionViewDataSource, UIColle
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return User.userFriendsShared.count
+        return User.userFriendsShared.count + 1
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "socialGridCell", for: indexPath) as! SocialCollectionViewCell
-        let userName = User.userFriendsShared[indexPath.row].name
-        cell.nameLabel.text = userName
-        cell.friendProfPic.image = User.usersToButtons[userName]
-        return cell
+        if (indexPath.row == 0) {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "addFriendCell", for: indexPath) as! AddFriendCollectionViewCell
+            return cell
+
+        }
+        else {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "socialGridCell", for: indexPath) as! SocialCollectionViewCell
+            let userName = User.userFriendsShared[indexPath.row - 1].name
+            cell.nameLabel.text = userName
+            cell.friendProfPic.image = User.usersToButtons[userName]
+            return cell
+        }
         
     }
     
