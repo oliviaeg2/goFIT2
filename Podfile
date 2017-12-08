@@ -8,5 +8,7 @@ target 'goFit' do
   # Pods for goFit
   pod "MBCircularProgressBar"
   pod 'PNChart’
+  pod "SAConfettiView"
+  pod 'Toast-Swift', '~> 3.0.1'
 
 end

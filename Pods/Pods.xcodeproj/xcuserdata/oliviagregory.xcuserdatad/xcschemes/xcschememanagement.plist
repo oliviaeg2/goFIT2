@@ -24,6 +24,21 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SAConfettiView-SAConfettiView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SAConfettiView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Toast-Swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>UICountingLabel.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,7 +52,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5386049100E6BBF95D8DA76071FA8D6F</key>
+		<key>79D75CFE213FFE7B183C1FEB0C1E056E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -52,7 +67,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>DDC689AC1D3BF6EAF4ACD43689E55857</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DEB8E59ECADFA9E009B50B53A32A290C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>F579AA4D4755DD9570010BC36D0422F7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FC906189BDAFBE87A40F1355BACB1CA2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

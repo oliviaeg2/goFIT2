@@ -8,6 +8,7 @@
 
 import UIKit
 import MBCircularProgressBar
+import SAConfettiView
 
 class HomeViewController: UIViewController {
     
@@ -26,6 +27,8 @@ class HomeViewController: UIViewController {
     var currentInt = 0;
     var progressVal = 2;
     var goalVal = 4;
+    
+    var confettiView = SAConfettiView()
     //var fitBlue =
     
     func hexStringToUIColor (hex:String) -> UIColor {
@@ -62,16 +65,43 @@ class HomeViewController: UIViewController {
         UIView.animate(withDuration: 2.0, animations: { 
             self.progressBar.value = CGFloat(curChallenge.progress)
             if (curChallenge.progress == curChallenge.frequency) {
+                self.view.addSubview(self.confettiView)
+                self.confettiView.startConfetti()
                 self.progressBar.progressColor = UIColor.green
                 Challenge.moveCompletedToEnd(intToMove: self.currentInt)
             }
         }) { (finished) in
+            if (curChallenge.progress == curChallenge.frequency) {
+            if (self.currentInt + 1 < Challenge.userChallengesShared.count) {
+                self.currentInt+=1;
+                let newChallenge = Challenge.userChallengesShared[self.currentInt]
+                self.currentChallengeLabel.text = newChallenge.type;
+                self.currentChallenge.image = newChallenge.icon!
+                self.progressVal = newChallenge.progress
+                self.goalVal = newChallenge.frequency
+                self.progress.text = String(self.progressVal)
+                self.goal.text = String(self.goalVal)
+                if (self.progressVal == self.goalVal) {
+                    self.progressBar.progressColor = UIColor.green
+                }
+                else {
+                    self.progressBar.progressColor = self.hexStringToUIColor(hex: "48d0f9")
+                }
+                self.progressBar.value = CGFloat(self.progressVal)
+                self.progressBar.maxValue = CGFloat(self.goalVal)
+                
+            }
+            self.confettiView.stopConfetti()
+            self.confettiView.removeFromSuperview()
+            }
             print("updated!")
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        confettiView = SAConfettiView(frame: self.view.bounds)
         
 //        challengesImage.layer.borderColor = UIColor.green.cgColor;
 //        challengesImage.layer.cornerRadius = 50;
@@ -88,6 +118,7 @@ class HomeViewController: UIViewController {
         
         if (progressVal == goalVal) {
             progressBar.progressColor = UIColor.green
+            //self.view.addSubview(confettiView)
         }
         else {
             progressBar.progressColor = hexStringToUIColor(hex: "48d0f9")
