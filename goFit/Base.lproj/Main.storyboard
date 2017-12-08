@@ -311,6 +311,7 @@
                                             <outlet property="cellView" destination="t7N-gT-s9X" id="vaL-wd-coK"/>
                                             <outlet property="friendImage" destination="ElX-eV-Ktr" id="6U5-9Q-US6"/>
                                             <outlet property="friendProgressBar" destination="UIW-JA-HtP" id="Pty-9a-T7X"/>
+                                            <outlet property="goalLabel" destination="yR6-ma-6rh" id="sc6-Np-Ko0"/>
                                             <outlet property="imageView" destination="pYn-Fm-tc6" id="g4l-ZU-UVf"/>
                                             <outlet property="progressLabel" destination="3Ie-ah-kB2" id="ix7-oP-2fP"/>
                                             <outlet property="typeLabel" destination="53v-LC-5n3" id="Xaj-98-Jvb"/>

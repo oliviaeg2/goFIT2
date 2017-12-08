@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         let initialChallengeTitles = ["Walking", "Weights", "Biking", "Swimming", "Salad", "Water"];
         let initialChallengeImages = [#imageLiteral(resourceName: "steps"), #imageLiteral(resourceName: "weights"), #imageLiteral(resourceName: "bike"), #imageLiteral(resourceName: "swimming"), #imageLiteral(resourceName: "salad"), #imageLiteral(resourceName: "water")];
+        let initialUnits = ["mi", "rep", "km", "km", "cups", "oz"]
         
         let initialFriendNames = ["ME", "Denis", "Bryce","Christina"];
         let initialFriendImages = [#imageLiteral(resourceName: "olivia"), #imageLiteral(resourceName: "denis"), #imageLiteral(resourceName: "bryce"), #imageLiteral(resourceName: "christina")];
@@ -29,10 +30,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         for challengeType in initialChallengeTitles {
             if (i < 4) {
-            curChallenge = Challenge(type: challengeType, frequency: 4, amount: 0, user: initialFriendNames[i], icon: initialChallengeImages[i], unit: "unit")!;
+            curChallenge = Challenge(type: challengeType, frequency: 4, amount: 0, user: initialFriendNames[i], icon: initialChallengeImages[i], unit: initialUnits[i])!;
             }
             else {
-                curChallenge = Challenge(type: challengeType, frequency: 4, amount: 0, user: initialFriendNames[i - 3], icon: initialChallengeImages[i], unit: "unit")!;
+                curChallenge = Challenge(type: challengeType, frequency: 4, amount: 0, user: initialFriendNames[i - 3], icon: initialChallengeImages[i], unit: initialUnits[i])!;
             }
             Challenge.userChallengesShared.append(curChallenge);
             i = i + 1;

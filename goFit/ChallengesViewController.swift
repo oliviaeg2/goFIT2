@@ -44,6 +44,9 @@ class ChallengesViewController: UIViewController, UICollectionViewDataSource, UI
             let curUser = Challenge.userChallengesShared[indexPath.row - 1].user
             cell.typeLabel.text = challengeTitle
             cell.imageView.image = challengeImage
+            let amount = Challenge.userChallengesShared[indexPath.row - 1].amount
+            let unit = Challenge.userChallengesShared[indexPath.row - 1].unit
+            cell.goalLabel.text = String(amount) + " " + unit + "/wk"
             
 //            let size = User.userFriendsShared.count
 //            let index = arc4random_uniform(UInt32(size))

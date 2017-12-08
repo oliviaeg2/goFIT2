@@ -20,7 +20,7 @@ class Challenge: NSObject {
     var progress : Int
     //var goalDescription : String
     var amount : Int
-    //var unit: String
+    var unit: String
     
     init?(type: String, frequency: Int, amount: Int, user: String, icon: UIImage?, unit: String) {
         if (type.isEmpty || frequency < 0 ) {
@@ -28,6 +28,7 @@ class Challenge: NSObject {
         }
         self.amount = amount
         self.type = type;
+        self.unit = unit
         self.frequency = frequency;
         self.user = user;
         self.progress = 0;

@@ -15,6 +15,8 @@ class ChallengeCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var imageView: UIImageView!
     
+    @IBOutlet weak var goalLabel: UILabel!
+    
     @IBOutlet weak var cellView: MBCircularProgressBarView!
     
     @IBOutlet weak var progressLabel: UILabel!
