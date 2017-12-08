@@ -51,8 +51,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             curUser.addChallenge(newChallenge: dummyChallenge);
             User.universalFriendsShared.append(curUser);
             k += 1;
-            //This is a comment 
-            //I am making changes!!!
         }
         
         return true

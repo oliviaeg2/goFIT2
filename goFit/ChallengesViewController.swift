@@ -26,7 +26,6 @@ class ChallengesViewController: UIViewController, UICollectionViewDataSource, UI
         
     }
     
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -45,9 +44,12 @@ class ChallengesViewController: UIViewController, UICollectionViewDataSource, UI
             let curUser = Challenge.userChallengesShared[indexPath.row - 1].user
             cell.typeLabel.text = challengeTitle
             cell.imageView.image = challengeImage
-            let size = User.userFriendsShared.count
-            let index = arc4random_uniform(UInt32(size))
-            let name = User.userFriendsShared[Int(index)].name
+            
+//            let size = User.userFriendsShared.count
+//            let index = arc4random_uniform(UInt32(size))
+//            let name = User.userFriendsShared[Int(index)].name
+            
+            let name = curUser
             cell.friendImage.image = User.usersToIcons[name]
             cell.friendImage.layer.borderColor = UIColor.clear.cgColor
             cell.friendImage.layer.cornerRadius = 15;

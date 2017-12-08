@@ -16,6 +16,7 @@
 		B5B4E3611FCFB23A0087DA32 /* createChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B4E3601FCFB23A0087DA32 /* createChallengeViewController.swift */; };
 		B5D62CCC1FCE8A1E0020A958 /* plusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D62CCB1FCE8A1E0020A958 /* plusTableViewCell.swift */; };
 		B5D62CCE1FCE8FDA0020A958 /* challengesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D62CCD1FCE8FDA0020A958 /* challengesTableViewController.swift */; };
+		B90E749F1FDA3E720024117E /* CreateSocialChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90E749E1FDA3E720024117E /* CreateSocialChallengeViewController.swift */; };
 		B9272F391FD05A0B009F756E /* ChallengesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9272F381FD05A0B009F756E /* ChallengesViewController.swift */; };
 		B9272F3B1FD05A2C009F756E /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9272F3A1FD05A2C009F756E /* Challenge.swift */; };
 		B9272F3D1FD05A7F009F756E /* ChallengeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9272F3C1FD05A7F009F756E /* ChallengeCollectionViewCell.swift */; };
@@ -44,6 +45,7 @@
 		B5B4E3601FCFB23A0087DA32 /* createChallengeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = createChallengeViewController.swift; sourceTree = "<group>"; };
 		B5D62CCB1FCE8A1E0020A958 /* plusTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = plusTableViewCell.swift; sourceTree = "<group>"; };
 		B5D62CCD1FCE8FDA0020A958 /* challengesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = challengesTableViewController.swift; sourceTree = "<group>"; };
+		B90E749E1FDA3E720024117E /* CreateSocialChallengeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateSocialChallengeViewController.swift; sourceTree = "<group>"; };
 		B9272F381FD05A0B009F756E /* ChallengesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengesViewController.swift; sourceTree = "<group>"; };
 		B9272F3A1FD05A2C009F756E /* Challenge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
 		B9272F3C1FD05A7F009F756E /* ChallengeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				B92E699B1FD1F74F00FCBB43 /* User_icon_BLACK-01.png */,
 				B959EDF91FD5E7370041BE6A /* AddNewCollectionViewCell.swift */,
 				B95B18CC1FDA1ED60016ED3F /* ProfileViewController.swift */,
+				B90E749E1FDA3E720024117E /* CreateSocialChallengeViewController.swift */,
 			);
 			path = goFit;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				B5D62CCC1FCE8A1E0020A958 /* plusTableViewCell.swift in Sources */,
 				B572996C1FB98A1B009367E6 /* AppDelegate.swift in Sources */,
 				B92E69981FD1F30A00FCBB43 /* SocialViewController.swift in Sources */,
+				B90E749F1FDA3E720024117E /* CreateSocialChallengeViewController.swift in Sources */,
 				B92E69961FD1EF0F00FCBB43 /* User.swift in Sources */,
 				B5B4E3611FCFB23A0087DA32 /* createChallengeViewController.swift in Sources */,
 				B92E699A1FD1F65D00FCBB43 /* SocialCollectionViewCell.swift in Sources */,
