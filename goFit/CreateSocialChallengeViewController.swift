@@ -51,9 +51,8 @@ class CreateSocialChallengeViewController: UIViewController {
     @IBOutlet weak var amountTextField: UITextField!
     
     @IBAction func createChallenge(_ sender: UIButton) {
-        //TODO: Implement users
         let newChallenge = Challenge.init(type: selectedChallenge, frequency: currentFrequency, user: selectedUser!, icon: Challenge.challengesToIcons[selectedChallenge]);
-        Challenge.userChallengesShared.append(newChallenge!);
+        Challenge.userChallengesShared.insert(newChallenge!, at: 0);
         //TODO: CONGRATS screen
         _ = navigationController?.popViewController(animated: true)
     }

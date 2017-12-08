@@ -15,7 +15,6 @@ class Challenge: NSObject {
     
     var type : String
     var frequency: Int
-    //TODO: Create user class
     var user : String
     var icon: UIImage?
     var progress : Int
@@ -31,6 +30,12 @@ class Challenge: NSObject {
         if ((icon) != nil) {
             self.icon = icon;
         }
+    }
+    
+    class func moveCompletedToEnd(intToMove: Int) {
+        let tempChallenge = userChallengesShared[intToMove]
+        userChallengesShared.remove(at: intToMove)
+        userChallengesShared.append(tempChallenge)
     }
     
     
