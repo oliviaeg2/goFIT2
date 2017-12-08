@@ -7,5 +7,6 @@ target 'goFit' do
 
   # Pods for goFit
   pod "MBCircularProgressBar"
+  pod 'PNChart’
 
 end

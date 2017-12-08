@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '5386049100E6BBF95D8DA76071FA8D6F'
-               BlueprintName = 'Pods-goFit'
+               BlueprintIdentifier = '0FC1CB21D1B64FAAC47A6478616DA728'
+               BlueprintName = 'PNChart'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Pods-goFit.framework'>
+               BuildableName = 'PNChart.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
