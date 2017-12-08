@@ -29,10 +29,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         for challengeType in initialChallengeTitles {
             if (i < 4) {
-            curChallenge = Challenge(type: challengeType, frequency: 4, user: initialFriendNames[i], icon: initialChallengeImages[i])!;
+            curChallenge = Challenge(type: challengeType, frequency: 4, amount: 0, user: initialFriendNames[i], icon: initialChallengeImages[i], unit: "unit")!;
             }
             else {
-                curChallenge = Challenge(type: challengeType, frequency: 4, user: initialFriendNames[i - 3], icon: initialChallengeImages[i])!;
+                curChallenge = Challenge(type: challengeType, frequency: 4, amount: 0, user: initialFriendNames[i - 3], icon: initialChallengeImages[i], unit: "unit")!;
             }
             Challenge.userChallengesShared.append(curChallenge);
             i = i + 1;
