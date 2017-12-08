@@ -29,6 +29,7 @@
 		B959EE0B1FD88B7E0041BE6A /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B959EE0A1FD88B7E0041BE6A /* Comfortaa-Light.ttf */; };
 		B959EE0D1FD88B8B0041BE6A /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B959EE0C1FD88B8B0041BE6A /* Comfortaa-Regular.ttf */; };
 		B959EE0F1FD88B980041BE6A /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = B959EE0E1FD88B980041BE6A /* OFL.txt */; };
+		B95B18CD1FDA1ED60016ED3F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95B18CC1FDA1ED60016ED3F /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		B959EE0A1FD88B7E0041BE6A /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Light.ttf"; sourceTree = "<group>"; };
 		B959EE0C1FD88B8B0041BE6A /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
 		B959EE0E1FD88B980041BE6A /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		B95B18CC1FDA1ED60016ED3F /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		DAD4645E6C6E434D0CBE994A /* Pods-goFit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-goFit.release.xcconfig"; path = "Pods/Target Support Files/Pods-goFit/Pods-goFit.release.xcconfig"; sourceTree = "<group>"; };
 		DF2ABD7FC09481A5B7FB1BE5 /* Pods_goFit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_goFit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -129,6 +131,7 @@
 				B57299771FB98A1B009367E6 /* Info.plist */,
 				B92E699B1FD1F74F00FCBB43 /* User_icon_BLACK-01.png */,
 				B959EDF91FD5E7370041BE6A /* AddNewCollectionViewCell.swift */,
+				B95B18CC1FDA1ED60016ED3F /* ProfileViewController.swift */,
 			);
 			path = goFit;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				B92E69961FD1EF0F00FCBB43 /* User.swift in Sources */,
 				B5B4E3611FCFB23A0087DA32 /* createChallengeViewController.swift in Sources */,
 				B92E699A1FD1F65D00FCBB43 /* SocialCollectionViewCell.swift in Sources */,
+				B95B18CD1FDA1ED60016ED3F /* ProfileViewController.swift in Sources */,
 				B9272F391FD05A0B009F756E /* ChallengesViewController.swift in Sources */,
 				B5D62CCE1FCE8FDA0020A958 /* challengesTableViewController.swift in Sources */,
 			);
