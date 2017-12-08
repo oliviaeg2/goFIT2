@@ -16,9 +16,9 @@ class User: NSObject {
     var challenges : [Challenge]
     var proPic : UIImage
     
-    static var usersToIcons = ["Denis": #imageLiteral(resourceName: "denis"), "Bryce": #imageLiteral(resourceName: "bryce"), "Christina": #imageLiteral(resourceName: "christina"), "Olivia": #imageLiteral(resourceName: "olivia"), "Me": #imageLiteral(resourceName: "dylan"), "ME": #imageLiteral(resourceName: "dylan")]
+    static var usersToIcons = ["Denis": #imageLiteral(resourceName: "denis"), "Bryce": #imageLiteral(resourceName: "bryce"), "Christina": #imageLiteral(resourceName: "christina"), "Dylan": #imageLiteral(resourceName: "dylan"), "Me": #imageLiteral(resourceName: "olivia"), "ME": #imageLiteral(resourceName: "olivia")]
     
-    static var usersToButtons = ["Denis": #imageLiteral(resourceName: "denis_blue"), "Bryce": #imageLiteral(resourceName: "bryce_blue"), "Christina": #imageLiteral(resourceName: "christina_blue"), "Olivia": #imageLiteral(resourceName: "olivia_blue"), "Me": #imageLiteral(resourceName: "dylan_blue"), "ME": #imageLiteral(resourceName: "dylan_blue")]
+    static var usersToButtons = ["Denis": #imageLiteral(resourceName: "denis_blue"), "Bryce": #imageLiteral(resourceName: "bryce_blue"), "Christina": #imageLiteral(resourceName: "christina_blue"), "Dylan": #imageLiteral(resourceName: "dylan_blue"), "Me": #imageLiteral(resourceName: "olivia_blue"), "ME": #imageLiteral(resourceName: "olivia_blue")]
     
     init?(name: String?, image: UIImage?) {
         if (name == nil) {
