@@ -16,6 +16,11 @@
 		B5B4E3611FCFB23A0087DA32 /* createChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B4E3601FCFB23A0087DA32 /* createChallengeViewController.swift */; };
 		B5D62CCC1FCE8A1E0020A958 /* plusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D62CCB1FCE8A1E0020A958 /* plusTableViewCell.swift */; };
 		B5D62CCE1FCE8FDA0020A958 /* challengesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D62CCD1FCE8FDA0020A958 /* challengesTableViewController.swift */; };
+		B5EF8B281FDA514F00F300BE /* GradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EF8B271FDA514F00F300BE /* GradientBackground.swift */; };
+		B5EF8B2A1FDA515900F300BE /* DataPointTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EF8B291FDA515900F300BE /* DataPointTableViewCell.swift */; };
+		B5EF8B2C1FDA516200F300BE /* ChartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EF8B2B1FDA516200F300BE /* ChartTableViewCell.swift */; };
+		B5EF8B2E1FDA516B00F300BE /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EF8B2D1FDA516B00F300BE /* HeaderTableViewCell.swift */; };
+		B5EF8B371FDA560100F300BE /* ChartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EF8B361FDA560100F300BE /* ChartTableViewController.swift */; };
 		B90E749F1FDA3E720024117E /* CreateSocialChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90E749E1FDA3E720024117E /* CreateSocialChallengeViewController.swift */; };
 		B9272F391FD05A0B009F756E /* ChallengesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9272F381FD05A0B009F756E /* ChallengesViewController.swift */; };
 		B9272F3B1FD05A2C009F756E /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9272F3A1FD05A2C009F756E /* Challenge.swift */; };
@@ -31,7 +36,6 @@
 		B959EE0D1FD88B8B0041BE6A /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B959EE0C1FD88B8B0041BE6A /* Comfortaa-Regular.ttf */; };
 		B959EE0F1FD88B980041BE6A /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = B959EE0E1FD88B980041BE6A /* OFL.txt */; };
 		B95B18CD1FDA1ED60016ED3F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95B18CC1FDA1ED60016ED3F /* ProfileViewController.swift */; };
-		E9C313641FDA3CF2003A20F1 /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9C313621FDA3CF2003A20F1 /* Test.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +50,12 @@
 		B5B4E3601FCFB23A0087DA32 /* createChallengeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = createChallengeViewController.swift; sourceTree = "<group>"; };
 		B5D62CCB1FCE8A1E0020A958 /* plusTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = plusTableViewCell.swift; sourceTree = "<group>"; };
 		B5D62CCD1FCE8FDA0020A958 /* challengesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = challengesTableViewController.swift; sourceTree = "<group>"; };
+		B5EF8B271FDA514F00F300BE /* GradientBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientBackground.swift; sourceTree = "<group>"; };
+		B5EF8B291FDA515900F300BE /* DataPointTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPointTableViewCell.swift; sourceTree = "<group>"; };
+		B5EF8B2B1FDA516200F300BE /* ChartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartTableViewCell.swift; sourceTree = "<group>"; };
+		B5EF8B2D1FDA516B00F300BE /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
+		B5EF8B321FDA536F00F300BE /* goFit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "goFit-Bridging-Header.h"; sourceTree = "<group>"; };
+		B5EF8B361FDA560100F300BE /* ChartTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartTableViewController.swift; sourceTree = "<group>"; };
 		B90E749E1FDA3E720024117E /* CreateSocialChallengeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateSocialChallengeViewController.swift; sourceTree = "<group>"; };
 		B9272F381FD05A0B009F756E /* ChallengesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengesViewController.swift; sourceTree = "<group>"; };
 		B9272F3A1FD05A2C009F756E /* Challenge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
@@ -63,7 +73,6 @@
 		B95B18CC1FDA1ED60016ED3F /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		DAD4645E6C6E434D0CBE994A /* Pods-goFit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-goFit.release.xcconfig"; path = "Pods/Target Support Files/Pods-goFit/Pods-goFit.release.xcconfig"; sourceTree = "<group>"; };
 		DF2ABD7FC09481A5B7FB1BE5 /* Pods_goFit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_goFit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9C313631FDA3CF2003A20F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Test.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +133,11 @@
 				B92E69951FD1EF0F00FCBB43 /* User.swift */,
 				B9272F3C1FD05A7F009F756E /* ChallengeCollectionViewCell.swift */,
 				B572996F1FB98A1B009367E6 /* Main.storyboard */,
-				E9C313621FDA3CF2003A20F1 /* Test.storyboard */,
+				B5EF8B361FDA560100F300BE /* ChartTableViewController.swift */,
+				B5EF8B2D1FDA516B00F300BE /* HeaderTableViewCell.swift */,
+				B5EF8B271FDA514F00F300BE /* GradientBackground.swift */,
+				B5EF8B2B1FDA516200F300BE /* ChartTableViewCell.swift */,
+				B5EF8B291FDA515900F300BE /* DataPointTableViewCell.swift */,
 				B92E69991FD1F65D00FCBB43 /* SocialCollectionViewCell.swift */,
 				B92E69971FD1F30A00FCBB43 /* SocialViewController.swift */,
 				B5B4E3601FCFB23A0087DA32 /* createChallengeViewController.swift */,
@@ -138,6 +151,7 @@
 				B959EDF91FD5E7370041BE6A /* AddNewCollectionViewCell.swift */,
 				B95B18CC1FDA1ED60016ED3F /* ProfileViewController.swift */,
 				B90E749E1FDA3E720024117E /* CreateSocialChallengeViewController.swift */,
+				B5EF8B321FDA536F00F300BE /* goFit-Bridging-Header.h */,
 			);
 			path = goFit;
 			sourceTree = "<group>";
@@ -189,6 +203,7 @@
 					B57299671FB98A1B009367E6 = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = T829AWJPEZ;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -220,7 +235,6 @@
 				B92E69941FD15E7100FCBB43 /* background.png in Resources */,
 				B959EE091FD88B5D0041BE6A /* Comfortaa-Bold.ttf in Resources */,
 				B959EE0F1FD88B980041BE6A /* OFL.txt in Resources */,
-				E9C313641FDA3CF2003A20F1 /* Test.storyboard in Resources */,
 				B92E699C1FD1F74F00FCBB43 /* User_icon_BLACK-01.png in Resources */,
 				B959EE0D1FD88B8B0041BE6A /* Comfortaa-Regular.ttf in Resources */,
 				B959EE0B1FD88B7E0041BE6A /* Comfortaa-Light.ttf in Resources */,
@@ -295,18 +309,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9272F3B1FD05A2C009F756E /* Challenge.swift in Sources */,
+				B5EF8B2C1FDA516200F300BE /* ChartTableViewCell.swift in Sources */,
+				B5EF8B371FDA560100F300BE /* ChartTableViewController.swift in Sources */,
 				B572996E1FB98A1B009367E6 /* HomeViewController.swift in Sources */,
 				B9272F3D1FD05A7F009F756E /* ChallengeCollectionViewCell.swift in Sources */,
 				B959EDFA1FD5E7370041BE6A /* AddNewCollectionViewCell.swift in Sources */,
 				B5D62CCC1FCE8A1E0020A958 /* plusTableViewCell.swift in Sources */,
+				B5EF8B281FDA514F00F300BE /* GradientBackground.swift in Sources */,
 				B572996C1FB98A1B009367E6 /* AppDelegate.swift in Sources */,
 				B92E69981FD1F30A00FCBB43 /* SocialViewController.swift in Sources */,
 				B90E749F1FDA3E720024117E /* CreateSocialChallengeViewController.swift in Sources */,
+				B5EF8B2E1FDA516B00F300BE /* HeaderTableViewCell.swift in Sources */,
 				B92E69961FD1EF0F00FCBB43 /* User.swift in Sources */,
 				B5B4E3611FCFB23A0087DA32 /* createChallengeViewController.swift in Sources */,
 				B92E699A1FD1F65D00FCBB43 /* SocialCollectionViewCell.swift in Sources */,
 				B95B18CD1FDA1ED60016ED3F /* ProfileViewController.swift in Sources */,
 				B9272F391FD05A0B009F756E /* ChallengesViewController.swift in Sources */,
+				B5EF8B2A1FDA515900F300BE /* DataPointTableViewCell.swift in Sources */,
 				B5D62CCE1FCE8FDA0020A958 /* challengesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,14 +347,6 @@
 				B57299751FB98A1B009367E6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		E9C313621FDA3CF2003A20F1 /* Test.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E9C313631FDA3CF2003A20F1 /* Base */,
-			);
-			name = Test.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -439,12 +450,15 @@
 			baseConfigurationReference = 51FBD0AFE95A837FA2808B3E /* Pods-goFit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = T829AWJPEZ;
 				INFOPLIST_FILE = goFit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CS147.goFit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "goFit/goFit-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -454,12 +468,14 @@
 			baseConfigurationReference = DAD4645E6C6E434D0CBE994A /* Pods-goFit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = T829AWJPEZ;
 				INFOPLIST_FILE = goFit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CS147.goFit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "goFit/goFit-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
