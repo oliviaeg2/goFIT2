@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SAConfettiView
 
 class createChallengeViewController: UIViewController {
     
@@ -32,6 +33,7 @@ class createChallengeViewController: UIViewController {
     var distanceSelected = true;
     var foodSelected = false;
     var otherSelected = false;
+    let confettiView = SAConfettiView()
     
     @IBOutlet weak var swimmingButton: UIButton!
     @IBOutlet weak var runningButton: UIButton!
@@ -68,7 +70,14 @@ class createChallengeViewController: UIViewController {
                 user.addChallenge(newChallenge: newChallenge!)
             }
         }
-        _ = navigationController?.popViewController(animated: true)
+        view.addSubview(confettiView)
+        confettiView.startConfetti()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
+            _ = self.navigationController?.popViewController(animated: true)
+            
+            self.confettiView.stopConfetti()
+            self.confettiView.removeFromSuperview()
+        })
     }
     
     @IBAction func startedTypingAmount(_ sender: Any) {
