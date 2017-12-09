@@ -85,7 +85,7 @@ class HomeViewController: UIViewController {
                     self.progressBar.progressColor = UIColor.green
                 }
                 else {
-                    self.progressBar.progressColor = self.hexStringToUIColor(hex: "48d0f9")
+                    self.progressBar.progressColor = self.hexStringToUIColor(hex: "00ffff")
                 }
                 self.progressBar.value = CGFloat(self.progressVal)
                 self.progressBar.maxValue = CGFloat(self.goalVal)
@@ -121,7 +121,7 @@ class HomeViewController: UIViewController {
             //self.view.addSubview(confettiView)
         }
         else {
-            progressBar.progressColor = hexStringToUIColor(hex: "48d0f9")
+            progressBar.progressColor = hexStringToUIColor(hex: "00ffff")
         }
         progressBar.value = CGFloat(progressVal)
         progressBar.maxValue = CGFloat(goalVal)
@@ -142,7 +142,7 @@ class HomeViewController: UIViewController {
                 progressBar.progressColor = UIColor.green
             }
             else {
-                progressBar.progressColor = hexStringToUIColor(hex: "48d0f9")
+                progressBar.progressColor = hexStringToUIColor(hex: "00ffff")
             }
             progressBar.value = CGFloat(progressVal)
             progressBar.maxValue = CGFloat(goalVal)
@@ -164,7 +164,7 @@ class HomeViewController: UIViewController {
                 progressBar.progressColor = UIColor.green
             }
             else {
-                progressBar.progressColor = hexStringToUIColor(hex: "48d0f9")
+                progressBar.progressColor = hexStringToUIColor(hex: "00ffff")
             }
         progressBar.value = CGFloat(progressVal)
         progressBar.maxValue = CGFloat(goalVal)
