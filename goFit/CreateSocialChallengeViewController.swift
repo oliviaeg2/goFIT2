@@ -26,6 +26,7 @@ class CreateSocialChallengeViewController: UIViewController {
             unitsControl.insertSegment(withTitle: unit, at: i, animated: false)
         }
         i+=1;
+        unitsControl.selectedSegmentIndex = 0;
     }
     
     var distanceSelected = true;
@@ -51,7 +52,8 @@ class CreateSocialChallengeViewController: UIViewController {
     @IBOutlet weak var amountTextField: UITextField!
     
     @IBAction func createChallenge(_ sender: UIButton) {
-        let newChallenge = Challenge.init(type: selectedChallenge, frequency: currentFrequency, amount: 0, user: selectedUser!, icon: Challenge.challengesToIcons[selectedChallenge], unit: "unit");
+        let unit = unitsControl.titleForSegment(at: unitsControl.selectedSegmentIndex)
+        let newChallenge = Challenge.init(type: selectedChallenge, frequency: currentFrequency, amount: amount, user: selectedUser!, icon: Challenge.challengesToIcons[selectedChallenge], unit: unit!);
         Challenge.userChallengesShared.insert(newChallenge!, at: 0);
         //TODO: CONGRATS screen
         
