@@ -62,7 +62,7 @@ class ChartTableViewController: UITableViewController {
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "dataCell", for: indexPath) as! DataPointTableViewCell
             
-            cell.dataLabel.text = weeklyData[indexPath.section - 1][indexPath.row].description + " " + "Cups"
+            cell.dataLabel.text = weeklyData[indexPath.section - 1][indexPath.row].description + " " + "mi."
             
             let formatter = DateFormatter()
             formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"

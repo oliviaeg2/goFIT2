@@ -22,6 +22,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var progress: UILabel!
     @IBOutlet weak var goal: UILabel!
     
+    @IBOutlet weak var challengeunits: UILabel!
     @IBOutlet weak var currentChallengeLabel: UILabel!
     
     var currentInt = 0;
@@ -76,6 +77,7 @@ class HomeViewController: UIViewController {
                 self.currentInt+=1;
                 let newChallenge = Challenge.userChallengesShared[self.currentInt]
                 self.currentChallengeLabel.text = newChallenge.type;
+                self.challengeunits.text = String(newChallenge.amount) + " " + newChallenge.unit + "/week"
                 self.currentChallenge.image = newChallenge.icon!
                 self.progressVal = newChallenge.progress
                 self.goalVal = newChallenge.frequency
@@ -110,6 +112,7 @@ class HomeViewController: UIViewController {
         
         let newChallenge = Challenge.userChallengesShared[currentInt]
         currentChallengeLabel.text = newChallenge.type;
+        challengeunits.text = String(newChallenge.amount) + " " + newChallenge.unit + "/week"
         currentChallenge.image = newChallenge.icon!
         progressVal = newChallenge.progress
         goalVal = newChallenge.frequency
@@ -133,6 +136,7 @@ class HomeViewController: UIViewController {
             currentInt-=1;
             let newChallenge = Challenge.userChallengesShared[currentInt]
             currentChallengeLabel.text = newChallenge.type;
+            challengeunits.text = String(newChallenge.amount) + " " + newChallenge.unit + "/week"
             currentChallenge.image = newChallenge.icon!
             progressVal = newChallenge.progress
             goalVal = newChallenge.frequency
@@ -155,6 +159,7 @@ class HomeViewController: UIViewController {
         currentInt+=1;
         let newChallenge = Challenge.userChallengesShared[currentInt]
         currentChallengeLabel.text = newChallenge.type;
+        challengeunits.text = String(newChallenge.amount) + " " + newChallenge.unit + "/week"
         currentChallenge.image = newChallenge.icon!
         progressVal = newChallenge.progress
         goalVal = newChallenge.frequency
