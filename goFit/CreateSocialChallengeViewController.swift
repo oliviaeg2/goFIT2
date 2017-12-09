@@ -54,6 +54,13 @@ class CreateSocialChallengeViewController: UIViewController {
         let newChallenge = Challenge.init(type: selectedChallenge, frequency: currentFrequency, amount: 0, user: selectedUser!, icon: Challenge.challengesToIcons[selectedChallenge], unit: "unit");
         Challenge.userChallengesShared.insert(newChallenge!, at: 0);
         //TODO: CONGRATS screen
+        
+        for user in User.userFriendsShared {
+            if (user.name == selectedUser!) {
+                user.addChallenge(newChallenge: newChallenge!)
+            }
+        }
+        
         _ = navigationController?.popViewController(animated: true)
     }
 

@@ -19,11 +19,29 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     
     @IBOutlet weak var challengesTableView: UITableView!
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        
+        for user in User.userFriendsShared {
+            if (user.name == username) {
+                challenges = user.challenges
+            }
+        }
+        
+        challengesTableView.reloadData()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         challengesTableView.delegate = self
         challengesTableView.dataSource = self
+        
+        for user in User.userFriendsShared {
+            if (user.name == username) {
+                challenges = user.challenges
+            }
+        }
         
         usernameLabel.text = username!;
         friendProfPic.image = profPic!
@@ -35,6 +53,7 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     func tableView(_: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = challengesTableView.dequeueReusableCell(withIdentifier: "profileCell", for: indexPath) as! ProfileTableViewCell
+
         let curChallenge = challenges?[indexPath.row]
         cell.challengeName.text = curChallenge?.type
         cell.challengeIcon.image = Challenge.challengesToIcons[(curChallenge?.type)!]
