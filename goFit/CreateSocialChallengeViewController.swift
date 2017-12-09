@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SAConfettiView
 
 class CreateSocialChallengeViewController: UIViewController {
     
@@ -14,6 +15,8 @@ class CreateSocialChallengeViewController: UIViewController {
     var currentFrequency  = 1;
     var selectedUser : String?
     var amount = 0;
+    
+    let confettiView = SAConfettiView()
     
     var distanceUnits = ["mi", "km", "min", "hr"];
     var foodUnits = ["oz", "cup"];
@@ -63,7 +66,19 @@ class CreateSocialChallengeViewController: UIViewController {
             }
         }
         
-        _ = navigationController?.popViewController(animated: true)
+        view.addSubview(confettiView)
+        confettiView.startConfetti()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
+            let alert = UIAlertController(title: "Congrats!", message: "Your challenge was created successfully!", preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: "Go Forth!", style: .default, handler: {(alert: UIAlertAction!) in  _ = self.navigationController?.popViewController(animated: true)
+                self.confettiView.stopConfetti()
+                self.confettiView.removeFromSuperview()
+            }
+                )
+            )
+            self.present(alert, animated: true)
+        })
     }
 
     func clearChallengesSelection() {

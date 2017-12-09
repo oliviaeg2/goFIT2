@@ -73,10 +73,15 @@ class createChallengeViewController: UIViewController {
         view.addSubview(confettiView)
         confettiView.startConfetti()
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
-            _ = self.navigationController?.popViewController(animated: true)
+            let alert = UIAlertController(title: "Congrats!", message: "Your challenge was created successfully!", preferredStyle: .alert)
             
-            self.confettiView.stopConfetti()
-            self.confettiView.removeFromSuperview()
+            alert.addAction(UIAlertAction(title: "Go forth!", style: .default, handler: {(alert: UIAlertAction!) in  _ = self.navigationController?.popViewController(animated: true)
+                self.confettiView.stopConfetti()
+                self.confettiView.removeFromSuperview()
+            }
+            )
+        )
+            self.present(alert, animated: true)
         })
     }
     
