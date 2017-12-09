@@ -60,7 +60,7 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
         let curAmount = String(describing: (curChallenge?.amount)!)
         let curUnit = (curChallenge?.unit)!
         let curFrequency = (curChallenge?.frequency)!
-        cell.challengeQuantity.text =  curAmount + String(curUnit) + "/wk, " + String(curFrequency) + " times a week"
+        cell.challengeQuantity.text =  curAmount + " " + String(curUnit) + "/wk (" + String(curFrequency) + "x a week)"
         return cell;
     }
     
