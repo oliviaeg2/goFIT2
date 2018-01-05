@@ -11,9 +11,7 @@ import UIKit
 class SocialCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var nameLabel: UILabel!
-
     @IBOutlet weak var socialCellView: UIView!
-    
     @IBOutlet weak var friendProfPic: UIImageView!
     
 }

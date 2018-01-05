@@ -21,57 +21,46 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
-        
         for user in User.userFriendsShared {
             if (user.name == username) {
                 challenges = user.challenges
             }
         }
-        
         challengesTableView.reloadData()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         challengesTableView.delegate = self
         challengesTableView.dataSource = self
-        
         for user in User.userFriendsShared {
             if (user.name == username) {
                 challenges = user.challenges
             }
         }
-        
-        usernameLabel.text = username!;
+        usernameLabel.text = username!
         friendProfPic.image = profPic!
-        
-        // Do any additional setup after loading the view.
     }
     
     
-    func tableView(_: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
-    {
+    func tableView(_: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = challengesTableView.dequeueReusableCell(withIdentifier: "profileCell", for: indexPath) as! ProfileTableViewCell
-
         let curChallenge = challenges?[indexPath.row]
         cell.challengeName.text = curChallenge?.type
         cell.challengeIcon.image = Challenge.challengesToIcons[(curChallenge?.type)!]
         let curAmount = String(describing: (curChallenge?.amount)!)
         let curUnit = (curChallenge?.unit)!
-        let curFrequency = (curChallenge?.frequency)!
-        cell.challengeQuantity.text =  curAmount + " " + String(curUnit) + "/wk (" + String(curFrequency) + "x a week)"
+        let curFrequency = (curChallenge?.goal)!
+        cell.challengeQuantity.text =  curAmount + " " + String(curUnit) + " (" + String(curFrequency) + "x a week)"
         return cell;
     }
     
     func tableView(_: UITableView, numberOfRowsInSection: Int) -> Int {
-        return (challenges?.count)!;
-        
+        return (challenges?.count)!
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     // MARK: - Navigation

@@ -8,6 +8,6 @@
 
 import UIKit
 
-class AddNewCollectionViewCell: UICollectionViewCell {
+class AddChallengeCollectionViewCell: UICollectionViewCell {
     
 }

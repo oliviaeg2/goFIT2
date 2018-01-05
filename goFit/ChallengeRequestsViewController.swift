@@ -1,5 +1,5 @@
 //
-//  RequestsViewController.swift
+//  ChallengeRequestsViewController.swift
 //  goFit
 //
 //  Created by Denis Russu on 12/8/17.
@@ -8,26 +8,20 @@
 
 import UIKit
 
-class RequestsViewController: UIViewController {
-    
+class ChallengeRequestsViewController: UIViewController {
     
     @IBAction func acceptChallenge() {
-        let alert = UIAlertController(title: "Oops!", message: "Feature not yet implemented", preferredStyle: .alert)
-        
+        let alert = UIAlertController(title: "Sorry!", message: "Feature not yet implemented!", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
-        
         self.present(alert, animated: true)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 

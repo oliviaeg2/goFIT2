@@ -97,7 +97,7 @@
                                 </accessibility>
                                 <state key="normal" title="+" image="plus_green"/>
                                 <connections>
-                                    <action selector="plus" destination="BYZ-38-t0r" eventType="touchUpInside" id="uyr-Ih-qcx"/>
+                                    <action selector="incrementCurrentChallengeProgress" destination="BYZ-38-t0r" eventType="touchUpInside" id="uyr-Ih-qcx"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SOCIAL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dvs-p7-vMV">
@@ -166,10 +166,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="level_bar" translatesAutoresizingMaskIntoConstraints="NO" id="ycG-lc-xSo">
-                                <rect key="frame" x="67" y="624" width="240" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Level 4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Qp-vb-7Bw">
                                 <rect key="frame" x="128" y="601" width="118" height="15"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -184,6 +180,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2jr-yD-dqW">
+                                <rect key="frame" x="113" y="624" width="150" height="3"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.14341568790000001" green="0.98471734850000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -191,14 +192,12 @@
                         <barButtonItem key="leftBarButtonItem" id="5GM-jn-jdG"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="challenges" destination="tKB-Wi-Mlu" id="UHv-ph-c4j"/>
-                        <outlet property="challengeunits" destination="svc-yF-0Wt" id="LDS-mm-ezR"/>
-                        <outlet property="currentChallenge" destination="tR2-Dl-Ijh" id="PG0-Ky-1eZ"/>
-                        <outlet property="currentChallengeLabel" destination="Ab5-dF-1HZ" id="rVb-Gc-bER"/>
-                        <outlet property="goal" destination="1hh-dK-IKB" id="c0s-Qq-XfT"/>
-                        <outlet property="progress" destination="ljN-2Y-DJN" id="aMl-EW-jIi"/>
-                        <outlet property="progressBar" destination="PG1-iH-4r0" id="0BV-Se-Zpf"/>
-                        <outlet property="social" destination="xnv-Fh-kOx" id="tgz-TU-Os4"/>
+                        <outlet property="currentChallengeGoalLabel" destination="1hh-dK-IKB" id="c0s-Qq-XfT"/>
+                        <outlet property="currentChallengeNameLabel" destination="Ab5-dF-1HZ" id="rVb-Gc-bER"/>
+                        <outlet property="currentChallengeProgressBar" destination="PG1-iH-4r0" id="0BV-Se-Zpf"/>
+                        <outlet property="currentChallengeProgressLabel" destination="ljN-2Y-DJN" id="aMl-EW-jIi"/>
+                        <outlet property="currentChallengeUnitsLabel" destination="svc-yF-0Wt" id="LDS-mm-ezR"/>
+                        <outlet property="currentChallengeView" destination="tR2-Dl-Ijh" id="PG0-Ky-1eZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -246,11 +245,11 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pYn-Fm-tc6">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="running" translatesAutoresizingMaskIntoConstraints="NO" id="pYn-Fm-tc6">
                                                             <rect key="frame" x="55" y="29" width="40" height="40"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5 mi. / wk." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yR6-ma-6rh">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5 mi." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yR6-ma-6rh">
                                                             <rect key="frame" x="31" y="93" width="88" height="14"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="12"/>
@@ -258,11 +257,11 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UIW-JA-HtP" customClass="MBCircularProgressBarView">
-                                                            <rect key="frame" x="49" y="122" width="53" height="30"/>
+                                                            <rect key="frame" x="49" y="122" width="54" height="30"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <subviews>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="User_icon_BLACK-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="ElX-eV-Ktr">
-                                                                    <rect key="frame" x="15" y="4" width="22" height="22"/>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="olivia" translatesAutoresizingMaskIntoConstraints="NO" id="ElX-eV-Ktr">
+                                                                    <rect key="frame" x="16" y="4" width="22" height="22"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 </imageView>
                                                             </subviews>
@@ -275,7 +274,7 @@
                                                                     <real key="value" value="4"/>
                                                                 </userDefinedRuntimeAttribute>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="progressLineWidth">
-                                                                    <real key="value" value="2"/>
+                                                                    <real key="value" value="1"/>
                                                                 </userDefinedRuntimeAttribute>
                                                                 <userDefinedRuntimeAttribute type="color" keyPath="progressColor">
                                                                     <color key="value" red="0.14341568790000001" green="0.98471734850000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -319,7 +318,7 @@
                                             <segue destination="chc-9U-mDh" kind="show" identifier="viewHistorySegue" id="eaQ-n7-V5B"/>
                                         </connections>
                                     </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AddGridCell" id="Kp6-R6-c8C" customClass="AddNewCollectionViewCell" customModule="goFit" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AddGridCell" id="Kp6-R6-c8C" customClass="AddChallengeCollectionViewCell" customModule="goFit" customModuleProvider="target">
                                         <rect key="frame" x="194" y="0.0" width="181" height="164"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -397,8 +396,8 @@
                                                     <rect key="frame" x="24" y="8" width="100" height="100"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="User_icon_BLACK-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="Zfc-dZ-BmB">
-                                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="man_blue" translatesAutoresizingMaskIntoConstraints="NO" id="Zfc-dZ-BmB">
+                                                            <rect key="frame" x="5" y="0.0" width="100" height="100"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
                                                     </subviews>
@@ -509,7 +508,7 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yTB-Qw-e0O">
-                                                            <rect key="frame" x="18" y="18" width="25" height="25"/>
+                                                            <rect key="frame" x="18" y="17" width="25" height="25"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
                                                     </subviews>
@@ -557,10 +556,6 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="level_bar" translatesAutoresizingMaskIntoConstraints="NO" id="jRt-ri-Nu4">
-                                <rect key="frame" x="131" y="149" width="220" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Challenges With You" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpB-8s-OEc">
                                 <rect key="frame" x="100" y="195" width="182" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -582,6 +577,11 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="k3J-WL-gaF">
+                                <rect key="frame" x="132" y="154" width="150" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.14341568790000001" green="0.98471734850000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -595,63 +595,10 @@
             </objects>
             <point key="canvasLocation" x="3901.5999999999999" y="667.91604197901052"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Z13-f1-1a9">
-            <objects>
-                <viewController id="zmg-3H-Z1D" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="xtO-yN-RFl"/>
-                        <viewControllerLayoutGuide type="bottom" id="2jb-b7-Z8Q"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="yZd-LO-9HE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AIJ-KM-1Cb">
-                                <rect key="frame" x="16" y="76" width="331" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Find Friends" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GpO-vL-kAP">
-                                <rect key="frame" x="68" y="28" width="246" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Qo2-C0-2LY">
-                                <rect key="frame" x="0.0" y="146" width="375" height="521"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gfu-Yi-YW2">
-                                    <size key="itemSize" width="153" height="116"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="URu-Xb-cMX">
-                                        <rect key="frame" x="0.0" y="0.0" width="153" height="116"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="153" height="116"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </view>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Tp-Cw-oH3" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3038" y="1452"/>
-        </scene>
         <!--Create Challenge-->
         <scene sceneID="ztY-2a-W0t">
             <objects>
-                <viewController id="ehm-pW-WOU" customClass="createChallengeViewController" customModule="goFit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ehm-pW-WOU" customClass="CreateChallengeViewController" customModule="goFit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="w3t-MV-Ob3"/>
                         <viewControllerLayoutGuide type="bottom" id="ty3-kt-PUI"/>
@@ -811,9 +758,6 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                                <connections>
-                                    <action selector="startedTypingAmount:" destination="ehm-pW-WOU" eventType="editingDidEnd" id="c3I-Ab-XZI"/>
-                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Activity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFv-z0-egw">
                                 <rect key="frame" x="96" y="81" width="182" height="24"/>
@@ -946,52 +890,6 @@
             </objects>
             <point key="canvasLocation" x="5068" y="-1128"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="mCI-S9-zbq">
-            <objects>
-                <viewController id="qv1-6d-Qfd" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="lan-tX-hmo"/>
-                        <viewControllerLayoutGuide type="bottom" id="hy2-9F-0gZ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="xDo-3J-6FN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="balloons" translatesAutoresizingMaskIntoConstraints="NO" id="HPI-m9-xdC">
-                                <rect key="frame" x="137" y="225" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CONGRATULATIONS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NtO-ve-8ro">
-                                <rect key="frame" x="96" y="333" width="182" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="on starting a new challenge" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9p-gd-T0i">
-                                <rect key="frame" x="65" y="360" width="245" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sd3-GU-Xww">
-                                <rect key="frame" x="157" y="392" width="60" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="continue"/>
-                                <connections>
-                                    <segue destination="pfA-MG-ju8" kind="show" id="ONF-Lt-tCE"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="T0C-4o-R5b" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5859" y="-1141"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="0Ry-vt-jlJ">
             <objects>
@@ -1014,23 +912,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jv7-WJ-lcj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2071" y="-967"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Zrl-uk-jzj">
-            <objects>
-                <viewController id="V6l-7B-TWQ" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="igo-N6-It0"/>
-                        <viewControllerLayoutGuide type="bottom" id="QTj-i9-693"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="9Im-Gf-BL7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dJB-vn-p1J" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
         </scene>
         <!--Create Challenge-->
         <scene sceneID="lAn-jK-Kqw">
@@ -1361,7 +1242,7 @@
         <!--Challenge Requests-->
         <scene sceneID="0fZ-JF-M4L">
             <objects>
-                <viewController title="Challenge Requests" id="pnd-vs-ewW" customClass="RequestsViewController" customModule="goFit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Challenge Requests" id="pnd-vs-ewW" customClass="ChallengeRequestsViewController" customModule="goFit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0zm-gW-Nhe"/>
                         <viewControllerLayoutGuide type="bottom" id="Z1c-8m-dq7"/>
@@ -1459,7 +1340,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="bryce_blue"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5 mi. running challenge" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSp-hK-fli">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5 mi running challenge" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSp-hK-fli">
                                 <rect key="frame" x="76" y="140" width="225" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="12"/>
@@ -1609,10 +1490,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="User_icon_BLACK-01.png" width="311" height="276"/>
         <image name="accept_green" width="81" height="82"/>
         <image name="back_blue" width="81" height="82"/>
-        <image name="balloons" width="256" height="256"/>
         <image name="beyonce_blue" width="81" height="82"/>
         <image name="biking_blue" width="81" height="82"/>
         <image name="bryce_blue" width="81" height="82"/>
@@ -1622,11 +1501,12 @@
         <image name="dog_blue" width="81" height="82"/>
         <image name="go_green" width="81" height="82"/>
         <image name="jumprope_blue" width="81" height="82"/>
-        <image name="level_bar" width="327" height="23"/>
         <image name="man_blue" width="81" height="82"/>
+        <image name="olivia" width="500" height="500"/>
         <image name="olivia_blue" width="81" height="82"/>
         <image name="plus_green" width="81" height="82"/>
         <image name="reject_red" width="81" height="82"/>
+        <image name="running" width="64" height="64"/>
         <image name="running_blue" width="81" height="82"/>
         <image name="salad_blue" width="81" height="82"/>
         <image name="social_blue" width="81" height="82"/>
@@ -1636,7 +1516,4 @@
         <image name="water_blue" width="81" height="82"/>
         <image name="weights_blue" width="81" height="82"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="eTZ-lI-2au"/>
-    </inferredMetricsTieBreakers>
 </document>

@@ -12,176 +12,98 @@ import SAConfettiView
 
 class HomeViewController: UIViewController {
     
-    @IBOutlet weak var currentChallenge: UIImageView!
+    @IBOutlet weak var currentChallengeView: UIImageView!
     
-    @IBOutlet weak var challengesImage: UIImageView!
-    @IBOutlet weak var challenges: UIButton!
-    @IBOutlet weak var social: UIButton!
+    @IBOutlet weak var currentChallengeProgressBar: MBCircularProgressBarView!
+    @IBOutlet weak var currentChallengeProgressLabel: UILabel!
+    @IBOutlet weak var currentChallengeGoalLabel: UILabel!
     
-    @IBOutlet weak var progressBar: MBCircularProgressBarView!
-    @IBOutlet weak var progress: UILabel!
-    @IBOutlet weak var goal: UILabel!
-    
-    @IBOutlet weak var challengeunits: UILabel!
-    @IBOutlet weak var currentChallengeLabel: UILabel!
-    
-    var currentInt = 0;
-    var progressVal = 2;
-    var goalVal = 4;
+    @IBOutlet weak var currentChallengeNameLabel: UILabel!
+    @IBOutlet weak var currentChallengeUnitsLabel: UILabel!
+
+    var currentChallengeIndex = 0;
+    var currentChallengeProgressValue = 2;
+    var currentChallengeGoalValue = 4;
     
     var confettiView = SAConfettiView()
-    //var fitBlue =
     
-    func hexStringToUIColor (hex:String) -> UIColor {
-        var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
-        
-        if (cString.hasPrefix("#")) {
-            cString.remove(at: cString.startIndex)
+    @IBAction func incrementCurrentChallengeProgress() {
+        let currentChallenge = Challenge.userChallengesShared[currentChallengeIndex]
+        if (currentChallenge.progress < currentChallenge.goal) {
+          currentChallenge.progress += 1
         }
-        
-        if ((cString.characters.count) != 6) {
-            return UIColor.gray
-        }
-        
-        var rgbValue:UInt32 = 0
-        Scanner(string: cString).scanHexInt32(&rgbValue)
-        
-        return UIColor(
-            red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
-            green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
-            blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
-            alpha: CGFloat(1.0)
-        )
-    }
-    
-    @IBAction func minus() {
-     }
-    
-    @IBAction func plus() {
-        let curChallenge = Challenge.userChallengesShared[currentInt]
-        if (curChallenge.progress < curChallenge.frequency) {
-          curChallenge.progress += 1
-        }
-        progress.text = String(curChallenge.progress)
+        currentChallengeProgressLabel.text = String(currentChallenge.progress)
         UIView.animate(withDuration: 2.0, animations: { 
-            self.progressBar.value = CGFloat(curChallenge.progress)
-            if (curChallenge.progress == curChallenge.frequency) {
+            self.currentChallengeProgressBar.value = CGFloat(currentChallenge.progress)
+            if (currentChallenge.progress == currentChallenge.goal) {
                 self.view.addSubview(self.confettiView)
                 self.confettiView.startConfetti()
-                self.progressBar.progressColor = UIColor.green
-                Challenge.moveCompletedToEnd(intToMove: self.currentInt)
+                self.currentChallengeProgressBar.progressColor = UIColor.green
+                Challenge.moveCompletedToEnd(intToMove: self.currentChallengeIndex)
             }
         }) { (finished) in
-            if (curChallenge.progress == curChallenge.frequency) {
-            if (self.currentInt + 1 < Challenge.userChallengesShared.count) {
-                self.currentInt+=1;
-                let newChallenge = Challenge.userChallengesShared[self.currentInt]
-                self.currentChallengeLabel.text = newChallenge.type;
-                self.challengeunits.text = String(newChallenge.amount) + " " + newChallenge.unit + "/week"
-                self.currentChallenge.image = newChallenge.icon!
-                self.progressVal = newChallenge.progress
-                self.goalVal = newChallenge.frequency
-                self.progress.text = String(self.progressVal)
-                self.goal.text = String(self.goalVal)
-                if (self.progressVal == self.goalVal) {
-                    self.progressBar.progressColor = UIColor.green
-                }
-                else {
-                    self.progressBar.progressColor = self.hexStringToUIColor(hex: "00ffff")
-                }
-                self.progressBar.value = CGFloat(self.progressVal)
-                self.progressBar.maxValue = CGFloat(self.goalVal)
-                
+            if (currentChallenge.progress == currentChallenge.goal) {
+            if (self.currentChallengeIndex + 1 < Challenge.userChallengesShared.count) {
+                self.updateCurrentChallenge(to: self.currentChallengeIndex + 1)
             }
             self.confettiView.stopConfetti()
             self.confettiView.removeFromSuperview()
             }
-            print("updated!")
         }
+    }
+    
+    func updateCurrentChallenge(to index: Int) {
+        currentChallengeIndex = index
+        let newChallenge = Challenge.userChallengesShared[currentChallengeIndex]
+        currentChallengeNameLabel.text = newChallenge.type;
+        currentChallengeUnitsLabel.text = String(newChallenge.amount) + " " + newChallenge.unit + "/week"
+        currentChallengeView.image = newChallenge.icon!
+        currentChallengeProgressValue = newChallenge.progress
+        currentChallengeGoalValue = newChallenge.goal
+        currentChallengeProgressLabel.text = String(currentChallengeProgressValue)
+        currentChallengeGoalLabel.text = String(currentChallengeGoalValue)
+        currentChallengeProgressBar.progressColor = currentChallengeProgressValue == currentChallengeGoalValue ? UIColor.green : UIColor(hex: "00ffff")
+        currentChallengeProgressBar.value = CGFloat(currentChallengeProgressValue)
+        currentChallengeProgressBar.maxValue = CGFloat(currentChallengeGoalValue)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         confettiView = SAConfettiView(frame: self.view.bounds)
-        
-//        challengesImage.layer.borderColor = UIColor.green.cgColor;
-//        challengesImage.layer.cornerRadius = 50;
-//        challengesImage.clipsToBounds = true;
-//        challengesImage.layer.borderWidth = 2.0;
-        
-        let newChallenge = Challenge.userChallengesShared[currentInt]
-        currentChallengeLabel.text = newChallenge.type;
-        challengeunits.text = String(newChallenge.amount) + " " + newChallenge.unit + "/week"
-        currentChallenge.image = newChallenge.icon!
-        progressVal = newChallenge.progress
-        goalVal = newChallenge.frequency
-        progress.text = String(progressVal)
-        goal.text = String(goalVal)
-        
-        if (progressVal == goalVal) {
-            progressBar.progressColor = UIColor.green
-            //self.view.addSubview(confettiView)
-        }
-        else {
-            progressBar.progressColor = hexStringToUIColor(hex: "00ffff")
-        }
-        progressBar.value = CGFloat(progressVal)
-        progressBar.maxValue = CGFloat(goalVal)
-        
+        updateCurrentChallenge(to: currentChallengeIndex)
     }
     
     @IBAction func touchedPrevious(_ sender: Any) {
-        if (currentInt - 1 >= 0) {
-            currentInt-=1;
-            let newChallenge = Challenge.userChallengesShared[currentInt]
-            currentChallengeLabel.text = newChallenge.type;
-            challengeunits.text = String(newChallenge.amount) + " " + newChallenge.unit + "/week"
-            currentChallenge.image = newChallenge.icon!
-            progressVal = newChallenge.progress
-            goalVal = newChallenge.frequency
-            progress.text = String(progressVal)
-            goal.text = String(goalVal)
-            if (progressVal == goalVal) {
-                progressBar.progressColor = UIColor.green
-            }
-            else {
-                progressBar.progressColor = hexStringToUIColor(hex: "00ffff")
-            }
-            progressBar.value = CGFloat(progressVal)
-            progressBar.maxValue = CGFloat(goalVal)
+        if (currentChallengeIndex - 1 >= 0) {
+            updateCurrentChallenge(to: currentChallengeIndex - 1)
         }
     }
     
     @IBAction func touchedNext(_ sender: Any) {
-      
-        if (currentInt + 1 < Challenge.userChallengesShared.count) {
-        currentInt+=1;
-        let newChallenge = Challenge.userChallengesShared[currentInt]
-        currentChallengeLabel.text = newChallenge.type;
-        challengeunits.text = String(newChallenge.amount) + " " + newChallenge.unit + "/week"
-        currentChallenge.image = newChallenge.icon!
-        progressVal = newChallenge.progress
-        goalVal = newChallenge.frequency
-        progress.text = String(progressVal)
-        goal.text = String(goalVal)
-            if (progressVal == goalVal) {
-                progressBar.progressColor = UIColor.green
-            }
-            else {
-                progressBar.progressColor = hexStringToUIColor(hex: "00ffff")
-            }
-        progressBar.value = CGFloat(progressVal)
-        progressBar.maxValue = CGFloat(goalVal)
-
+        if (currentChallengeIndex + 1 < Challenge.userChallengesShared.count) {
+            updateCurrentChallenge(to: currentChallengeIndex + 1)
         }
     }
     
     override func viewWillAppear(_ animated: Bool) {
-    super.viewWillAppear(false);
-    //self.navigationController?.navigationBar.isHidden = true;
+        super.viewWillAppear(false);
     }
-
 
 }
 
+extension UIColor {
+    convenience init(hex: String) {
+        let scanner = Scanner(string: hex)
+        scanner.scanLocation = 0
+        var rgbValue: UInt64 = 0
+        scanner.scanHexInt64(&rgbValue)
+        let r = (rgbValue & 0xff0000) >> 16
+        let g = (rgbValue & 0xff00) >> 8
+        let b = rgbValue & 0xff
+        self.init(
+            red: CGFloat(r) / 0xff,
+            green: CGFloat(g) / 0xff,
+            blue: CGFloat(b) / 0xff, alpha: 1
+        )
+    }
+}

@@ -1,5 +1,5 @@
 //
-//  challengesTableViewController.swift
+//  ChallengesTableViewController.swift
 //  goFit
 //
 //  Created by Denis Russu on 11/28/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class challengesTableViewController: UITableViewController {
+class ChallengesTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +35,7 @@ class challengesTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "addCell", for: indexPath) as! plusTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "addCell", for: indexPath) as! PlusTableViewCell
         
         print("About to return cell!")
         

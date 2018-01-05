@@ -1,5 +1,5 @@
 //
-//  plusTableViewCell.swift
+//  PlusTableViewCell.swift
 //  goFit
 //
 //  Created by Denis Russu on 11/28/17.
@@ -8,16 +8,10 @@
 
 import UIKit
 
-class plusTableViewCell: UITableViewCell {
-    
-    
-    @IBAction func addChallenge() {
-        print("Added challenge")
-    }
+class PlusTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
 }

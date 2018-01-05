@@ -12,13 +12,10 @@ class SocialViewController: UIViewController,UICollectionViewDataSource, UIColle
     
     
     @IBAction func addFriend() {
-        let alert = UIAlertController(title: "Oops!", message: "Feature not yet implemented", preferredStyle: .alert)
-        
+        let alert = UIAlertController(title: "Sorry!", message: "Feature not yet implemented!", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
-        
         self.present(alert, animated: true)
     }
-
 
     @IBOutlet weak var socialGridView: UICollectionView!
     
@@ -26,12 +23,10 @@ class SocialViewController: UIViewController,UICollectionViewDataSource, UIColle
         super.viewDidLoad()
         socialGridView.dataSource = self
         socialGridView.delegate = self
-        //socialGridView.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -53,8 +48,6 @@ class SocialViewController: UIViewController,UICollectionViewDataSource, UIColle
         }
         
     }
-    
-    // MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "viewProfileSegue") {
