@@ -56,7 +56,7 @@ class HomeViewController: UIViewController {
         currentChallengeIndex = index
         let newChallenge = Challenge.userChallengesShared[currentChallengeIndex]
         currentChallengeNameLabel.text = newChallenge.type;
-        currentChallengeUnitsLabel.text = String(newChallenge.amount) + " " + newChallenge.unit + "/week"
+        currentChallengeUnitsLabel.text = String(newChallenge.amount) + " " + newChallenge.unit
         currentChallengeView.image = newChallenge.icon!
         currentChallengeProgressValue = newChallenge.progress
         currentChallengeGoalValue = newChallenge.goal

@@ -48,6 +48,7 @@ class ChallengesViewController: UIViewController, UICollectionViewDataSource, UI
             cell.cellView.maxValue = CGFloat(challenge.goal);
             if (challenge.progress == challenge.goal) {
                 cell.cellView.progressColor = UIColor.green
+                cell.cellView.progressStrokeColor = UIColor.green
                 cell.cellView.alpha = 0.5
             }
             
@@ -59,7 +60,7 @@ class ChallengesViewController: UIViewController, UICollectionViewDataSource, UI
             cell.friendProgressBar.value = CGFloat(arc4random_uniform(6));
             cell.friendProgressBar.maxValue = 5;
             if (cell.friendProgressBar.value == 5) {
-                cell.friendProgressBar.progressColor = UIColor.green
+                cell.friendProgressBar.progressStrokeColor = UIColor.green
             }
             
             return cell
