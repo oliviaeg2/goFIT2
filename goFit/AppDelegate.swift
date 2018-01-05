@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         let initialChallengeTitles = ["Walking", "Weights", "Biking", "Swimming", "Salad", "Water"];
-        let initialChallengeImages = [#imageLiteral(resourceName: "steps"), #imageLiteral(resourceName: "weights"), #imageLiteral(resourceName: "bike"), #imageLiteral(resourceName: "swimming"), #imageLiteral(resourceName: "salad"), #imageLiteral(resourceName: "water")];
+        let initialChallengeImages = [#imageLiteral(resourceName: "walking"), #imageLiteral(resourceName: "weights"), #imageLiteral(resourceName: "biking"), #imageLiteral(resourceName: "swimming"), #imageLiteral(resourceName: "salad"), #imageLiteral(resourceName: "water")];
         let initialUnits = ["mi", "rep", "km", "km", "cups", "oz"]
         
         let initialFriendNames = ["ME", "Denis", "Bryce","Christina"];

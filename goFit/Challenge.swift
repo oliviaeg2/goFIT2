@@ -11,7 +11,7 @@ import UIKit
 class Challenge: NSObject {
     static var userChallengesShared = [Challenge]()
     
-    static var challengesToIcons = ["Walking" : #imageLiteral(resourceName: "steps"), "Swimming": #imageLiteral(resourceName: "swimming"), "Salad": #imageLiteral(resourceName: "salad"), "Running": #imageLiteral(resourceName: "running"), "Biking": #imageLiteral(resourceName: "bike"), "Weights": #imageLiteral(resourceName: "weights"), "Jumprope": #imageLiteral(resourceName: "jumprope"), "Water": #imageLiteral(resourceName: "water")];
+    static var challengesToIcons = ["Walking" : #imageLiteral(resourceName: "walking"), "Swimming": #imageLiteral(resourceName: "swimming"), "Salad": #imageLiteral(resourceName: "salad"), "Running": #imageLiteral(resourceName: "running"), "Biking": #imageLiteral(resourceName: "biking"), "Weights": #imageLiteral(resourceName: "weights"), "Jumprope": #imageLiteral(resourceName: "jumprope"), "Water": #imageLiteral(resourceName: "water")];
     
     var type : String
     var goal: Int
