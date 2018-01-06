@@ -45,7 +45,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         for userName in initialFriendNames {
             curUser = User(name: userName, image: initialFriendImages[j])!;
-            let dummyChallenge = Challenge.userChallengesShared[j];
             if (j < 4) {
                 let dummyChallenge = Challenge.userChallengesShared[j];
                 curUser.addChallenge(newChallenge: dummyChallenge);

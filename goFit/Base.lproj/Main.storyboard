@@ -191,6 +191,7 @@
                     <navigationItem key="navigationItem" id="xNF-cu-W0S">
                         <barButtonItem key="leftBarButtonItem" id="5GM-jn-jdG"/>
                     </navigationItem>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="currentChallengeGoalLabel" destination="1hh-dK-IKB" id="c0s-Qq-XfT"/>
                         <outlet property="currentChallengeNameLabel" destination="Ab5-dF-1HZ" id="rVb-Gc-bER"/>
@@ -1468,6 +1469,7 @@
                                         <constraint firstAttribute="centerY" secondItem="15O-Im-I0i" secondAttribute="centerY" constant="0.25" id="RBi-pz-ueZ"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="N39-dF-Ro3" secondAttribute="trailing" constant="0.5" id="X0Z-GV-ZuB"/>
                                         <constraint firstAttribute="centerY" secondItem="N39-dF-Ro3" secondAttribute="centerY" constant="1" id="qMd-7J-z3M"/>
+                                        <constraint firstItem="N39-dF-Ro3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gfz-SE-Cqn" secondAttribute="leading" constant="20" symbolic="YES" id="y4J-Lh-DeT"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -1503,7 +1505,7 @@
         <image name="jumprope_blue" width="81" height="82"/>
         <image name="man_blue" width="81" height="82"/>
         <image name="olivia_blue" width="80" height="81"/>
-        <image name="plus_green" width="81" height="82"/>
+        <image name="plus_green" width="80" height="81"/>
         <image name="reject_red" width="81" height="82"/>
         <image name="running_blue" width="81" height="82"/>
         <image name="salad_blue" width="81" height="82"/>

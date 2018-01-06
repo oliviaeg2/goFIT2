@@ -186,7 +186,7 @@ class CreateChallengeViewController: UIViewController {
         changeSegmentedControl(units: distanceUnits)
     }
     
-    func dismissKeyboard() {
+    @objc func dismissKeyboard() {
         if (amountTextField.text != nil) {
             if (Int(amountTextField.text!) != nil) {
                 amount = Int(amountTextField.text!)!

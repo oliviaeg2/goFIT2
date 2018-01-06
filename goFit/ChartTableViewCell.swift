@@ -19,7 +19,7 @@ class ChartTableViewCell: UITableViewCell {
         super.awakeFromNib()
 
         // Initializes the line chart
-        var lineChart = PNLineChart(frame: CGRect(x: self.contentView.frame.origin.x, y: self.contentView.frame.origin.y + 10, width: self.frame.width, height: self.frame.height - 10))
+        let lineChart = PNLineChart(frame: CGRect(x: self.contentView.frame.origin.x, y: self.contentView.frame.origin.y + 10, width: self.frame.width, height: self.frame.height - 10))
         
         lineChart.xLabels = ["Sun","Mon","Tues","Wed","Thur","Fri","Sat"]
         lineChart.yLabelFormat = "%1.1f"
