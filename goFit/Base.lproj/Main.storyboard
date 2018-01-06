@@ -191,7 +191,6 @@
                     <navigationItem key="navigationItem" id="xNF-cu-W0S">
                         <barButtonItem key="leftBarButtonItem" id="5GM-jn-jdG"/>
                     </navigationItem>
-                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="currentChallengeGoalLabel" destination="1hh-dK-IKB" id="c0s-Qq-XfT"/>
                         <outlet property="currentChallengeNameLabel" destination="Ab5-dF-1HZ" id="rVb-Gc-bER"/>
